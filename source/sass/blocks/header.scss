@@ -1,12 +1,19 @@
 .header {
   background-color: red;
-  height: 50px;
+  height: 54px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   transition: top $trans-600;
+  margin-top: 30px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header__logo-link {
@@ -14,5 +21,50 @@
   height: 52px;
   width: 52px;
 }
+
+.header__button {
+  position: relative;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 134px;
+  height: 54px;
+  border-radius: 30px;
+  border: 1px solid $color-cerulean-blue;
+  background-color: $color-default-white;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 4px;
+  color: $color-cerulean-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__button-toggle {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: $color-cerulean-blue;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -450%);
+    width: 18px;
+    height: 1px;
+    background-color: $color-default-white;
+    box-shadow: 0 4px 0 0 $color-default-white,0 8px 0 0 $color-default-white;
+}
+}
+
+
 
 /*  */
