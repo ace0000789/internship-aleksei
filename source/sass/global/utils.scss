@@ -4,8 +4,6 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 
   .header,
   .footer {
@@ -32,7 +30,6 @@
 
 .scroll-lock-ios {
   position: fixed;
-
   overflow: hidden;
 }
 
