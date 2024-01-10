@@ -13,3 +13,15 @@
 - команда `npm run lint-js` проверяет валидность JavaScript
 - команда `npm run ls-lint` проверяет названия файлов
 - команда `npm run editorconfig` проверяет формат файлов
+
+
+<div data-test="slider">slider</div>
+<div data-test="about">about</div>
+<div data-test="programs">programs</div>
+<div data-test="grant">grant</div>
+<div data-test="news">news</div>
+<div data-test="FAQ">FAQ</div>
+<div data-test="reviews">reviews</div>
+<div data-test="contacts">contacts</div>
+<div data-test="form">form</div>
+<div data-test="footer">footer</div>
