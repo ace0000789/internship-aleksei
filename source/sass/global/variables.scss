@@ -1,0 +1,32 @@
+// Colors
+// ---------------------------------
+
+$color-charcoal:               #484848;
+$color-white:                  #ffffff;
+$color-cerulean-blue:          #316dc2;
+$color-alabaster:              #f0efe9;
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+$ff-placeholder:                    "Montserrat", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-768:                            768px;
+$vp-1440:                           1440px;

@@ -2,3 +2,17 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// Global
+// ---------------------------------
+
+@import "global/container.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+@import "global/variables.scss";
+
+// Blocks
+// ---------------------------------
+
