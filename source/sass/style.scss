@@ -6,15 +6,15 @@
 // Global
 // ---------------------------------
 
-@import "mixins.scss";
-@import "variables.scss";
-@import "global/container.scss";
-@import "global/fonts.scss";
-@import "global/reboot.scss";
-@import "global/utils.scss";
+@import "mixins";
+@import "variables";
+@import "global/container";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/header.scss";
+@import "blocks/header";
 
