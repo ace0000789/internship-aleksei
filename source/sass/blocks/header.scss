@@ -45,6 +45,7 @@
   justify-content: space-between;
   z-index: 500;
   transition: $trans-modal;
+  cursor: pointer;
 }
 
 /* кружок */
@@ -83,7 +84,8 @@
 }
 
 .is-opened .header__button {
-  width: 286px;
+  min-width: 286px;
+  max-width: 100%;
   border: none;
   background-color:  $color-cerulean-blue;
   color: $color-default-white;
