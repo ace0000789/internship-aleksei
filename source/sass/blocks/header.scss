@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  transition: top $trans-600;
+  transition: top $trans-900;
   margin-top: 30px;
   z-index: 1;
 }
@@ -51,6 +51,7 @@
   cursor: pointer;
   z-index: 500;
   margin-left: auto;
+  transition: $trans-900;
 }
 
 /* кружок */
@@ -60,7 +61,7 @@
   height: 46px;
   background-color: $color-cerulean-blue;
   border-radius: 50%;
-  transition: $trans-modal;
+  transition: $trans-900;
 
   &::before {
     content: "";
@@ -75,9 +76,6 @@
   }
 }
 
-.header__button-text {
-  transition: $trans-modal;
-}
 
 /* открыттое меню */
 .is-opened::after {
@@ -130,7 +128,7 @@
 /* header menu */
 .header__menu {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: $trans-900;
 }
 
 .is-opened .header__menu {
@@ -138,15 +136,23 @@
   top: 50px;
   color: $color-default-white;
   opacity: 1;
+  transition: $trans-default;
+}
+
+.header__menu-link {
+  color: $color-default-white;
 }
 
 .header__submenu-is-close {
-  display: none;
+  opacity: 0;
+  height: 0;
+  transition: $trans-default;
 }
 
 .header__submenu-is-open {
-  display: block;
-
+  opacity: 1;
+  height: auto;
+  transition: $trans-default;
 }
 
 
