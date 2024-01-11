@@ -1,18 +1,20 @@
 export function initSubMenu() {
+  const subButtons = document.querySelectorAll('[data-validate="header-subbutton"]');
+  const subMenus = document.querySelectorAll('[data-validate="header-submenu"]');
 
-  const subButton = document.querySelector('[data-validate="header-subbutton"]');
-  const subMenu = document.querySelector('[data-validate="header-submenu"]');
+  subButtons.forEach((subButton, index) => {
+    subButton.removeEventListener('click', () => {
+      subMenuToggle(index);
+    });
 
+    subButton.addEventListener('click', () => {
+      subMenuToggle(index);
+    });
+  });
 
-  subButton.addEventListener('click', subMenuToggle);
-
-  function subMenuToggle() {
-    if (subMenu.classList.contains('header__submenu-is-close')) {
-      subMenu.classList.remove('header__submenu-is-close');
-      subMenu.classList.add('header__submenu-is-open');
-    } else {
-      subMenu.classList.add('header__submenu-is-close');
-      subMenu.classList.remove('header__submenu-is-open');
-    }
+  function subMenuToggle(index) {
+    const subMenu = subMenus[index];
+    subMenu.classList.toggle('header__submenu-is-open');
+    subMenu.classList.toggle('header__submenu-is-close');
   }
 }
