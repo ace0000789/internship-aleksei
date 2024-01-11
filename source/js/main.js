@@ -6,6 +6,7 @@
 import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
 import { initSubMenuProg } from './init-submenu-prog';
+import { initSubMenuNews } from './init-submenu-news';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -13,6 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
   stickyHeader();
   initMenu();
   initSubMenuProg();
+  initSubMenuNews();
+
+
+
   window.addEventListener('load', () => {
     // const form = new Form();
     // window.form = form;
