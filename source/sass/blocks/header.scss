@@ -130,7 +130,9 @@
   margin: 0;
   padding: 35px 25px;
   opacity: 0;
+  height: 0;
   //transition: $trans-900;
+  display: none;
 }
 
 .is-opened .header__menu {
@@ -145,11 +147,19 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+  height: auto;
 }
 
 .header__menu-item {
   margin: 0;
   padding: 0;
+  outline: none;
+  height: 0;
+  list-style: none;
+}
+
+.is-opened .header__menu-item {
+  height: auto;
 }
 
 .header__menu-link {
@@ -159,6 +169,17 @@
   line-height: 16px;
   letter-spacing: 0.32px;
   text-transform: uppercase;
+  height: 0;
+}
+
+.is-opened .header__menu-link {
+  height: auto;
+}
+
+.header__menu-link:hover,
+.header__menu-link:focus {
+  color: $color-default-white;
+  outline: none;
 }
 
 .header__menu-button {
@@ -228,6 +249,7 @@
 }
 
 .header__submenu-link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);;
   font-size: 16px;
   font-weight: 400;
