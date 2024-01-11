@@ -5,6 +5,7 @@
 
 import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
+import {initAccordions } from './init-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
 
