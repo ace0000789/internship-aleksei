@@ -8,7 +8,7 @@ export function initMenu() {
     return;
   }
 
-  headerButton.addEventListener('click', toggleHeader, test);
+  headerButton.addEventListener('click', toggleHeader);
 
   function toggleHeader() {
     if (header.classList.contains('is-closed')) {
