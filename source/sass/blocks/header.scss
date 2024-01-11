@@ -61,7 +61,7 @@
   height: 46px;
   background-color: $color-cerulean-blue;
   border-radius: 50%;
-  //transition: $trans-900;
+  transition: $trans-900;
 
   &::before {
     content: "";
@@ -131,7 +131,6 @@
   padding: 35px 25px;
   opacity: 0;
   height: 0;
-  //transition: $trans-900;
   display: none;
 }
 
@@ -141,7 +140,6 @@
   top: 50px;
   color: $color-default-white;
   opacity: 1;
-  //transition: $trans-default;
   border-radius: 16px;
   list-style: none;
   display: flex;
@@ -222,7 +220,6 @@
 .header__submenu-is-close {
   opacity: 0;
   height: 0;
- // transition: $trans-default;
 
   li {
     height: 0;
@@ -233,7 +230,7 @@
   opacity: 1;
   height: auto;
   margin-top: 20px;
-  //transition: $trans-default;
+  transition: opacity 0.6s;
 
   li {
     height: 100%;
