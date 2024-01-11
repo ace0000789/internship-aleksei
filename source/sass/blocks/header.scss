@@ -50,8 +50,7 @@
   justify-content: space-between;
   cursor: pointer;
   z-index: 500;
-  margin-left: auto;
-  //transition: $trans-900;
+  transition: $trans-modal;
 }
 
 /* кружок */
@@ -204,6 +203,16 @@
   }
 }
 
+.header__menu-button:hover,
+.header__menu-button:focus,
+.header__menu-button:active {
+  color: $color-default-white;
+
+  svg {
+    stroke: $color-default-white;
+  }
+}
+
 /* SUBMENU */
 
 
@@ -247,11 +256,16 @@
 
 .header__submenu-link {
   display: block;
-  color: rgba(255, 255, 255, 0.6);;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
 }
 
-
+.header__submenu-link:hover,
+.header__submenu-link:focus,
+.header__submenu-link:active {
+  color: $color-default-white;
+  outline: none;
+}
 /*  */
