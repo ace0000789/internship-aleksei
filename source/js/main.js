@@ -5,14 +5,14 @@
 
 import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
-import {initAccordions } from './init-accordion';
+import { initSubMenu } from './init-submenu';
 
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
   stickyHeader();
   initMenu();
-
+  initSubMenu();
   window.addEventListener('load', () => {
     // const form = new Form();
     // window.form = form;
