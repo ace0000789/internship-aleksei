@@ -177,6 +177,19 @@
   cursor: pointer;
 }
 
+/* SUBMENU */
+
+
+.header__submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .header__submenu-is-close {
   opacity: 0;
   height: 0;
@@ -190,11 +203,27 @@
 .header__submenu-is-open {
   opacity: 1;
   height: auto;
+  margin-top: 20px;
   //transition: $trans-default;
 
   li {
     height: 100%;
   }
+}
+
+.header__submenu-item {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header__submenu-link {
+  color: $color-default-white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 
