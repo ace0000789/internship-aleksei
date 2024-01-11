@@ -22,6 +22,11 @@
   position: relative;
 }
 
+.header__subwrapper {
+  position: relative;
+  z-index: 500;
+}
+
 .header__button {
   position: relative;
   outline: none;
@@ -43,9 +48,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 500;
   transition: $trans-modal;
   cursor: pointer;
+  z-index: 500;
 }
 
 /* кружок */
@@ -115,6 +120,18 @@
     left: 12px;
     top: 22px;
   }
+}
+
+/* header menu */
+.header__menu {
+  display: none;
+}
+
+.is-opened .header__menu {
+  display: block;
+  background-color: $color-cerulean-blue;
+  position: absolute;
+  top: 50px;
 }
 
 
