@@ -127,20 +127,37 @@
 
 /* header menu */
 .header__menu {
+  margin: 0;
+  padding: 35px 25px;
   opacity: 0;
   transition: $trans-900;
 }
 
 .is-opened .header__menu {
+  margin-top: 4px;
   background-color: $color-cerulean-blue;
   top: 50px;
   color: $color-default-white;
   opacity: 1;
   transition: $trans-default;
+  border-radius: 16px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.header__menu-item {
+  margin: 0;
+  padding: 0;
 }
 
 .header__menu-link {
   color: $color-default-white;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
 }
 
 .header__submenu-is-close {
