@@ -154,7 +154,7 @@
 
 .header__menu-link {
   display: block;
-  color: $color-default-white;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.32px;
@@ -166,7 +166,7 @@
   padding: 0;
   width: 100%;
   text-align: left;
-  color: $color-default-white;
+  color: rgba(255, 255, 255, 0.7);;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.32px;
@@ -220,7 +220,7 @@
 }
 
 .header__submenu-link {
-  color: $color-default-white;
+  color: rgba(255, 255, 255, 0.6);;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
