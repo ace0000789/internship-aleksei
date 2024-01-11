@@ -129,7 +129,8 @@
 /* header menu */
 .header__menu {
   display: none;
-  transition: $trans-modal;
+  transition: $trans-default;
+
 }
 
 .is-opened .header__menu {
