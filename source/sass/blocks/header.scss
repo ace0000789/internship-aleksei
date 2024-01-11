@@ -128,17 +128,22 @@
 
 /* header menu */
 .header__menu {
-  display: none;
-  transition: $trans-default;
-
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .is-opened .header__menu {
-  display: block;
   background-color: $color-cerulean-blue;
   top: 50px;
   color: $color-default-white;
+  opacity: 1;
 }
+
+.header__submenu {
+  display: none;
+}
+
+
 
 
 /*  */
