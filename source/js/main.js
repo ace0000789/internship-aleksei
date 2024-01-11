@@ -5,16 +5,14 @@
 
 import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
-import { initSubMenuProg } from './init-submenu-prog';
-import { initSubMenuNews } from './init-submenu-news';
+import { initSubMenu } from './init-submenu';
 
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
   stickyHeader();
   initMenu();
-  initSubMenuProg();
-  initSubMenuNews();
+  initSubMenu();
 
 
 
