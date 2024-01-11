@@ -48,7 +48,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: $trans-modal;
   cursor: pointer;
   z-index: 500;
 }
@@ -73,6 +72,10 @@
     background-color: $color-default-white;
     box-shadow: 0 4px 0 0 $color-default-white,0 8px 0 0 $color-default-white;
   }
+}
+
+.header__button-text {
+  transition: $trans-modal;
 }
 
 /* открыттое меню */
@@ -126,6 +129,7 @@
 /* header menu */
 .header__menu {
   display: none;
+  transition: $trans-modal;
 }
 
 .is-opened .header__menu {
