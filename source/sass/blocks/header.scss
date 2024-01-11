@@ -1,5 +1,4 @@
 .header {
-  //background-color: red;
   height: 54px;
   position: fixed;
   top: 0;
@@ -22,18 +21,7 @@
   width: 52px;
   position: relative;
 }
-/*
-.header.is-opened .header__logo-link::after {
-  position: absolute;
-  content: "";
-  width: 52px;
-  height: 52px;
-  background-color: rgba(13, 29, 51, 0.40);
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-}
-*/
+
 .header__button {
   position: relative;
   outline: none;
@@ -56,14 +44,17 @@
   align-items: center;
   justify-content: space-between;
   z-index: 500;
+  transition: $trans-modal;
 }
 
+/* кружок */
 .header__button-toggle {
   position: relative;
   width: 46px;
   height: 46px;
   background-color: $color-cerulean-blue;
   border-radius: 50%;
+  transition: $trans-modal;
 
   &::before {
     content: "";
@@ -78,15 +69,50 @@
   }
 }
 
-.is-bg::after {
+/* открыттое меню */
+.is-opened::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -30px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 2;
+  height: 100vh;
   background-color: rgba(13, 29, 51, 0.40);
+}
+
+.is-opened .header__button {
+  width: 286px;
+  border: none;
+  background-color:  $color-cerulean-blue;
+  color: $color-default-white;
+}
+
+.is-opened .header__button-toggle {
+  background-color: $color-default-white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 1px;
+    background-color: $color-cerulean-blue;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+    left: 12px;
+    top: 22px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    left: 12px;
+    top: 22px;
+  }
 }
 
 
