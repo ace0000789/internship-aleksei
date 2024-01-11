@@ -4,11 +4,13 @@
 //import 'swiper/css';
 
 import { stickyHeader } from './stiky-header';
+import { initMenu } from './init-menu';
 
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
   stickyHeader();
+  initMenu();
 
   window.addEventListener('load', () => {
     // const form = new Form();
