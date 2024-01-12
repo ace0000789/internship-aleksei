@@ -203,7 +203,6 @@
   opacity: 0;
   height: 0;
   opacity: 0;
-  transition: none;
 }
 
 .is-opened .header__menu {
@@ -219,7 +218,6 @@
   flex-direction: column;
   gap: 28px;
   height: auto;
-  transition: 0.5s;
 }
 
 .header__menu-item {
