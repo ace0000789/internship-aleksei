@@ -34,17 +34,17 @@
               <span class="header__button-toggle"></span>
             </button>
 
-            <ul class="header__menu" data-validate="header-menu">
+            <ul class="header__menu" data-validate="header-menu" data-accordion="parent">
               <li class="header__menu-item">
                 <a class="header__menu-link" href="#">О проекте</a>
               </li>
-              <li class="header__menu-item">
-                <button class="header__menu-button" type="button" data-validate="header-subbutton">Программы
+              <li class="header__menu-item" data-accordion="element">
+                <button class="header__menu-button" type="button" data-accordion="button">Программы
                   <svg width="12" height="12" role="img" aria-label="Иконка подменю.">
                     <use href="__spritemap#sprite-submenu-icon"></use>
                   </svg>
                 </button>
-                <ul class="header__submenu header__submenu-is-close" data-validate="header-submenu">
+                <ul class="header__submenu"  data-accordion="content">
                   <li class="header__submenu-item">
                     <a class="header__submenu-link" href="#">Стажировки</a>
                   </li>
@@ -65,12 +65,12 @@
               <li class="header__menu-item">
                 <a class="header__menu-link" href="#">отзывы</a>
               </li>
-              <li class="header__menu-item">
-                <button class="header__menu-button" type="button" data-validate="header-subbutton">Новости
+              <li class="header__menu-item"  data-accordion="element">
+                <button class="header__menu-button" type="button" data-accordion="button">Новости
                   <svg width="12" height="12" role="img" aria-label="Иконка подменю.">
                     <use href="__spritemap#sprite-submenu-icon"></use>
                   </svg></button>
-                <ul class="header__submenu header__submenu-is-close" data-validate="header-submenu">
+                <ul class="header__submenu" data-accordion="content">
                   <li class="header__submenu-item">
                     <a class="header__submenu-link" href="#">Карьера</a>
                   </li>

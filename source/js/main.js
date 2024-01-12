@@ -5,14 +5,14 @@
 
 import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
-import { initSubMenu } from './init-submenu';
+import { initAccordions } from './init-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
   stickyHeader();
   initMenu();
-  initSubMenu();
+  initAccordions();
 
 
 
