@@ -22,12 +22,26 @@
   position: relative;
 }
 
+.is-opened .header__logo-link {
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
 /* Button Menu */
 
 .header__subwrapper {
   position: relative;
   z-index: 500;
 }
+
+.is-opened .header__subwrapper {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
 
 .header__button {
   position: relative;
@@ -268,6 +282,7 @@
 }
 
 .header__menu-button {
+  word-break: break-all;
   margin: 0;
   padding: 0;
   width: 100%;
