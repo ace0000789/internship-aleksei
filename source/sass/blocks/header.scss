@@ -226,6 +226,11 @@
   outline: none;
   height: 0;
   list-style: none;
+  display: none;
+}
+
+.header.is-opened .header__menu-item {
+  display: block;
 }
 
 .header__menu-item.is-active button {
