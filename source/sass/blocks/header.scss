@@ -269,6 +269,7 @@
   letter-spacing: 0.32px;
   text-transform: uppercase;
   height: 0;
+  transition: 0.5s;
 }
 
 .is-opened .header__menu-link {
@@ -300,9 +301,11 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
+  transition: 0.5s;
 
   svg {
     stroke: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
   }
 }
 
@@ -331,6 +334,7 @@
 
 .header__submenu-link {
   color: rgba(255, 255, 255, 0.6);
+  transition: 0.5s;
 }
 
 .header__submenu-link:hover,
