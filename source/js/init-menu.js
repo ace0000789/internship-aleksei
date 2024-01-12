@@ -8,7 +8,7 @@ export function initMenu() {
   }
 
   headerButton.addEventListener('click', toggleHeader);
-  html.addEventListener('click', closeMenu); // Добавляем обработчик события клика на html элемент
+  html.addEventListener('click', closeMenu);
 
   function toggleHeader() {
     if (header.classList.contains('is-closed')) {
@@ -23,7 +23,6 @@ export function initMenu() {
   }
 
   function closeMenu(event) {
-    // Проверяем, что клик произошел не на header или headerButton
     if (
       !event.target.closest('[data-validate="header-menu"]') &&
       !event.target.closest('[data-validate="header-button"]')
@@ -33,4 +32,5 @@ export function initMenu() {
       html.classList.remove('scroll-lock');
     }
   }
+
 }
