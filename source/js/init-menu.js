@@ -2,13 +2,14 @@ export function initMenu() {
   const header = document.querySelector('[data-validate="header"]');
   const headerButton = document.querySelector('[data-validate="header-button"]');
   const html = document.querySelector('[data-validate="html"]');
-  const subMenu = document.querySelectorAll('[data-validate="header-submenu"]');
+  const menu = document.querySelector('[data-validate="header-menu"]');
 
   if (!header || !headerButton) {
     return;
   }
 
   headerButton.addEventListener('click', toggleHeader);
+  html.addEventListener('click', closeMenu); // Добавляем обработчик события клика на html элемент
 
   function toggleHeader() {
     if (header.classList.contains('is-closed')) {
@@ -19,14 +20,18 @@ export function initMenu() {
       header.classList.add('is-closed');
       header.classList.remove('is-opened');
       html.classList.remove('scroll-lock');
-      test();
     }
   }
 
-  function test() {
-    subMenu.forEach((el) => {
-      el.classList.add('header__submenu-is-close');
-      el.classList.remove('header__submenu-is-open');
-    });
+  function closeMenu(event) {
+    // Проверяем, что клик произошел не на header или headerButton
+    if (
+      !event.target.closest('[data-validate="header-menu"]') &&
+      !event.target.closest('[data-validate="header-button"]')
+    ) {
+      header.classList.add('is-closed');
+      header.classList.remove('is-opened');
+      html.classList.remove('scroll-lock');
+    }
   }
 }

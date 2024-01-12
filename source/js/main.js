@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initAccordions();
 
 
-
   window.addEventListener('load', () => {
     // const form = new Form();
     // window.form = form;
