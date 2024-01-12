@@ -250,6 +250,7 @@
 .header__menu-item.is-active button {
   color: $color-default-white;
   margin-bottom: 20px;
+  font-weight: 500;
 
   svg {
     stroke: $color-default-white;
@@ -280,6 +281,8 @@
 .header__menu-link:focus {
   color: $color-default-white;
   outline: none;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
 .header__menu-button {
@@ -313,6 +316,7 @@
 .header__menu-button:focus,
 .header__menu-button:active {
   color: $color-default-white;
+  font-weight: 500;
 
   svg {
     stroke: $color-default-white;
