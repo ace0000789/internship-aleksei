@@ -22,6 +22,8 @@
   position: relative;
 }
 
+/* Button Menu */
+
 .header__subwrapper {
   position: relative;
   z-index: 500;
@@ -50,6 +52,25 @@
   justify-content: space-between;
   cursor: pointer;
   z-index: 500;
+}
+
+.header__button:hover,
+.header__button:focus,
+.header__button:active {
+  outline: none;
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+}
+
+.header__button:hover .header__button-toggle,
+.header__button:focus .header__button-toggle,
+.header__button:active .header__button-toggle  {
+  background-color: $color-default-white;
+
+  &::before {
+    background-color: $color-cerulean-blue;
+    box-shadow: 0 4px 0 0 $color-cerulean-blue,0 8px 0 0 $color-cerulean-blue;
+  }
 }
 
 /* кружок */
@@ -93,6 +114,28 @@
   border: none;
   background-color:  $color-cerulean-blue;
   color: $color-default-white;
+}
+
+.is-opened .header__button:hover,
+.is-opened .header__button:focus,
+.is-opened .header__button:active {
+  outline: none;
+  background-color: $color-default-white;
+  color: $color-cerulean-blue;
+}
+
+.is-opened .header__button:hover .header__button-toggle,
+.is-opened .header__button:focus .header__button-toggle,
+.is-opened .header__button:active .header__button-toggle{
+  outline: none;
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+
+  &::before,
+  &::after {
+
+    background-color: $color-default-white;
+  }
 }
 
 .is-opened .header__button-toggle {
