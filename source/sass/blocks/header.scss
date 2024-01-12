@@ -51,6 +51,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin-left: auto;
   z-index: 500;
 }
 
@@ -196,15 +197,16 @@
 /* header menu */
 .header__menu {
   margin: 0;
-  padding: 35px 25px;
+  padding: 0;
   opacity: 0;
   height: 0;
-  display: none;
   opacity: 0;
+  transition: none;
 }
 
 .is-opened .header__menu {
   margin-top: 4px;
+  padding: 35px 25px;
   background-color: $color-cerulean-blue;
   top: 50px;
   color: $color-default-white;
@@ -215,6 +217,7 @@
   flex-direction: column;
   gap: 28px;
   height: auto;
+  transition: 0.5s;
 }
 
 .header__menu-item {
