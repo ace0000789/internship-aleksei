@@ -2,7 +2,6 @@ export function initMenu() {
   const header = document.querySelector('[data-validate="header"]');
   const headerButton = document.querySelector('[data-validate="header-button"]');
   const html = document.querySelector('[data-validate="html"]');
-  const menu = document.querySelector('[data-validate="header-menu"]');
 
   if (!header || !headerButton) {
     return;
