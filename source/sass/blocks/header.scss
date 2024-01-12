@@ -62,6 +62,20 @@
   color: $color-default-white;
 }
 
+.header__button:disabled {
+  border: 1px solid $color-chocolate;
+  color: $color-chocolate;
+  cursor: default;
+}
+
+.header__button:disabled:hover,
+.header__button:disabled:focus,
+.header__button:disabled:active {
+  outline: none;
+  background-color: $color-default-white;
+  color: $color-chocolate;
+}
+
 .header__button:hover .header__button-toggle,
 .header__button:focus .header__button-toggle,
 .header__button:active .header__button-toggle  {
@@ -70,6 +84,17 @@
   &::before {
     background-color: $color-cerulean-blue;
     box-shadow: 0 4px 0 0 $color-cerulean-blue,0 8px 0 0 $color-cerulean-blue;
+  }
+}
+
+.header__button:disabled:hover .header__button-toggle,
+.header__button:disabled:focus .header__button-toggle,
+.header__button:disabled:active .header__button-toggle  {
+  background-color: $color-chocolate;
+
+  &::before {
+    background-color: $color-default-white;
+    box-shadow: 0 4px 0 0 $color-default-white,0 8px 0 0 $color-default-white;
   }
 }
 
@@ -92,6 +117,10 @@
     background-color: $color-default-white;
     box-shadow: 0 4px 0 0 $color-default-white,0 8px 0 0 $color-default-white;
   }
+}
+
+.header__button:disabled .header__button-toggle {
+  background-color: $color-chocolate;
 }
 
 
