@@ -6,6 +6,7 @@
 import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
 import { initAccordions } from './init-accordion';
+import { initHeroSlider } from'./init-hero-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   stickyHeader();
   initMenu();
   initAccordions();
+  initHeroSlider();
 
 
   window.addEventListener('load', () => {
