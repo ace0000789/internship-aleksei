@@ -1,17 +1,9 @@
 import Swiper from 'swiper';
-import {Pagination, Autoplay} from 'swiper/modules';
+import {Autoplay, Controller} from 'swiper/modules';
 
 function initHeroSlider() {
-  const myImageSlider = new Swiper('[data-validate="swiper-hero"]', {
-    modules: [Pagination, Autoplay],
-
-    pagination: {
-      el: '[data-validate="swiper-hero-pagination"]',
-      clickable: true,
-      renderBullet(index, className) {
-        return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
-      },
-    },
+  const sliderOne = new Swiper('[data-validate="swiper-hero"]', {
+    modules: [Autoplay, Controller],
     /*
     autoplay: {
       delay: 3000,
@@ -37,7 +29,26 @@ function initHeroSlider() {
       },
     },
   });
-  return myImageSlider;
+
+  const sliderTwo = new Swiper('[data-validate="swiper-hero-pag"]', {
+    modules: [Controller],
+
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        centeredSlides: false,
+      },
+    },
+
+  });
+
+  sliderOne.controller.control = sliderTwo;
+  sliderTwo.controller.control = sliderOne;
+
+  return {
+    sliderOne,
+    sliderTwo
+  };
 }
 
 export { initHeroSlider };
