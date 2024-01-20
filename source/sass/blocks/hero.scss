@@ -17,6 +17,10 @@
   position: relative;
   display: flex;
   align-items: flex-end;
+
+  @include vp-1439 {
+    min-height: 1024px;
+  }
 }
 
 .hero__image {
