@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Autoplay, Controller} from 'swiper/modules';
+import {Autoplay, Controller, Pagination} from 'swiper/modules';
 
 function initHeroSlider() {
   const sliderOne = new Swiper('[data-validate="swiper-hero"]', {
@@ -31,15 +31,16 @@ function initHeroSlider() {
   });
 
   const sliderTwo = new Swiper('[data-validate="swiper-hero-pag"]', {
-    modules: [Controller],
+    modules: [Controller, Pagination],
+    loop: true,
 
-    breakpoints: {
-      1200: {
-        slidesPerView: 3,
-        centeredSlides: true,
+    pagination: {
+      el: '[data-validate="swiper-hero-pagination"]',
+      clickable: true,
+      renderBullet(index, className) {
+        return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
       },
     },
-
   });
 
   sliderOne.controller.control = sliderTwo;
