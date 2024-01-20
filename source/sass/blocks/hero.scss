@@ -38,9 +38,14 @@
   flex-direction: column;
   height: 100%;
   background-color: $color-default-white;
+  position: relative;
 }
 
 /* pagination */
+.slider-pagination {
+  position: absolute;
+  top: -100px;
+}
 
 .slider-pagination .swiper-wrapper {
   display: none;
