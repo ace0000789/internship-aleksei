@@ -192,8 +192,36 @@
   }
 }
 
+.hero__link.btn {
+  @include vp-767 {
+    min-width: 152px;
+    width: 152px;
+    padding: 4px 4px 4px 20px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+  }
+}
+
+.hero__link.btn .btn__toggle {
+  @include vp-767 {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+
+.hero__link.btn svg {
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 .hero__link-angle {
   display: none;
+
   @include vp-767 {
     display: block;
     position: absolute;
