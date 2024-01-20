@@ -252,7 +252,7 @@
   }
 }
 
-.swiper-pagination__angle {
+.slider-pagination__angle {
   position: absolute;
   right: -20px;
   bottom: -8px;
@@ -264,7 +264,7 @@
   }
 }
 
-.swiper-pagination__angle svg{
+.slider-pagination__angle svg{
   @include vp-767 {
     width: 10px;
     height: 10px;
