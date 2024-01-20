@@ -23,6 +23,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  stroke: $color-default-white;
 }
+
+.btn:hover,
+.btn:focus {
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+  outline: none;
+}
+
+.btn:hover .btn__toggle,
+.btn:focus .btn__toggle {
+  background-color: $color-default-white;
+}
+
+.btn:hover .btn__toggle,
+.btn:focus .btn__toggle {
+  stroke: $color-cerulean-blue;
+  transform: rotate(45deg);
+  outline: none;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn:active .btn__toggle {
+  stroke: rgba(49, 109, 194, 0.7);
+  transform: rotate(45deg);
+}
+
+/* for disabled add class btn--disabled */
+
+.btn--disabled {
+  border: 1px solid $color-chocolate;
+  cursor: default;
+  pointer-events: none;
+  color: $color-chocolate;
+
+  &:focus {
+    border: 1px solid $color-chocolate;
+    cursor: default;
+    pointer-events: none;
+    color: $color-chocolate;
+    background-color: $color-default-white;
+  }
+}
+
+.btn--disabled .btn__toggle {
+  background-color: $color-chocolate;
+}
+
+.btn--disabled:focus .btn__toggle {
+  background-color: $color-chocolate;
+  stroke: $color-default-white;
+  transform: none;
+}
+
 
 /**/
