@@ -42,7 +42,6 @@
   }
 }
 
-
 .header__button {
   position: relative;
   outline: none;
@@ -69,6 +68,15 @@
   margin-left: auto;
   z-index: 500;
   transition: 0.5s;
+}
+
+.header__button-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 100% */
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
 }
 
 .header__button:hover,
