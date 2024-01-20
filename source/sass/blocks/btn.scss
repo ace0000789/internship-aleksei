@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
+  justify-content: space-between;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -13,10 +13,12 @@
   text-transform: uppercase;
   height: max-content;
   color: $color-cerulean-blue;
+  min-width: 196px;
 }
 
 .btn__toggle {
   width: 46px;
+  min-width: 46px;
   height: 46px;
   background-color: $color-cerulean-blue;
   border-radius: 50%;
@@ -42,8 +44,9 @@
 .btn:focus .btn__toggle {
   stroke: $color-cerulean-blue;
   transform: rotate(45deg);
-  outline: none;
 }
+
+
 
 .btn:active {
   color: rgba(255, 255, 255, 0.7);
