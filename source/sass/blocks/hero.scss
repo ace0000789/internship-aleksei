@@ -176,7 +176,10 @@
   }
 
   &--small-text {
-    right: -4px;
+    @include vp-767 {
+      right: -4px;
+    }
+
   }
 }
 
