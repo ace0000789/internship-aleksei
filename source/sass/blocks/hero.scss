@@ -144,19 +144,22 @@
   position: relative;
 
   @include vp-1439 {
-    width: 267px;
-    padding: 0 14px 15px;
+    width: 591px;
+    padding: 0 40px 31px;
     align-items: flex-start;
   }
 
   @include vp-767 {
+    width: 267px;
     padding: 0;
     flex-direction: column;
     background-color: transparent;
+    gap: 0;
   }
 }
 
 .hero__angle {
+  width: 267px;
   width: 26px;
   height: 26px;
   position: absolute;
