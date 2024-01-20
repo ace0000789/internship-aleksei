@@ -37,15 +37,10 @@
 
 .btn:hover .btn__toggle,
 .btn:focus .btn__toggle {
-  background-color: $color-default-white;
-}
-
-.btn:hover .btn__toggle,
-.btn:focus .btn__toggle {
   stroke: $color-cerulean-blue;
   transform: rotate(45deg);
+  background-color: $color-default-white;
 }
-
 
 
 .btn:active {
@@ -83,6 +78,3 @@
   stroke: $color-default-white;
   transform: none;
 }
-
-
-/**/

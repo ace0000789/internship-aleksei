@@ -23,7 +23,6 @@
 }
 
 .is-opened .header__logo-link {
-
   @include vp-767 {
     display: none;
   }
@@ -103,23 +102,23 @@
 
 .header__button:hover .header__button-toggle,
 .header__button:focus .header__button-toggle,
-.header__button:active .header__button-toggle  {
+.header__button:active .header__button-toggle {
   background-color: $color-default-white;
 
   &::before {
     background-color: $color-cerulean-blue;
-    box-shadow: 0 4px 0 0 $color-cerulean-blue,0 8px 0 0 $color-cerulean-blue;
+    box-shadow: 0 4px 0 0 $color-cerulean-blue, 0 8px 0 0 $color-cerulean-blue;
   }
 }
 
 .header__button:disabled:hover .header__button-toggle,
 .header__button:disabled:focus .header__button-toggle,
-.header__button:disabled:active .header__button-toggle  {
+.header__button:disabled:active .header__button-toggle {
   background-color: $color-chocolate;
 
   &::before {
     background-color: $color-default-white;
-    box-shadow: 0 4px 0 0 $color-default-white,0 8px 0 0 $color-default-white;
+    box-shadow: 0 4px 0 0 $color-default-white, 0 8px 0 0 $color-default-white;
   }
 }
 
@@ -140,7 +139,7 @@
     width: 18px;
     height: 1px;
     background-color: $color-default-white;
-    box-shadow: 0 4px 0 0 $color-default-white,0 8px 0 0 $color-default-white;
+    box-shadow: 0 4px 0 0 $color-default-white, 0 8px 0 0 $color-default-white;
   }
 }
 
@@ -159,14 +158,14 @@
   bottom: 0;
   z-index: 2;
   height: 100vh;
-  background-color: rgba(13, 29, 51, 0.40);
+  background-color: rgba(13, 29, 51, 0.4);
 }
 
 .is-opened .header__button {
   min-width: 286px;
   max-width: 100%;
   border: none;
-  background-color:  $color-cerulean-blue;
+  background-color: $color-cerulean-blue;
   color: $color-default-white;
 }
 
@@ -180,14 +179,13 @@
 
 .is-opened .header__button:hover .header__button-toggle,
 .is-opened .header__button:focus .header__button-toggle,
-.is-opened .header__button:active .header__button-toggle{
+.is-opened .header__button:active .header__button-toggle {
   outline: none;
   background-color: $color-cerulean-blue;
   color: $color-default-white;
 
   &::before,
   &::after {
-
     background-color: $color-default-white;
   }
 }
@@ -222,7 +220,6 @@
 .header__menu {
   margin: 0;
   padding: 0;
-  opacity: 0;
   height: 0;
   opacity: 0;
 }
@@ -356,4 +353,3 @@
   color: $color-default-white;
   outline: none;
 }
-/**/
