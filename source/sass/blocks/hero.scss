@@ -171,3 +171,13 @@
 .slider-pagination .swiper-pagination-bullet-active {
   background-color: $color-cerulean-blue;
 }
+
+.hero__br {
+  display: block;
+
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+
