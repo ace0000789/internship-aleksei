@@ -30,12 +30,12 @@ function initHeroSlider() {
     },
   });
 
-  const sliderTwo = new Swiper('[data-validate="swiper-hero-pag"]', {
+  const sliderTwo = new Swiper('[data-validate="swiper-hero-pag-one"]', {
     modules: [Controller, Pagination],
     loop: true,
 
     pagination: {
-      el: '[data-validate="swiper-hero-pagination"]',
+      el: '[data-validate="swiper-hero-pagination-one"]',
       clickable: true,
       renderBullet(index, className) {
         return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
@@ -43,12 +43,12 @@ function initHeroSlider() {
     },
   });
 
-  const sliderThree = new Swiper('[data-validate="swiper-hero-pag-test"]', {
+  const sliderThree = new Swiper('[data-validate="swiper-hero-pag-two"]', {
     modules: [Controller, Pagination],
     loop: true,
 
     pagination: {
-      el: '[data-validate="swiper-hero-pagination-test"]',
+      el: '[data-validate="swiper-hero-pagination-two"]',
       clickable: true,
       renderBullet(index, className) {
         return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
@@ -56,14 +56,12 @@ function initHeroSlider() {
     },
   });
 
-
-
-  const sliderFour = new Swiper('[data-validate="swiper-hero-pag-test2"]', {
+  const sliderFour = new Swiper('[data-validate="swiper-hero-pag-three"]', {
     modules: [Controller, Pagination],
     loop: true,
 
     pagination: {
-      el: '[data-validate="swiper-hero-pagination-test2"]',
+      el: '[data-validate="swiper-hero-pagination-three"]',
       clickable: true,
       renderBullet(index, className) {
         return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
