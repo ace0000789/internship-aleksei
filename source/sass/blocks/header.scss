@@ -238,7 +238,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 22.5px;
   height: auto;
 }
 
@@ -257,7 +257,7 @@
 
 .header__menu-item.is-active button {
   color: $color-default-white;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   font-weight: 500;
 
   svg {
@@ -342,6 +342,7 @@
 .header__submenu-item {
   margin: 0;
   padding: 0;
+  line-height: 27.5px;
 }
 
 .header__submenu-link {
