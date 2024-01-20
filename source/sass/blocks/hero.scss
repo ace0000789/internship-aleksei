@@ -82,7 +82,7 @@
       padding: 20px 14px 16px;
       font-size: 22px;
       line-height: 26px;
-      border-radius: 0px 16px 16px 0px;
+      border-radius: 0 16px 16px 0;
       margin-bottom: -5px;
     }
   }
@@ -108,7 +108,7 @@
       line-height: 20px;
       background-color: $color-default-white;
       padding: 0 14px 10px;
-      border-radius: 0px 0px 14px 0px;
+      border-radius: 0 0 14px;
     }
   }
 }
@@ -128,7 +128,7 @@
       font-size: 14px;
       line-height: 20px;
       background-color: $color-default-white;
-      border-radius: 0px 0px 14px 0px;
+      border-radius: 0 0 14px;
     }
   }
 }
@@ -161,7 +161,6 @@
 }
 
 .hero__angle {
-  width: 267px;
   width: 26px;
   height: 26px;
   position: absolute;
@@ -179,7 +178,6 @@
     @include vp-767 {
       right: -4px;
     }
-
   }
 }
 
@@ -195,7 +193,7 @@
   @include vp-767 {
     padding: 9px 15px;
     background-color: $color-default-white;
-    border-radius: 0px 0px 14px 14px;
+    border-radius: 0 0 14px 14px;
     position: relative;
   }
 }
@@ -247,7 +245,7 @@
 
   @include vp-767 {
     top: -28px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0 0;
   }
 }
 
@@ -263,7 +261,7 @@
   }
 }
 
-.slider-pagination__angle svg{
+.slider-pagination__angle svg {
   @include vp-767 {
     width: 10px;
     height: 10px;
@@ -306,11 +304,9 @@
   }
 }
 
-
 .slider-pagination .swiper-pagination-bullet-active {
   background-color: $color-cerulean-blue;
 }
-
 
 .hero__br {
   display: block;
@@ -319,5 +315,3 @@
     display: none;
   }
 }
-
-
