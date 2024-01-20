@@ -88,12 +88,16 @@
       line-height: 20px;
     }
   }
+}
 
-  &--student {
-    p {
-      line-height: 21.5px;
-      text-align: top;
-    };
+.hero__wrapper--student {
+  p {
+    line-height: 21.5px;
+    text-align: top;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
   }
 }
 
@@ -111,7 +115,8 @@
 
   @include vp-1439 {
     width: 591px;
-    padding: 0 40px 35px;
+    padding: 0 40px 31px;
+    align-items: flex-start;
   }
 }
 
