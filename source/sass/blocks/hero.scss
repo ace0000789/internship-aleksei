@@ -103,6 +103,12 @@
   background-color: $color-default-white;
 }
 
+.swiper-pagination__angle {
+  position: absolute;
+  right: -20px;
+  bottom: -8px;
+}
+
 .slider-pagination .swiper-wrapper {
   display: none;
 }
