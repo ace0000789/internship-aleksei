@@ -36,7 +36,7 @@ function initHeroSlider() {
     breakpoints: {
       1200: {
         slidesPerView: 3,
-        centeredSlides: false,
+        centeredSlides: true,
       },
     },
 
