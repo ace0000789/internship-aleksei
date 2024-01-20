@@ -71,6 +71,13 @@
     line-height: 26px;
     width: 446px;
   }
+
+  &--student {
+    p {
+      line-height: 21.5px;
+      text-align: top;
+    };
+  }
 }
 
 .hero__sub-wrapper {
@@ -84,10 +91,6 @@
   align-items: center;
   gap: 30px;
   position: relative;
-
-  &--student {
-    padding: 0 50px 35px;
-  }
 }
 
 .hero__angle {
