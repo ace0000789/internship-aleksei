@@ -93,7 +93,7 @@
     position: relative;
 
     input {
-      opacity: 0.5;
+      opacity: 0;
       height: 20px;
     }
   }
@@ -115,6 +115,15 @@
     border: 1px solid rgba(255, 94, 102, 0.70);
     background: rgba(255, 94, 102, 0.20);
   }
+
+  label[data-validate-type="checkbox"].is-valid .modal__form-chekbox-mark {
+    background: $color-cerulean-blue;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  label[data-validate-type="checkbox"].is-valid svg {
+    stroke: $color-default-white;
+  }
 }
 
 .modal__form-chekbox-mark {
@@ -123,6 +132,9 @@
   height: 20px;
   border: 1px solid rgba(49, 109, 194, 0.7);
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__form-chekbox-text {
