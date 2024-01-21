@@ -144,8 +144,7 @@
       }
 
       &.focus-visible:focus {
-        background-color: $color-cerulean-blue;
-        color: $color-default-white;
+        display: none;
       }
     }
 
@@ -156,8 +155,9 @@
       }
     }
 
-    &.focus-visible:focus {
-      background-color: rgba(0, 0, 0, 0.4);
+    &:focus {
+      background-color: $color-cerulean-blue;
+      color: $color-default-white;
     }
   }
 
