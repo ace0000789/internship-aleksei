@@ -7,6 +7,7 @@ import { stickyHeader } from './stiky-header';
 import { initMenu } from './init-menu';
 import { initAccordions } from './init-accordion';
 import { initHeroSlider } from'./init-hero-slider';
+import { initModals } from './modules/modals/init-modals';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -18,6 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   window.addEventListener('load', () => {
+    initModals();
+
     // const form = new Form();
     // window.form = form;
     //form.init();
