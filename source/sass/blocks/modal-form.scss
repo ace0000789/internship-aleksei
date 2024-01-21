@@ -163,7 +163,7 @@
     border: 1px solid $color-chocolate;
   }
 
-  label[data-validate-type="checkbox"] input:disabled:hover + .modal__form-chekbox-mark svg {
+  label[data-validate-type="checkbox"] input:disabled:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
 
