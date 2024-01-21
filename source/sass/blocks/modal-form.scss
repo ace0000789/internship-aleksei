@@ -133,6 +133,32 @@
   label[data-validate-type="checkbox"] input:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
+
+  /* hover/focus witch checked */
+  label[data-validate-type="checkbox"]:hover input:checked + .modal__form-chekbox-mark,
+  label[data-validate-type="checkbox"]:focus-within input:checked + .modal__form-chekbox-mark {
+    background: $color-default-white;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  label[data-validate-type="checkbox"]:hover input:checked + .modal__form-chekbox-mark svg,
+  label[data-validate-type="checkbox"]:focus-within input:checked + .modal__form-chekbox-mark svg{
+    stroke: $color-cerulean-blue;
+  }
+
+  label[data-validate-type="checkbox"].is-valid:hover .modal__form-chekbox-mark,
+  label[data-validate-type="checkbox"].is-valid:focus-within .modal__form-chekbox-mark {
+    background: $color-default-white;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  label[data-validate-type="checkbox"].is-valid:hover svg,
+  label[data-validate-type="checkbox"].is-valid:focus-within svg {
+    stroke: $color-cerulean-blue;
+  }
+
+
+
 }
 
 .modal__form-chekbox-mark {
