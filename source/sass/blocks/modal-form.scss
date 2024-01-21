@@ -93,7 +93,7 @@
     position: relative;
 
     input {
-      opacity: 0.2;
+      opacity: 0;
       height: 20px;
     }
   }
@@ -122,6 +122,15 @@
   }
 
   label[data-validate-type="checkbox"].is-valid svg {
+    stroke: $color-default-white;
+  }
+
+  label[data-validate-type="checkbox"] input:checked + .modal__form-chekbox-mark {
+    background: $color-cerulean-blue;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  label[data-validate-type="checkbox"] input:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
 }
