@@ -359,7 +359,7 @@
 
   <!-- Modal -->
 
-  <div class="modal modal--preload is-active" data-modal="feedback">
+  <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -375,20 +375,17 @@
             <h2 class="modal__form-title">Напишите нам</h2>
             <p class="modal__form-text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <div class="modal__form-wrapper">
-
               <label data-validate-type="text" data-limitation="name" data-message-extra="Более одной буквы"
                 data-on-input-validate data-required>
                 <input type="text" name="name" aria-label="Как к вам обращаться?" required autocomplete="off">
                 <span class="modal__form-block-name">Имя</span>
                 <span class="visually-hidden">Поле для заполнения имя.</span>
               </label>
-
               <label data-validate-type="phone" data-on-input-validate data-required>
                 <input type="text" name="phone" required aria-label="Телефон" autocomplete="off">
                 <span class="modal__form-block-name">Телефон</span>
                 <span class="visually-hidden">Поле для заполнения телефона.</span>
               </label>
-
               <div class="custom-select" data-select data-validate-type="select" data-name="city">
                 <div class="custom-select__label">Выберите город</div>
                 <button class="custom-select__button" type="button" aria-label="Выберите город.">
@@ -407,7 +404,6 @@
                   <li class="custom-select__item" tabindex="0" data-select-value="Berlin">Берлин</li>
                 </ul>
               </div>
-
               <label for="checkbox" data-validate-type="checkbox" value="agree" name="agree"  aria-label="Согласие на предосталение персональных данных.">
                 <input type="checkbox" id="checkbox">
                 <span class="modal__form-chekbox-mark">
@@ -419,8 +415,6 @@
               </label>
 
             </div>
-
-
             <button class="modal__form-btn btn" type="submit">отправить
               <span class="btn__toggle">
                 <svg width="10" height="10" role="img" aria-label="Лого кнопки">
