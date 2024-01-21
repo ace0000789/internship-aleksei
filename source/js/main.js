@@ -9,6 +9,7 @@ import { initAccordions } from './init-accordion';
 import { initHeroSlider } from'./init-hero-slider';
 import { initModals } from './modules/modals/init-modals';
 import { Form } from './vendor/form-validate/form';
+import { CustomSelect } from './vendor/custom-select/custom-select';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -21,6 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('load', () => {
     initModals();
+
+    const select = new CustomSelect();
+    select.init();
 
     const form = new Form();
     window.form = form;
