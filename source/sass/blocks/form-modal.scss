@@ -30,7 +30,7 @@
   label {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 12px;
   }
 
@@ -40,6 +40,10 @@
 
   label:hover input {
     border: 1px solid $color-charcoal;
+  }
+
+  label:hover input:disabled {
+    border: 1px solid rgba(169, 175, 183, 0.50);
   }
 
   label:focus-within .form-modal__block-name {
@@ -62,6 +66,15 @@
   input:active {
     border: 1px solid $color-charcoal;
     outline: none;
+  }
+
+  input:disabled + .form-modal__block-name {
+    color: rgba(72, 72, 72, 0.6);
+  }
+
+  input:disabled {
+    border: 1px solid rgba(169, 175, 183, 0.50);
+    background: rgba(169, 175, 183, 0.20);
   }
 }
 
