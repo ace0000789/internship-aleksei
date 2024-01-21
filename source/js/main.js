@@ -8,7 +8,7 @@ import { initMenu } from './init-menu';
 import { initAccordions } from './init-accordion';
 import { initHeroSlider } from'./init-hero-slider';
 import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
+import { Form } from './vendor/form-validate/form';
 
 window.addEventListener('DOMContentLoaded', () => {
 

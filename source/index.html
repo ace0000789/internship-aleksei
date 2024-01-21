@@ -359,7 +359,7 @@
 
   <!-- Modal -->
 
-  <div class="modal modal--preload" data-modal="feedback">
+  <div class="modal modal--preload is-active" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -370,22 +370,42 @@
         </button>
 
         <div class="form__container" data-form-validate data-callback="base">
+
           <form action="http://echo.htmlacademy.ru" method="post">
-            <h3 class="form__title">Задать вопрос</h3>
-            <p class="form__text">Заполните форму и наш оператор свяжется с&nbsp;вами для&nbsp;консультации.</p>
+            <h2 class="form__title">Напишите нам</h2>
+            <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <div class="form__wrapper">
+
               <label data-validate-type="text" data-limitation="name" data-message-extra="Более одной буквы"
                 data-on-input-validate data-required>
-                <input type="text" name="name" placeholder="Как к вам обращаться?" aria-label="Как к вам обращаться?"
+                <input type="text" name="name" aria-label="Как к вам обращаться?"
                   required>
                 <span class="visually-hidden">Поле для заполнения имя.</span>
               </label>
+
               <label data-validate-type="phone" data-on-input-validate data-required>
-                <input type="text" name="phone" required aria-label="Телефон" placeholder="Телефон">
+                <input type="text" name="phone" required aria-label="Телефон">
                 <span class="visually-hidden">Поле для заполнения телефона.</span>
               </label>
-              
-              <button class="btn btn--white form__button" type="submit">Отправить</button>
+
+              <select name="colors">
+                <option value="red">Красный</option>
+                <option value="green">Зеленый</option>
+                <option value="blue">Синий</option>
+              </select>
+
+              <label for="checkbox">
+                <input type="checkbox" id="checkbox">
+
+              </label>
+
+              <button class="form__btn btn" type="submit">отправить
+                <span class="btn__toggle">
+                  <svg width="10" height="10" role="img" aria-label="Лого кнопки">
+                    <use href="__spritemap#sprite-btn-arrow"></use>
+                  </svg>
+                </span>
+              </button>
             </div>
           </form>
 
