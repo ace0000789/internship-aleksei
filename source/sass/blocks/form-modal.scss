@@ -50,6 +50,11 @@
     color: $color-charcoal;
   }
 
+  label.is-invalid input:not(input:disabled) {
+    border: 1px solid $color-wild-watermelon;
+    background: rgba(255, 94, 102, 0.20);
+  }
+
   input {
     height: 50px;
     border-radius: 8px;
