@@ -79,11 +79,15 @@
     transition: border 0.3s ease;
 
     &:hover {
-      border: 2px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid $color-charcoal;
     }
 
     &:focus {
-      border: 2px solid rgba(0, 0, 0, 0.8);
+      border: 1px solid $color-charcoal;
+
+      .custom-select__icon {
+        transform: rotate(180deg);
+      }
     }
 
     &:disabled {

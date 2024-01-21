@@ -1,10 +1,3 @@
-// Vendor
-// ---------------------------------
-
-@import "vendor/normalize";
-@import "vendor/data-accordion";
-@import "vendor/custom-select";
-@import "swiper/css";
 
 // Global
 // ---------------------------------
@@ -15,6 +8,14 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
+
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/data-accordion";
+@import "vendor/custom-select";
+@import "swiper/css";
 
 // Blocks
 // ---------------------------------
