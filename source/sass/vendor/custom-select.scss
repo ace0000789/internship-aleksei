@@ -98,7 +98,7 @@
 
   &__list {
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     z-index: 1;
 
     width: 100%;
@@ -133,22 +133,26 @@
     transition: background-color 0.3s ease;
 
     &[aria-selected="true"] {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: $color-cerulean-blue;
+      color: $color-default-white;
 
       @media (hover: hover) {
         &:hover:not(.focus-visible) {
-          background-color: rgba(0, 0, 0, 0.2);
+          background-color: $color-cerulean-blue;
+          color: $color-default-white;
         }
       }
 
       &.focus-visible:focus {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: $color-cerulean-blue;
+        color: $color-default-white;
       }
     }
 
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: $color-cerulean-blue;
+        color: $color-default-white;
       }
     }
 
@@ -156,7 +160,7 @@
       background-color: rgba(0, 0, 0, 0.4);
     }
   }
-  
+
 
   &__error {
     position: absolute;
