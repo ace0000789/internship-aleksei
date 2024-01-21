@@ -157,7 +157,15 @@
     stroke: $color-cerulean-blue;
   }
 
+/* disabled checked */
+  label[data-validate-type="checkbox"] input:disabled:checked + .modal__form-chekbox-mark {
+    background: $color-chocolate;
+    border: 1px solid $color-chocolate;
+  }
 
+  label[data-validate-type="checkbox"] input:disabled:hover + .modal__form-chekbox-mark svg {
+    stroke: $color-default-white;
+  }
 
 }
 
