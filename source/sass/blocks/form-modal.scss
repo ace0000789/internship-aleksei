@@ -20,6 +20,8 @@
   line-height: 26px;
 }
 
+/* label name/phone */
+
 .form-modal__wrapper {
   display: flex;
   flex-direction: column;
@@ -62,7 +64,6 @@
     outline: none;
   }
 }
-
 
 .form-modal__block-name {
   margin: 0;
