@@ -318,7 +318,7 @@
                 <h3>Более 250
 
                   программ</h3>
-                <p>учебных и рабочих, разной длительностью  от 3 месяцев до 1 года</p>
+                <p>учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
               </div>
             </li>
 
@@ -379,8 +379,7 @@
               <label data-validate-type="text" data-limitation="name" data-message-extra="Более одной буквы"
                 data-on-input-validate data-required>
                 <span class="form-modal__block-name">Имя</span>
-                <input type="text" name="name" aria-label="Как к вам обращаться?"
-                  required>
+                <input type="text" name="name" aria-label="Как к вам обращаться?" required>
                 <span class="visually-hidden">Поле для заполнения имя.</span>
               </label>
 
@@ -390,13 +389,15 @@
                 <span class="visually-hidden">Поле для заполнения телефона.</span>
               </label>
 
-              <select name="colors">
-                <option value="red">Красный</option>
-                <option value="green">Зеленый</option>
-                <option value="blue">Синий</option>
-              </select>
+              <label data-validate-type="select" data-required>
+                <select name="colors">
+                  <option value="red">Красный</option>
+                  <option value="green">Зеленый</option>
+                  <option value="blue">Синий</option>
+                </select>
+              </label>
 
-              <label for="checkbox">
+              <label for="checkbox" data-validate-type="checkbox">
                 <input type="checkbox" id="checkbox">
 
               </label>
@@ -411,11 +412,11 @@
             </div>
           </form>
 
+        </div>
       </div>
     </div>
-  </div>
 
-  <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
