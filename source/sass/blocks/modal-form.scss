@@ -104,6 +104,11 @@
   label[data-validate-type="checkbox"]:focus-within .modal__form-chekbox-mark {
     border: 1px solid $color-cerulean-blue;
   }
+
+  label[data-validate-type="checkbox"] input:disabled + .modal__form-chekbox-mark {
+    border: 1px solid $color-cerulean-blue;
+    background: rgba(49, 109, 194, 0.40);
+  }
 }
 
 .modal__form-chekbox-mark {
@@ -111,6 +116,7 @@
   width: 20px;
   height: 20px;
   border: 1px solid rgba(49, 109, 194, 0.7);
+  border-radius: 2px;
 }
 
 .modal__form-chekbox-text {
