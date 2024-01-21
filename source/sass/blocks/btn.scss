@@ -54,7 +54,8 @@
 
 /* for disabled add class btn--disabled */
 
-.btn--disabled {
+.btn--disabled,
+.btn:disabled {
   border: 1px solid $color-chocolate;
   cursor: default;
   pointer-events: none;
@@ -69,11 +70,13 @@
   }
 }
 
-.btn--disabled .btn__toggle {
+.btn--disabled .btn__toggle,
+.btn:disabled .btn__toggle  {
   background-color: $color-chocolate;
 }
 
-.btn--disabled:focus .btn__toggle {
+.btn--disabled:focus .btn__toggle,
+.btn:disabled:focus .btn__toggle {
   background-color: $color-chocolate;
   stroke: $color-default-white;
   transform: none;
