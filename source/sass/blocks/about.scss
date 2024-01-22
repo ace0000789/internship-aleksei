@@ -50,18 +50,55 @@
   min-width: 278px;
 }
 
-
-
-
-
-
-
-
-
-
 .about__list {
   background-color: $color-cerulean-blue;
-  color: $color-default-white
+  color: $color-default-white;
+  margin: 0;
+  padding: 50px 106px;
+  display: grid;
+  grid-template-columns: 478px 478px;
+  gap: 52px;
+  border-radius: 20px;
+  list-style: none;
 }
 
+.about__item {
+  margin: 0;
+  padding: 30px 60px;
+  border-radius: 16px;
+  border: 1px solid $color-alabaster;
+  position: relative;
+}
+
+.about__item-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    max-width: 173px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    max-width: 190px;
+  }
+}
+
+.about__item-icon {
+  position: absolute;
+  top: -21px;
+  left: -21px;
+}
 /**/
