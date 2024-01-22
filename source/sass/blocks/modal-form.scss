@@ -134,12 +134,13 @@
   }
 
   /* hover/focus witch checked */
-  label:hover input:checked + .modal__form-chekbox-mark,
+
+  /* label:hover input:checked + .modal__form-chekbox-mark,
   label:focus-within input:checked + .modal__form-chekbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
     stroke: $color-cerulean-blue;
-  }
+  } */
 
 
   .is-valid:hover .modal__form-chekbox-mark,
@@ -154,7 +155,7 @@
   }
 
   /* disabled checked */
-  label input:disabled:checked + .modal__form-chekbox-mark {
+  input:disabled:checked + .modal__form-chekbox-mark {
     background: $color-chocolate;
     border: 1px solid $color-chocolate;
     stroke: $color-default-white;
