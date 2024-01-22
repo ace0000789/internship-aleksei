@@ -160,9 +160,6 @@
   label input:disabled:checked + .modal__form-chekbox-mark {
     background: $color-chocolate;
     border: 1px solid $color-chocolate;
-  }
-
-  label input:disabled:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
 }
