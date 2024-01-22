@@ -3,7 +3,7 @@
 
   width: 100%;
   padding: 0 0 28px;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 14px;
@@ -39,6 +39,7 @@
     line-height: 14px;
     color: rgba(72, 72, 72, 0.7);
     transform: translateY(-50%);
+    padding-bottom: 2px;
 
     transition: transform 0.3s ease, opacity  0.3s ease;
 
