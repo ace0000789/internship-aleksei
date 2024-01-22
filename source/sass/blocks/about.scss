@@ -54,17 +54,18 @@
   background-color: $color-cerulean-blue;
   color: $color-default-white;
   margin: 0;
-  padding: 50px 106px;
+  padding: 72px 126px 32px;
   display: grid;
   grid-template-columns: 478px 478px;
   gap: 52px;
+  row-gap: 54px;
   border-radius: 20px;
   list-style: none;
 }
 
 .about__item {
   margin: 0;
-  padding: 30px 60px;
+  padding: 30px 48px 20px 60px;
   border-radius: 16px;
   border: 1px solid $color-alabaster;
   position: relative;
@@ -98,7 +99,7 @@
 
 .about__item-icon {
   position: absolute;
-  top: -21px;
+  top: -23px;
   left: -21px;
 }
 /**/
