@@ -124,9 +124,11 @@
 }
 
 .about__btn .btn__toggle {
-  min-width: 34px;
-  width: 34px;
-  height: 34px;
+  @include vp-767 {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+  }
 }
 
 /* 2 Block */
@@ -251,8 +253,17 @@
   position: absolute;
   top: -23px;
   left: -21px;
+  width: 42px;
+  height: 42px;
+  background-color: $color-cerulean-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include vp-767 {
-    margin: 2px;
+    svg {
+      width: 14px;
+      height: 18px;
+    }
   }
 }
