@@ -4,11 +4,11 @@ import {Autoplay, Controller, Pagination} from 'swiper/modules';
 function initHeroSlider() {
   const sliderOne = new Swiper('[data-validate="swiper-hero"]', {
     modules: [Autoplay, Controller],
-    /*
+
     autoplay: {
       delay: 3000,
     },
-    */
+
     grabCursor: true,
     autoHeight: true,
     loop: true,
@@ -17,15 +17,10 @@ function initHeroSlider() {
         slidesPerView: 1,
         slidesPerGroup: 1,
         centeredSlides: false,
-        simulateTouch: true, /// Отключить !!!!!!!!!!
+        simulateTouch: false,
       },
       768: {
         simulateTouch: true,
-
-      },
-
-      0: {
-
       },
     },
   });
