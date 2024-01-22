@@ -130,7 +130,6 @@
 
   @include vp-767 {
     margin-top: -25px;
-
   }
 
   label {
@@ -142,6 +141,10 @@
     position: relative;
     display: grid;
     grid-template-columns: 20px auto;
+
+    @include vp-767 {
+      margin-bottom: 24px;
+    }
   }
 
   input {
@@ -246,6 +249,21 @@ label:focus-within input:checked + .modal__form-chekbox-mark {
   cursor: pointer;
   margin: 0 auto;
   min-width: 195px;
+
+  @include vp-767 {
+    min-width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+    padding-left: 74px;
+
+    .btn__toggle {
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+    }
+  }
 
   &:disabled {
     cursor: default;
