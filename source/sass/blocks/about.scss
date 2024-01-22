@@ -92,6 +92,11 @@
   row-gap: 54px;
   border-radius: 20px;
   list-style: none;
+
+  @include  vp-1439 {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+  }
 }
 
 .about__item {
@@ -100,12 +105,20 @@
   border-radius: 16px;
   border: 1px solid $color-alabaster;
   position: relative;
+
+  @include  vp-1439 {
+    padding: 30px;
+  }
 }
 
 .about__item-wrap {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+
+  @include  vp-1439 {
+    grid-template-columns: auto;
+  }
 
   h3 {
     margin: 0;
@@ -131,16 +144,28 @@
   &--people {
     grid-template-columns: 171px 161px;
     padding-right: 12px;
+
+    @include  vp-1439 {
+      grid-template-columns: auto;
+    }
   }
 
   &--price {
     grid-template-columns: 134px 190px;
     padding-right: 12px;
+
+    @include  vp-1439 {
+      grid-template-columns: auto;
+    }
   }
 
   &--countries {
     grid-template-columns: 163px 142px;
     padding-right: 12px;
+
+    @include  vp-1439 {
+      grid-template-columns: auto;
+    }
   }
 }
 
