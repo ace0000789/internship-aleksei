@@ -50,6 +50,7 @@
 
   @include vp-767 {
     grid-template-columns: 100%;
+    margin-bottom: 40px;
   }
 
   span {
@@ -111,6 +112,21 @@
 
 .about__btn {
   min-width: 278px;
+
+  @include vp-767 {
+    min-width: 221px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+    padding-left: 20px;
+  }
+}
+
+.about__btn .btn__toggle {
+  min-width: 34px;
+  width: 34px;
+  height: 34px;
 }
 
 /* 2 Block */
