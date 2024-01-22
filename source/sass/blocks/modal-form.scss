@@ -133,9 +133,6 @@
   input:checked + .modal__form-chekbox-mark {
     background: $color-cerulean-blue;
     border: 1px solid $color-cerulean-blue;
-  }
-
-  input:checked + .modal__form-chekbox-mark {
     stroke: $color-default-white;
   }
 
