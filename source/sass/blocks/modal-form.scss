@@ -50,9 +50,13 @@
     color: $color-charcoal;
   }
 
-  label.is-invalid input:not(input:disabled) {
+  .is-invalid input {
     border: 1px solid $color-wild-watermelon;
     background: rgba(255, 94, 102, 0.2);
+  }
+
+  .is-invalid .modal__form-block-name {
+    color: $color-charcoal;
   }
 
   input {
