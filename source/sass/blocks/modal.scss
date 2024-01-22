@@ -9,13 +9,14 @@
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(13, 29, 51, 0.40);
+  background-color: rgba(13, 29, 51, 0.4);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  transition: opacity $trans-modal,
-  transform $trans-modal,
-  visibility $trans-modal;
+  transition:
+    opacity $trans-modal,
+    transform $trans-modal,
+    visibility $trans-modal;
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -114,4 +115,3 @@
 
   pointer-events: auto;
 }
-

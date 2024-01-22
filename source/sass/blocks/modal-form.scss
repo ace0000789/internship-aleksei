@@ -43,7 +43,7 @@
   }
 
   label:hover input:disabled {
-    border: 1px solid rgba(169, 175, 183, 0.50);
+    border: 1px solid rgba(169, 175, 183, 0.5);
   }
 
   label:focus-within .modal__form-block-name {
@@ -52,7 +52,7 @@
 
   label.is-invalid input:not(input:disabled) {
     border: 1px solid $color-wild-watermelon;
-    background: rgba(255, 94, 102, 0.20);
+    background: rgba(255, 94, 102, 0.2);
   }
 
   input {
@@ -78,8 +78,8 @@
   }
 
   input:disabled {
-    border: 1px solid rgba(169, 175, 183, 0.50);
-    background: rgba(169, 175, 183, 0.20);
+    border: 1px solid rgba(169, 175, 183, 0.5);
+    background: rgba(169, 175, 183, 0.2);
   }
 
   /* checkbox */
@@ -108,12 +108,12 @@
 
   label[data-validate-type="checkbox"] input:disabled + .modal__form-chekbox-mark {
     border: 1px solid $color-cerulean-blue;
-    background: rgba(49, 109, 194, 0.40);
+    background: rgba(49, 109, 194, 0.4);
   }
 
   label[data-validate-type="checkbox"].is-invalid .modal__form-chekbox-mark {
-    border: 1px solid rgba(255, 94, 102, 0.70);
-    background: rgba(255, 94, 102, 0.20);
+    border: 1px solid rgba(255, 94, 102, 0.7);
+    background: rgba(255, 94, 102, 0.2);
   }
 
   label[data-validate-type="checkbox"].is-valid .modal__form-chekbox-mark {
@@ -142,7 +142,7 @@
   }
 
   label[data-validate-type="checkbox"]:hover input:checked + .modal__form-chekbox-mark svg,
-  label[data-validate-type="checkbox"]:focus-within input:checked + .modal__form-chekbox-mark svg{
+  label[data-validate-type="checkbox"]:focus-within input:checked + .modal__form-chekbox-mark svg {
     stroke: $color-cerulean-blue;
   }
 
@@ -157,7 +157,7 @@
     stroke: $color-cerulean-blue;
   }
 
-/* disabled checked */
+  /* disabled checked */
   label[data-validate-type="checkbox"] input:disabled:checked + .modal__form-chekbox-mark {
     background: $color-chocolate;
     border: 1px solid $color-chocolate;
@@ -166,7 +166,6 @@
   label[data-validate-type="checkbox"] input:disabled:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
-
 }
 
 .modal__form-chekbox-mark {
@@ -208,4 +207,3 @@
     pointer-events: none;
   }
 }
-/**/
