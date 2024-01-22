@@ -65,15 +65,15 @@
 
 .about__item {
   margin: 0;
-  padding: 30px 48px 20px 60px;
+  padding: 25px 47px 25px 59px;
   border-radius: 16px;
   border: 1px solid $color-alabaster;
   position: relative;
 }
 
 .about__item-wrap {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
 
   h3 {
@@ -85,6 +85,7 @@
     letter-spacing: 0.26px;
     text-transform: uppercase;
     max-width: 173px;
+    padding-top: 4px;
   }
 
   p {
