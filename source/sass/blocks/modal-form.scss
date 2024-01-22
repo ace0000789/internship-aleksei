@@ -25,13 +25,13 @@
 .modal__form-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 
   label {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    gap: 12px;
+    gap: 9px;
   }
 
   label:hover .modal__form-block-name {
