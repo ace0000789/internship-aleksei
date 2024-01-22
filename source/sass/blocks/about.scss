@@ -96,6 +96,21 @@
     line-height: 20px;
     max-width: 190px;
   }
+
+  &--people {
+    grid-template-columns: 171px 161px;
+    padding-right: 12px;
+  }
+
+  &--price {
+    grid-template-columns: 134px 190px;
+    padding-right: 12px;
+  }
+
+  &--countries {
+    grid-template-columns: 163px 142px;
+    padding-right: 12px;
+  }
 }
 
 .about__item-icon {
