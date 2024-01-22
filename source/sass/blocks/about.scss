@@ -1,6 +1,10 @@
 .about {
   margin-top: -2px;
   margin-bottom: 122px;
+
+  @include  vp-1439 {
+    margin-bottom: 101px;
+  }
 }
 
 /* 1 Block */
@@ -72,7 +76,7 @@
 
     @include  vp-1439 {
       line-height: 20px;
-      margin-bottom: 36px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -81,6 +85,7 @@
   min-width: 278px;
 }
 
+/* 2 Block */
 .about__list {
   background-color: $color-cerulean-blue;
   color: $color-default-white;
