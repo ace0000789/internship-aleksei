@@ -95,8 +95,9 @@
 
   @include  vp-1439 {
     grid-template-columns: 1fr 1fr;
-    padding: 62px 40px 61px 60px;
+    padding: 62px 40px 40px 60px;
     gap: 50px;
+    row-gap: 42px;
   }
 }
 
@@ -188,6 +189,7 @@
 
     @include  vp-1439 {
       grid-template-columns: auto;
+      padding-right: 0;
     }
   }
 }
