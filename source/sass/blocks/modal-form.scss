@@ -141,12 +141,9 @@
   label:focus-within input:checked + .modal__form-chekbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
-  }
-
-  label:hover input:checked + .modal__form-chekbox-mark svg,
-  label:focus-within input:checked + .modal__form-chekbox-mark svg {
     stroke: $color-cerulean-blue;
   }
+
 
   .is-valid:hover .modal__form-chekbox-mark,
   .is-valid:focus-within .modal__form-chekbox-mark {
