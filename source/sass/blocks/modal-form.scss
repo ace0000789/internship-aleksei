@@ -6,7 +6,7 @@
   line-height: 36px;
   color: $color-cerulean-blue;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .modal__form-text {
@@ -14,7 +14,7 @@
   padding: 0;
   color: $color-charcoal;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -96,6 +96,8 @@
     align-items: center;
     margin-bottom: 30px;
     position: relative;
+    display: grid;
+    grid-template-columns: 20px auto;
   }
 
   input {
