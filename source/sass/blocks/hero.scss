@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   margin-bottom: 120px;
+
+  @include  vp-1439 {
+    margin-bottom: 96px;
+  }
 }
 
 .swiper-wrapper {
