@@ -251,12 +251,12 @@
 
 .slider-pagination__angle {
   position: absolute;
-  right: -20px;
+  right: -19px;
   bottom: -8px;
 
   @include vp-767 {
-    right: -10px;
-    bottom: 9px;
+    right: -9px;
+    bottom: 4px;
     height: 10px;
   }
 }
