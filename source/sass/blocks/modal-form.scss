@@ -135,14 +135,6 @@
 
   /* hover/focus witch checked */
 
-  /* label:hover input:checked + .modal__form-chekbox-mark,
-  label:focus-within input:checked + .modal__form-chekbox-mark {
-    background: $color-default-white;
-    border: 1px solid $color-cerulean-blue;
-    stroke: $color-cerulean-blue;
-  } */
-
-
   .is-valid:hover .modal__form-chekbox-mark,
   .is-valid:focus-within .modal__form-chekbox-mark {
     background: $color-default-white;
@@ -160,6 +152,13 @@
     border: 1px solid $color-chocolate;
     stroke: $color-default-white;
   }
+}
+
+label:hover input:checked + .modal__form-chekbox-mark,
+label:focus-within input:checked + .modal__form-chekbox-mark {
+  background: $color-default-white;
+  border: 1px solid $color-cerulean-blue;
+  stroke: $color-cerulean-blue;
 }
 
 .modal__form-chekbox-mark {
