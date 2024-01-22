@@ -1,0 +1,67 @@
+.about {
+  padding-top: 118px;
+  padding-bottom: 120px;
+}
+
+/* 1 Block */
+
+.about__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  color: $color-cerulean-blue;
+  margin-bottom: 35px;
+}
+.about__intro {
+  width: 1134px;
+  display: grid;
+  grid-template-columns: 477px 498px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  span {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    color: $color-cerulean-blue;
+    margin-bottom: 33px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 33px;
+  }
+}
+
+.about__btn {
+  min-width: 278px;
+}
+
+
+
+
+
+
+
+
+
+
+.about__list {
+  background-color: $color-cerulean-blue;
+  color: $color-default-white
+}
+
+/**/
