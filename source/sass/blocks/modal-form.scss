@@ -85,89 +85,90 @@
     border: 1px solid rgba(169, 175, 183, 0.5);
     background: rgba(169, 175, 183, 0.2);
   }
+}
 
-  /* checkbox */
-
-  label[data-validate-type="checkbox"] {
+/* checkbox */
+.modal__form-chekbox {
+  label {
     flex-direction: row;
     min-height: 20px;
     gap: 15px;
     align-items: center;
     margin-bottom: 30px;
     position: relative;
-
-    input {
-      opacity: 0;
-      height: 20px;
-    }
   }
 
-  label[data-validate-type="checkbox"]:hover .modal__form-chekbox-mark {
+  input {
+    opacity: 0;
+    height: 20px;
+  }
+
+  label:hover .modal__form-chekbox-mark {
     border: 1px solid $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"]:focus-within .modal__form-chekbox-mark {
+  label:focus-within .modal__form-chekbox-mark {
     border: 1px solid $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"] input:disabled + .modal__form-chekbox-mark {
+  input:disabled + .modal__form-chekbox-mark {
     border: 1px solid $color-cerulean-blue;
     background: rgba(49, 109, 194, 0.4);
   }
 
-  label[data-validate-type="checkbox"].is-invalid .modal__form-chekbox-mark {
+  .is-invalid .modal__form-chekbox-mark {
     border: 1px solid rgba(255, 94, 102, 0.7);
     background: rgba(255, 94, 102, 0.2);
   }
 
-  label[data-validate-type="checkbox"].is-valid .modal__form-chekbox-mark {
+  .is-valid .modal__form-chekbox-mark {
     background: $color-cerulean-blue;
     border: 1px solid $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"].is-valid svg {
+  .is-valid svg {
     stroke: $color-default-white;
   }
 
-  label[data-validate-type="checkbox"] input:checked + .modal__form-chekbox-mark {
+  input:checked + .modal__form-chekbox-mark {
     background: $color-cerulean-blue;
     border: 1px solid $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"] input:checked + .modal__form-chekbox-mark svg {
+  input:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
 
   /* hover/focus witch checked */
-  label[data-validate-type="checkbox"]:hover input:checked + .modal__form-chekbox-mark,
-  label[data-validate-type="checkbox"]:focus-within input:checked + .modal__form-chekbox-mark {
+  label:hover input:checked + .modal__form-chekbox-mark,
+  label:focus-within input:checked + .modal__form-chekbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"]:hover input:checked + .modal__form-chekbox-mark svg,
-  label[data-validate-type="checkbox"]:focus-within input:checked + .modal__form-chekbox-mark svg {
+  label:hover input:checked + .modal__form-chekbox-mark svg,
+  label:focus-within input:checked + .modal__form-chekbox-mark svg {
     stroke: $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"].is-valid:hover .modal__form-chekbox-mark,
-  label[data-validate-type="checkbox"].is-valid:focus-within .modal__form-chekbox-mark {
+  label.is-valid:hover .modal__form-chekbox-mark,
+  label.is-valid:focus-within .modal__form-chekbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
   }
 
-  label[data-validate-type="checkbox"].is-valid:hover svg,
-  label[data-validate-type="checkbox"].is-valid:focus-within svg {
+  label.is-valid:hover svg,
+  label.is-valid:focus-within svg {
     stroke: $color-cerulean-blue;
   }
 
   /* disabled checked */
-  label[data-validate-type="checkbox"] input:disabled:checked + .modal__form-chekbox-mark {
+  label input:disabled:checked + .modal__form-chekbox-mark {
     background: $color-chocolate;
     border: 1px solid $color-chocolate;
   }
 
-  label[data-validate-type="checkbox"] input:disabled:checked + .modal__form-chekbox-mark svg {
+  label input:disabled:checked + .modal__form-chekbox-mark svg {
     stroke: $color-default-white;
   }
 }
