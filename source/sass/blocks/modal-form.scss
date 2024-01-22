@@ -148,14 +148,14 @@
     stroke: $color-cerulean-blue;
   }
 
-  label.is-valid:hover .modal__form-chekbox-mark,
-  label.is-valid:focus-within .modal__form-chekbox-mark {
+  .is-valid:hover .modal__form-chekbox-mark,
+  .is-valid:focus-within .modal__form-chekbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
   }
 
-  label.is-valid:hover svg,
-  label.is-valid:focus-within svg {
+  .is-valid:hover svg,
+  .is-valid:focus-within svg {
     stroke: $color-cerulean-blue;
   }
 
