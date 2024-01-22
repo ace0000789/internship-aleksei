@@ -103,10 +103,7 @@
     height: 20px;
   }
 
-  label:hover .modal__form-chekbox-mark {
-    border: 1px solid $color-cerulean-blue;
-  }
-
+  label:hover .modal__form-chekbox-mark,
   label:focus-within .modal__form-chekbox-mark {
     border: 1px solid $color-cerulean-blue;
   }
