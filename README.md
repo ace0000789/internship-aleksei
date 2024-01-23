@@ -15,8 +15,6 @@
 - команда `npm run editorconfig` проверяет формат файлов
 
 
-<div data-test="slider">slider</div>
-<div data-test="about">about</div>
 <div data-test="programs">programs</div>
 <div data-test="grant">grant</div>
 <div data-test="news">news</div>
