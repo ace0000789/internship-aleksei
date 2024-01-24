@@ -3,6 +3,8 @@
   max-width: 1240px;
   grid-template-columns:  auto 232px;
   gap: 40px;
+
+  padding-bottom: 150px;
 }
 
 .programs__title {
@@ -131,7 +133,7 @@
   grid-template-columns: 1134px 54px;
   justify-content: space-between;
   align-items: center;
-  height: 22px;
+  min-height: 22px;
 }
 
 .swiper-scrollbar {
@@ -139,10 +141,45 @@
   height: 2px;
   background-color: rgba(49, 109, 194, 0.2);
 }
+
 .swiper-scrollbar-drag {
   height: 2px;
   background-color: $color-cerulean-blue;
   z-index: 100;
+}
+
+.programs__arrows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+
+  svg {
+    
+  }
+}
+
+.swiper-button-prev:focus-visible,
+.swiper-button-next:focus-visible,
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: $color-default-white;
+}
+
+.swiper-button-prev:active svg,
+.swiper-button-next:active svg {
+  opacity: 0.7;
 }
 
 /**/
