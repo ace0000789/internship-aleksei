@@ -22,6 +22,7 @@
 
 .programs__wrapper .swiper-wrapper {
   height: 200px;
+  margin-bottom: 40px;
 }
 
 .programs__wrapper .swiper-slide {
@@ -32,8 +33,7 @@
   max-width: 392px;
   padding: 20px 51px 20px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  outline: none;
 }
 
 .swiper__programs-img {
@@ -54,9 +54,95 @@
   }
 }
 
-.programs__control {
-  grid-column: 1 / -1;
+.programs__content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h3 {
+    margin: 0;
+    padding: 18px 18px 6px;
+    background-color: $color-default-white;
+    width: 194px;
+    border-radius: 12px 12px 0px 0px;
+    color: $color-cerulean-blue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: $color-charcoal;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
+.programs__content-subwrap {
+  margin: 0;
+  padding: 12px 18px 15px;
+  background-color: $color-default-white;
+  color: $color-cerulean-blue;
+  width: 321px;
+  border-radius: 0px 12px 12px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.programs__angle {
+  position: absolute;
+  top: -17px;
+  left: 193px;
+}
+
+.programs__link {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  min-width: 30px;
+}
+
+.programs__link .btn__toggle {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+
+.programs__link:hover,
+.programs__link:focus-visible,
+.programs__link:active {
+  background-color: $color-default-white;
+}
+
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.programs .programs__controles {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1134px 54px;
+  justify-content: space-between;
+  align-items: center;
+  height: 22px;
+}
+
+.swiper-scrollbar {
+  width: 1134px;
+  height: 2px;
+  background-color: rgba(49, 109, 194, 0.2);
+}
+.swiper-scrollbar-drag {
+  height: 2px;
+  background-color: $color-cerulean-blue;
+  z-index: 100;
+}
 
 /**/
