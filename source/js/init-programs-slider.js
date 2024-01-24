@@ -12,7 +12,7 @@ function initProgramsSlider() {
 
     grabCursor: true,
     autoHeight: true,
-    loop: false,
+    loop: true,
     breakpoints: {
       1440: {
         slidesPerView: 3,
@@ -24,6 +24,7 @@ function initProgramsSlider() {
       768: {
         simulateTouch: true,
         slidesPerView: 2,
+        spaceBetween: 32,
       },
       0: {
         simulateTouch: true,
