@@ -11,6 +11,8 @@ import { initModals } from './modules/modals/init-modals';
 import { Form } from './vendor/form-validate/form';
 import { CustomSelect } from './vendor/custom-select/custom-select';
 
+import { initProgramsSlider } from './init-programs-slider'
+
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
@@ -18,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initMenu();
   initAccordions();
   initHeroSlider();
+  initProgramsSlider();
 
 
   window.addEventListener('load', () => {
