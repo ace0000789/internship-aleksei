@@ -11,7 +11,7 @@ import { initModals } from './modules/modals/init-modals';
 import { Form } from './vendor/form-validate/form';
 import { CustomSelect } from './vendor/custom-select/custom-select';
 
-import { initProgramsSlider } from './init-programs-slider'
+import { initProgramsSlider } from './init-programs-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
 
