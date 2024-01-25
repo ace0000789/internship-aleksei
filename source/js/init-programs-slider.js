@@ -40,6 +40,7 @@ function initProgramsSlider() {
         slidesPerView: 1,
         spaceBetween: 40,
         centeredSlides: true,
+        watchSlidesProgress: true,
       },
     },
   });
