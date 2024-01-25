@@ -203,8 +203,8 @@
   background-color: $color-default-white;
 }
 
-.swiper-button-prev:active svg,
-.swiper-button-next:active svg {
+.swiper-button-prev:active:not(.swiper-button-disabled) svg,
+.swiper-button-next:active:not(.swiper-button-disabled) svg {
   opacity: 0.7;
 }
 
