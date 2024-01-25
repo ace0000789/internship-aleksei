@@ -25,6 +25,10 @@
     gap: 37px
   }
 
+  @include vp-767 {
+    gap: 27px;
+  }
+
   p {
     margin: 0;
     padding: 0;
@@ -36,6 +40,12 @@
       line-height: 20px;
       width: 75%;
       margin-bottom: 36px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 25px;
     }
   }
 }
@@ -55,6 +65,13 @@
     line-height: 50px;
     margin-bottom: 28px;
   }
+
+  @include vp-767 {
+    padding-top: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
 }
 
 .grant__img {
@@ -70,6 +87,10 @@
 
   @include vp-1439 {
     height: 375px;
+  }
+
+  @include vp-767 {
+    height: 200px;
   }
 }
 
@@ -88,6 +109,11 @@
     margin-bottom: 42px;
   }
 
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 26px;
+  }
 }
 
 .grant__list {
@@ -105,6 +131,12 @@
     column-gap: 48px;
     row-gap: 25px;
   }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    row-gap: 15px;
+  }
 }
 
 .grant__item {
@@ -119,6 +151,12 @@
   @include vp-1439 {
     padding: 25px 25px 25px 24px;
     font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    padding: 18px 25px 18px 24px;
+    font-size: 14px;
     line-height: 20px;
   }
 }
@@ -138,6 +176,15 @@
   line-height: 22px;
   letter-spacing: 0.22px;
   text-transform: uppercase;
+
+  @include vp-1439 {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 18px;
+    top: -7px;
+    left: -16px;
+  }
 }
 
 .grant__br {
