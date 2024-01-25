@@ -7,7 +7,7 @@
   margin-bottom: 150px;
 
   @include vp-1439 {
-    grid-template-columns:  auto 281px;
+    grid-template-columns:  auto 277px;
     padding-top: 0;
   }
 }
@@ -29,7 +29,7 @@
 
 .programs__link-all-programs {
   @include vp-1439 {
-    margin-right: 49px;
+    margin-right: 45px;
   }
 }
 
@@ -38,9 +38,8 @@
   overflow: hidden;
   margin-top: 5px;
 
-
   @include vp-1439 {
-    overflow: hidden;
+    margin-top: 1px;
   }
 }
 
@@ -107,7 +106,6 @@
   flex-direction: column;
   justify-content: flex-end;
 
-
   @include vp-1439 {
     width: 200px;
   }
@@ -124,6 +122,12 @@
     font-weight: 400;
     line-height: 26px;
     overflow-wrap: break-word;
+
+    @include vp-1439 {
+      width: 173px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   p {
@@ -133,6 +137,10 @@
     font-size: 14px;
     line-height: 18px;
     max-width: 239px;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
   }
 }
 
@@ -150,8 +158,19 @@
   justify-content: space-between;
   min-height: 79px;
 
+  @include vp-1439 {
+    width: 263px;
+    gap: 16px;
+    padding: 7px 18px 10px;
+    min-height: 0;
+  }
+
   &--stage {
     padding: 11px 18px 14px;
+
+    @include vp-1439 {
+      padding: 7px 18px 10px;
+    }
   }
 }
 
@@ -159,6 +178,10 @@
   position: absolute;
   top: -17px;
   left: 193px;
+
+  @include vp-1439 {
+    left: 173px;
+  }
 }
 
 .programs__link {
@@ -209,12 +232,23 @@
   justify-content: space-between;
   align-items: center;
   min-height: 22px;
+
+  @include vp-1439 {
+    grid-template-columns: 1fr 54px;
+    gap: 64px;
+    margin-right: 45px;
+  }
 }
 
 .swiper-scrollbar {
   width: 1134px;
   height: 2px;
   background-color: rgba(49, 109, 194, 0.2);
+
+  @include vp-1439 {
+    width:
+    100%;
+  }
 }
 
 .swiper-scrollbar-drag {

@@ -29,8 +29,11 @@ function initProgramsSlider() {
       },
       768: {
         simulateTouch: true,
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 30,
+        scrollbar: {
+          dragSize: 324,
+        },
       },
       0: {
         simulateTouch: true,
