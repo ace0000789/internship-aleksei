@@ -38,7 +38,8 @@ function initProgramsSlider() {
       0: {
         simulateTouch: true,
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 40,
+        centeredSlides: true,
       },
     },
   });
