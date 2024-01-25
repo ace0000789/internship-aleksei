@@ -7,6 +7,8 @@
   margin-bottom: 150px;
 
   @include vp-1439 {
+    grid-template-columns:  auto 281px;
+    padding-top: 0;
   }
 }
 
@@ -22,6 +24,12 @@
   @include vp-1439 {
     font-size: 34px;
     line-height: 50px;
+  }
+}
+
+.programs__link-all-programs {
+  @include vp-1439 {
+    margin-right: 49px;
   }
 }
 
@@ -189,7 +197,6 @@
 .programs__link:focus {
   background-color: $color-default-white;
 }
-
 
 .btn:active {
   color: rgba(255, 255, 255, 0.7);
