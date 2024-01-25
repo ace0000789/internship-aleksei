@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import {Navigation, Scrollbar} from 'swiper/modules';
 
 function initProgramsSlider() {
