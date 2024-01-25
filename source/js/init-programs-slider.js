@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import {Navigation, Scrollbar} from 'swiper/modules';
 
 function initProgramsSlider() {
@@ -26,18 +26,15 @@ function initProgramsSlider() {
         centeredSlides: false,
         simulateTouch: false,
         spaceBetween: 32,
-        watchSlidesProgress: true,
       },
       768: {
         simulateTouch: true,
-        slidesPerView: 'auto',
+        slidesPerView: 2,
         spaceBetween: 30,
-        watchSlidesProgress: true,
       },
       0: {
         simulateTouch: true,
         slidesPerView: 1,
-        watchSlidesProgress: true,
       },
     },
   });

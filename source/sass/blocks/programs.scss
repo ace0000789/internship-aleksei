@@ -5,6 +5,9 @@
   gap: 39px;
   padding-top: 3px;
   margin-bottom: 150px;
+
+  @include vp-1439 {
+  }
 }
 
 .programs__title {
@@ -29,7 +32,7 @@
 
 
   @include vp-1439 {
-    overflow: visible
+    overflow: hidden;
   }
 }
 
@@ -46,16 +49,13 @@
   padding: 20px 51px 20px 20px;
   display: flex;
   outline: none;
-  visibility: hidden;
 
   @include vp-1439 {
+    max-width: 324px;
     width: 324px;
   }
 }
 
-.programs__wrapper .swiper-slide.swiper-slide-fully-visible {
-  visibility: visible;
-}
 
 .swiper__programs-img {
   position: absolute;
@@ -97,6 +97,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+
+  @include vp-1439 {
+    width: 200px;
+  }
 
   h3 {
     margin: 0;
