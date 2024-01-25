@@ -14,9 +14,6 @@
 - команда `npm run ls-lint` проверяет названия файлов
 - команда `npm run editorconfig` проверяет формат файлов
 
-
-<div data-test="programs">programs</div>
-<div data-test="grant">grant</div>
 <div data-test="news">news</div>
 <div data-test="FAQ">FAQ</div>
 <div data-test="reviews">reviews</div>
