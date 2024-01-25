@@ -42,13 +42,28 @@
   }
 }
 
-.programs__link-all-programs {
+.programs__link-all-programs.btn {
   @include vp-1439 {
     margin-right: 45px;
   }
 
   @include vp-767 {
     grid-row:  3 / 4;
+    min-width: 203px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+}
+
+.programs__link-all-programs.btn .btn__toggle{
+  @include vp-767 {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
   }
 }
 
@@ -87,10 +102,10 @@
     width: 324px;
   }
 
-  @include vp-1439 {
+  @include vp-767 {
     min-height: 400px;
-    max-width: 290px;
-    width: 290px;
+    max-width: 737px;
+    width: 100%;
 
   }
 }
