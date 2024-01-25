@@ -2,8 +2,8 @@
   display: grid;
   max-width: 1240px;
   grid-template-columns:  auto 232px;
-  gap: 40px;
-
+  gap: 39px;
+  padding-top: 2px;
   padding-bottom: 150px;
 }
 
@@ -17,14 +17,15 @@
   color: $color-cerulean-blue;
 }
 
+
 .programs__wrapper .swiper-container {
   grid-column: 1 / -1;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .programs__wrapper .swiper-wrapper {
   height: 200px;
-  margin-bottom: 40px;
 }
 
 .programs__wrapper .swiper-slide {
@@ -63,7 +64,7 @@
 
   h3 {
     margin: 0;
-    padding: 18px 12px 6px;
+    padding: 14px 12px 1px 18px;
     background-color: $color-default-white;
     width: 194px;
     border-radius: 12px 12px 0px 0px;
@@ -81,6 +82,7 @@
     color: $color-charcoal;
     font-size: 14px;
     line-height: 18px;
+    max-width: 239px;
   }
 }
 
@@ -94,6 +96,13 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 79px;
+
+  &--stage {
+    padding: 11px 18px 14px;
+  }
 }
 
 .programs__angle {
