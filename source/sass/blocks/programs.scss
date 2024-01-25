@@ -4,7 +4,7 @@
   grid-template-columns:  auto 232px;
   gap: 39px;
   padding-top: 2px;
-  padding-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .programs__title {
@@ -16,7 +16,6 @@
   line-height: 50px;
   color: $color-cerulean-blue;
 }
-
 
 .programs__wrapper .swiper-container {
   grid-column: 1 / -1;
