@@ -10,6 +10,11 @@
   grid-template-columns: 498px 498px;
   gap: 138px;
 
+  @include vp-1439 {
+    grid-template-columns: 1fr;
+    gap: 40px
+  }
+
   p {
     margin: 0;
     padding: 0;

@@ -10,8 +10,9 @@ import { initHeroSlider } from'./init-hero-slider';
 import { initModals } from './modules/modals/init-modals';
 import { Form } from './vendor/form-validate/form';
 import { CustomSelect } from './vendor/custom-select/custom-select';
-
 import { initProgramsSlider } from './init-programs-slider';
+import { initNumbersForList } from './init-numbers-for-list';
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initAccordions();
   initHeroSlider();
   initProgramsSlider();
+  initNumbersForList();
 
 
   window.addEventListener('load', () => {
