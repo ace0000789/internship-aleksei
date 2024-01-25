@@ -119,6 +119,18 @@
   min-width: 30px;
 }
 
+/* for disabled add .programs__link--disabled */
+
+.programs__link--disabled{
+  pointer-events: none;
+}
+
+.programs__link.programs__link--disabled .btn__toggle {
+  background-color: $color-chocolate;
+  transform: none;
+  stroke: $color-default-white;
+}
+
 .programs__link .btn__toggle {
   width: 30px;
   height: 30px;
