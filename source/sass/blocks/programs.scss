@@ -121,6 +121,7 @@
 .programs__link:focus-visible,
 .programs__link:active {
   background-color: $color-default-white;
+  outline: none;
 }
 .programs__link:focus {
   background-color: $color-default-white;
