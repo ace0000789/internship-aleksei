@@ -26,15 +26,18 @@ function initProgramsSlider() {
         centeredSlides: false,
         simulateTouch: false,
         spaceBetween: 32,
+        watchSlidesProgress: true,
       },
       768: {
         simulateTouch: true,
-        slidesPerView: 2,
-        spaceBetween: 32,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        watchSlidesProgress: true,
       },
       0: {
         simulateTouch: true,
         slidesPerView: 1,
+        watchSlidesProgress: true,
       },
     },
   });

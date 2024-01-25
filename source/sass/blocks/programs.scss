@@ -15,12 +15,22 @@
   font-weight: 400;
   line-height: 50px;
   color: $color-cerulean-blue;
+
+  @include vp-1439 {
+    font-size: 34px;
+    line-height: 50px;
+  }
 }
 
 .programs__wrapper .swiper-container {
   grid-column: 1 / -1;
   overflow: hidden;
   margin-top: 5px;
+
+
+  @include vp-1439 {
+    overflow: visible
+  }
 }
 
 .programs__wrapper .swiper-wrapper {
@@ -36,6 +46,15 @@
   padding: 20px 51px 20px 20px;
   display: flex;
   outline: none;
+  visibility: hidden;
+
+  @include vp-1439 {
+    width: 324px;
+  }
+}
+
+.programs__wrapper .swiper-slide.swiper-slide-fully-visible {
+  visibility: visible;
 }
 
 .swiper__programs-img {
@@ -55,6 +74,10 @@
     height: 100%;
     position: relative;
     z-index: -1;
+
+    @include vp-1439 {
+      width: 324px;
+    }
   }
 
   &:after {
@@ -66,6 +89,7 @@
     top: 0;
     z-index: 1;
     background-color: $color-bg-programs;
+    border-radius: 12px;
   }
 }
 
