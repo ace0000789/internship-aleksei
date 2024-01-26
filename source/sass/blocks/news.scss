@@ -45,10 +45,20 @@
 }
 
 .news__content {
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
+  width: 100%;
+  min-height: 400px;
   margin-bottom: 52px;
+}
+
+.news__content .swiper-container {
+  overflow: hidden;
+}
+
+.news__content .swiper-wrapper {
+}
+
+.news__content.swiper-slide .swiper-slide-active {
+  width: 604px;
 }
 
 

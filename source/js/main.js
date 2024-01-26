@@ -13,6 +13,7 @@ import { CustomSelect } from './vendor/custom-select/custom-select';
 import { initProgramsSlider } from './init-programs-slider';
 import { initNumbersForList } from './init-numbers-for-list';
 import { initTabsNews } from './init-tabs-news';
+import { initNewsSlider } from './init-news-slider';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initProgramsSlider();
   initNumbersForList();
   initTabsNews();
+  initNewsSlider();
 
 
   window.addEventListener('load', () => {
