@@ -25,14 +25,16 @@ function initProgramsSlider() {
         centeredSlides: false,
         simulateTouch: false,
         spaceBetween: 32,
+        watchSlidesProgress: true,
       },
       768: {
         simulateTouch: true,
-        slidesPerView: 'auto',
+        slidesPerView: 2,
         spaceBetween: 30,
         scrollbar: {
           dragSize: 324,
         },
+        watchSlidesProgress: true,
       },
       0: {
         simulateTouch: true,
