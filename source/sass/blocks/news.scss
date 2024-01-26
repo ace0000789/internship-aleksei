@@ -65,6 +65,7 @@
   min-height: 400px;
   width: 286px;
   height: 400px;
+  position: relative;
 }
 
 .news__content .swiper-slide--big {
@@ -72,6 +73,9 @@
 }
 
 .news__img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 
