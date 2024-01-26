@@ -16,9 +16,26 @@ function initNewsSlider() {
         return `<button type="button" class="${className}">${index + 1}</button>`;
       },
     },
-    slidesPerView: 'auto',
-    slidesPerGroup: 1,
-    spaceBetween: 32,
+
+    breakpoints: {
+      1440: {
+        slidesPerView: 'auto',
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+      },
+      768: {
+
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+
+      },
+      0: {
+
+      },
+    },
   });
 
 
