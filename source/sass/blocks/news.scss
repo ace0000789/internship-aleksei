@@ -93,6 +93,16 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  h3 {
+    background-color: $color-alabaster;
+  }
+}
+
+.slide__info-wrap {
+  background-color: $color-alabaster;
+  width: 70%;
+
 }
 
 .news__content .swiper-pagination {
