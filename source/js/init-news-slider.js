@@ -1,47 +1,44 @@
-import Swiper from 'swiper/bundle';
-import {Pagination, Navigation} from 'swiper/modules';
+import Swiper from 'swiper';
+import { Pagination, Navigation } from 'swiper/modules';
 
 function initNewsSlider() {
   const sliderMySlider = new Swiper('[data-validate="swiper-news"]', {
-
     modules: [Navigation, Pagination],
     navigation: {
       nextEl: '[data-validate="swiper-news-next"]',
       prevEl: '[data-validate="swiper-news-prev"]',
     },
     centeredSlides: false,
-    slidesPerGroupSkip: 1,
-    slidesPerGroup: 1,
-    slidesPerView: 3,
-    spaceBetween: 10,
+    slidesPerGroup: 1, // Исправлено на slidesPerGroup: 1
     pagination: {
       el: '[data-validate="swiper-news-pagination"]',
       clickable: true,
       renderBullet: function (index, className) {
-        return `<span class="${ className }">${ index + 1 }</span>`;
+        return `<button type="button" class="${className}">${index + 1}</button>`;
       },
     },
     speed: 700,
     grabCursor: true,
     autoHeight: true,
     loop: false,
-    /*breakpoints: {
-      1200: {
+    breakpoints: {
+      1440: {
         slidesPerView: 3,
         slidesPerGroup: 1,
-        centeredSlides: false,
-        simulateTouch: false,
+        spaceBetween: 32,
       },
       768: {
-        simulateTouch: true,
+        
       },
-    },*/
+      320: {
+        slidesPerGroup: 2,
+      },
+    },
   });
 
-
   return {
-    sliderMySlider
+    sliderMySlider,
   };
 }
 
-export { initNewsSlider };
+export { initNewsSlider }
