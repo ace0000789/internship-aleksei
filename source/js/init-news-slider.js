@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import {Pagination, Navigation} from 'swiper/modules';
 
 function initNewsSlider() {
@@ -9,12 +9,11 @@ function initNewsSlider() {
       nextEl: '[data-validate="swiper-news-next"]',
       prevEl: '[data-validate="swiper-news-prev"]',
     },
-    slidesPerView: 1,
     centeredSlides: false,
     slidesPerGroupSkip: 1,
-    keyboard: {
-      enabled: true,
-    },
+    slidesPerGroup: 1,
+    slidesPerView: 3,
+    spaceBetween: 10,
     pagination: {
       el: '[data-validate="swiper-news-pagination"]',
       clickable: true,
@@ -22,10 +21,11 @@ function initNewsSlider() {
         return `<span class="${ className }">${ index + 1 }</span>`;
       },
     },
+    speed: 700,
     grabCursor: true,
     autoHeight: true,
     loop: false,
-    breakpoints: {
+    /*breakpoints: {
       1200: {
         slidesPerView: 3,
         slidesPerGroup: 1,
@@ -35,7 +35,7 @@ function initNewsSlider() {
       768: {
         simulateTouch: true,
       },
-    },
+    },*/
   });
 
 
