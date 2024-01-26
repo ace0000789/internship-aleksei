@@ -9,7 +9,7 @@ function initNewsSlider() {
       prevEl: '[data-validate="swiper-news-prev"]',
     },
     centeredSlides: false,
-    slidesPerGroup: 1, // Исправлено на slidesPerGroup: 1
+    slidesPerGroup: 1,
     pagination: {
       el: '[data-validate="swiper-news-pagination"]',
       clickable: true,
@@ -20,7 +20,7 @@ function initNewsSlider() {
     speed: 700,
     grabCursor: true,
     autoHeight: true,
-    loop: false,
+    loop: true,
     breakpoints: {
       1440: {
         slidesPerView: 'auto',
