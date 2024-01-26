@@ -88,6 +88,13 @@
   }
 }
 
+.slide__info {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .news__content .swiper-pagination {
   display: flex;
   flex-direction: row;
