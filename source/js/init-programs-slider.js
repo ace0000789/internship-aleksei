@@ -1,9 +1,7 @@
 import Swiper from 'swiper/bundle';
-import {Navigation, Scrollbar} from 'swiper/modules';
 
 function initProgramsSlider() {
   const sliderMySlider = new Swiper('[data-validate="swiper-programs"]', {
-    modules: [Navigation, Scrollbar],
 
     navigation: {
       nextEl: '[data-validate="swiper-programs-next"]',

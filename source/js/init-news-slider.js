@@ -1,15 +1,12 @@
 import Swiper from 'swiper';
-import { Pagination, Navigation } from 'swiper/modules';
 
 function initNewsSlider() {
   const sliderMySlider = new Swiper('[data-validate="swiper-news"]', {
-    modules: [Navigation, Pagination],
     navigation: {
       nextEl: '[data-validate="swiper-news-next"]',
       prevEl: '[data-validate="swiper-news-prev"]',
     },
-    centeredSlides: false,
-    slidesPerGroup: 1,
+
     pagination: {
       el: '[data-validate="swiper-news-pagination"]',
       clickable: true,
@@ -17,24 +14,10 @@ function initNewsSlider() {
         return `<button type="button" class="${className}">${index + 1}</button>`;
       },
     },
-    speed: 700,
-    grabCursor: true,
-    autoHeight: true,
-    loop: true,
-    breakpoints: {
-      1440: {
-        slidesPerView: 'auto',
-        slidesPerGroup: 1,
-        spaceBetween: 32,
-        watchSlidesProgress: true,
-      },
-      768: {
-
-      },
-      320: {
-        slidesPerGroup: 2,
-      },
-    },
+    loop: false,
+    slidesPerView: 'auto',
+    slidesPerGroup: 1,
+    spaceBetween: 32,
   });
 
 
@@ -43,4 +26,4 @@ function initNewsSlider() {
   };
 }
 
-export { initNewsSlider }
+export {initNewsSlider};
