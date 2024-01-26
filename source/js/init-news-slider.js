@@ -1,9 +1,9 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Grid, Navigation, Pagination } from 'swiper/modules';
 
 function initNewsSlider() {
   const sliderMySlider = new Swiper('[data-validate="swiper-news"]', {
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Pagination, Grid],
     navigation: {
       nextEl: '[data-validate="swiper-news-next"]',
       prevEl: '[data-validate="swiper-news-prev"]',
@@ -30,7 +30,6 @@ function initNewsSlider() {
           rows: 2,
         },
         spaceBetween: 30,
-
       },
       0: {
 

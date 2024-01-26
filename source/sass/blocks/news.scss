@@ -54,11 +54,21 @@
   overflow: hidden;
   position: relative;
   min-height: 472px;
+
+  @include vp-1439 {
+    min-height: 872px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .news__content .swiper-wrapper {
   border-radius: 12px;
   width: 1200px;
+
+  @include vp-1439 {
+    min-height: 872px;
+  }
 }
 
 .news__content .swiper-slide {
@@ -66,10 +76,21 @@
   width: 286px;
   height: 400px;
   position: relative;
+
+
+  @include vp-1439 {
+    width: 324px;
+    height: 350px;
+  }
 }
 
 .news__content .swiper-slide--big {
   width: 604px;
+
+  @include vp-1439 {
+    width: 324px;
+    height: 350px;
+  }
 }
 
 .news__img {
