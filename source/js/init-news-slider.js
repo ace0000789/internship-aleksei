@@ -23,12 +23,13 @@ function initNewsSlider() {
     loop: false,
     breakpoints: {
       1440: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         slidesPerGroup: 1,
         spaceBetween: 32,
+        watchSlidesProgress: true,
       },
       768: {
-        
+
       },
       320: {
         slidesPerGroup: 2,
