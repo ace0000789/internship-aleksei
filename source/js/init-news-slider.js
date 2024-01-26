@@ -5,12 +5,16 @@ function initNewsSlider() {
   const sliderMySlider = new Swiper('[data-validate="swiper-news"]', {
 
     modules: [Navigation, Pagination],
-
     navigation: {
       nextEl: '[data-validate="swiper-news-next"]',
       prevEl: '[data-validate="swiper-news-prev"]',
     },
-
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    keyboard: {
+      enabled: true,
+    },
     pagination: {
       el: '[data-validate="swiper-news-pagination"]',
       clickable: true,
@@ -18,7 +22,6 @@ function initNewsSlider() {
         return `<span class="${ className }">${ index + 1 }</span>`;
       },
     },
-
     grabCursor: true,
     autoHeight: true,
     loop: false,
