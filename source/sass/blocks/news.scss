@@ -76,11 +76,10 @@
   width: 286px;
   height: 400px;
   position: relative;
-
+  user-select: none;
 
   @include vp-1439 {
-    width: 324px;
-    height: 350px;
+    
   }
 }
 
@@ -88,8 +87,7 @@
   width: 604px;
 
   @include vp-1439 {
-    width: 324px;
-    height: 350px;
+
   }
 }
 
@@ -123,9 +121,9 @@
 .slide__info-wrap {
   background-color: $color-alabaster;
   width: 70%;
-
 }
 
+/* pagination */
 .news__content .swiper-pagination {
   display: flex;
   flex-direction: row;
