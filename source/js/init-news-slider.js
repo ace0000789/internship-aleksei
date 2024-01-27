@@ -36,7 +36,6 @@ function initNewsSlider() {
         }
       },
       0: {
-
       },
     },
   });

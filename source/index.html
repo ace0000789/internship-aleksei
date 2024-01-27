@@ -669,6 +669,8 @@
       <section class="news" data-test="news">
         <div class="container">
           <h2 class="news__title">Новости и материалы</h2>
+
+
           <div class="news__wraper" data-tabs="parent">
 
             <div class="news__button-list" data-tabs="controls">
@@ -693,9 +695,10 @@
 
             <div class="news__info" data-tabs="content">
               <div class="news__content" data-tabs="element">
-
+                <!--
                 <div class="swiper-container" data-validate="swiper-news">
                   <ul class="swiper-wrapper">
+
                     <li class="swiper-slide swiper-slide--big" tabindex="0">
                       <div class="news__img">
                         <picture>
@@ -705,7 +708,7 @@
                             alt="Изображение книг.">
                         </picture>
                       </div>
-                      
+
                       <div class="slide__info">
                         <span class="slide__dates">23/03/2023</span>
                         <h3>Интервью с участницей программы стажировки</h3>
@@ -721,7 +724,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="swiper-slide swiper-slide" tabindex="0">
+                    <li class="swiper-slide" tabindex="0">
                       <div class="news__img">
                         <picture>
                           <source type="image/webp" srcset="img/news/city.webp 1x,
@@ -731,7 +734,7 @@
                         </picture>
                       </div>
                     </li>
-                    <li class="swiper-slide swiper-slide" tabindex="0">
+                    <li class="swiper-slide" tabindex="0">
                       <div class="news__img">
                         <picture>
 
@@ -742,7 +745,7 @@
                         </picture>
                       </div>
                     </li>
-                    <li class="swiper-slide swiper-slide" tabindex="0">
+                    <li class="swiper-slide" tabindex="0">
                       <div class="news__img">
                         <picture>
 
@@ -753,7 +756,7 @@
                         </picture>
                       </div>
                     </li>
-                    <li class="swiper-slide swiper-slide" tabindex="0">
+                    <li class="swiper-slide" tabindex="0">
                       <div class="news__img">
                         <picture>
                           <source type="image/webp" srcset="img/news/city.webp 1x,
@@ -763,7 +766,7 @@
                         </picture>
                       </div>
                     </li>
-                    <li class="swiper-slide swiper-slide" tabindex="0">
+                    <li class="swiper-slide" tabindex="0">
                       <div class="news__img">
                         <picture>
 
@@ -774,7 +777,7 @@
                         </picture>
                       </div>
                     </li>
-                    <li class="swiper-slide swiper-slide" tabindex="0">
+                    <li class="swiper-slide" tabindex="0">
                       <div class="news__img">
                         <picture>
 
@@ -786,25 +789,68 @@
                       </div>
                     </li>
                   </ul>
-                  <div class="news__arrows">
-                    <button class="swiper-button-prev" type="button" data-validate="swiper-news-prev">
-                      <svg width="10" height="10" role="img" aria-label="Cтрелка назад.">
-                        <use href="__spritemap#sprite-arrow-prev"></use>
-                      </svg>
-                      <span class="visually-hidden">Cтрелка влево.</span>
-                    </button>
-                    <button class="swiper-button-next" type="button" data-validate="swiper-news-next">
-                      <svg width="10" height="10" role="img" aria-label="Cтрелка вперед.">
-                        <use href="__spritemap#sprite-arrow-next"></use>
-                      </svg>
-                      <span class="visually-hidden">Cтрелка вправо.</span>
-                    </button>
-                  </div>
 
-                  <div class="swiper-pagination" data-validate="swiper-news-pagination"></div>
+                </div>-->
+
+                <div class="news__slider swiper" data-validate="swiper-news">
+                <ul class="news__list swiper-wrapper">
+                  <li class="news__item swiper-slide">
+                    <div class="news__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/news/books.webp 1x,
+                        img/news/books@2x.webp 2x">
+                        <img src="img/news/books.jpg" width="286" height="400" srcset="img/news/books@2x.jpg 2x"
+                          alt="Изображение книг.">
+                      </picture>
+                    </div>
+
+                  </li>
+                  <li class="news__item swiper-slide">
+                   
+                  </li>
+                  <li class="news__item swiper-slide">
+
+                  </li>
+                  <li class="news__item swiper-slide">
+
+                  </li>
+                  <li class="news__item swiper-slide">
+
+                  </li>
+                  <li class="news__item swiper-slide">
+
+                  </li>
+                  <li class="news__item swiper-slide">
+                    <div class="news__img">
+                      <picture>
+
+                        <source type="image/webp" srcset="img/news/table.webp 1x,
+                        img/news/table@2x.webp 2x">
+                        <img src="img/news/table.jpg" width="286" height="400" srcset="img/news/table@2x.jpg 2x"
+                          alt="Изображение стола.">
+                      </picture>
+                    </div>
+                  </li>
+
+                </ul>
+                <div class="news__arrows">
+                  <button class="swiper-button-prev" type="button" data-validate="swiper-news-prev">
+                    <svg width="10" height="10" role="img" aria-label="Cтрелка назад.">
+                      <use href="__spritemap#sprite-arrow-prev"></use>
+                    </svg>
+                    <span class="visually-hidden">Cтрелка влево.</span>
+                  </button>
+                  <button class="swiper-button-next" type="button" data-validate="swiper-news-next">
+                    <svg width="10" height="10" role="img" aria-label="Cтрелка вперед.">
+                      <use href="__spritemap#sprite-arrow-next"></use>
+                    </svg>
+                    <span class="visually-hidden">Cтрелка вправо.</span>
+                  </button>
                 </div>
 
+                <div class="swiper-pagination" data-validate="swiper-news-pagination"></div>
 
+                </div>
 
 
 
