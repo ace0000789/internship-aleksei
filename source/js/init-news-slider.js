@@ -1,16 +1,21 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
 
+const swiperNews = document.querySelector('[data-validate="swiper-news"]');
+const buttonNext = document.querySelector('[data-validate="swiper-news-next"]');
+const buttonPrev = document.querySelector('[data-validate="swiper-news-prev"]');
+const paginationSlider = document.querySelector('[data-validate="swiper-news-pagination"]');
+
 function initNewsSlider() {
-  const sliderMySlider = new Swiper('[data-swiper="news"]', {
+  const sliderMySlider = new Swiper(swiperNews, {
     modules: [Navigation, Pagination, Grid],
     navigation: {
-      nextEl: '[data-validate="swiper-news-next"]',
-      prevEl: '[data-validate="swiper-news-prev"]',
+      nextEl: buttonNext,
+      prevEl: buttonPrev,
     },
 
     pagination: {
-      el: '[data-validate="swiper-news-pagination"]',
+      el: paginationSlider,
       clickable: true,
       renderBullet: function (index, className) {
         return `<button type="button" class="${className}">${index + 1}</button>`;
