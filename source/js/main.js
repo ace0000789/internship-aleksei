@@ -14,6 +14,7 @@ import { initProgramsSlider } from './init-programs-slider';
 import { initNumbersForList } from './init-numbers-for-list';
 import { initTabsNews } from './init-tabs-news';
 import { initNewsSlider } from './init-news-slider';
+import { initAddSlides } from './init-add-slides';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initNumbersForList();
   initTabsNews();
   initNewsSlider();
-
+  initAddSlides();
 
   window.addEventListener('load', () => {
     initModals();
