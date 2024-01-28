@@ -37,7 +37,7 @@ function initNewsSlider() {
       },
       0: {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 20,
         grid: {
           rows: 2,
         },
