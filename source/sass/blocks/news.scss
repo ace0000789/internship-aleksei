@@ -262,6 +262,18 @@
     padding: 5px 10px 0 0;
     width: 214px;
     border-radius: 0px 12px 0px 0px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url('../../img/sprite/news-angle.svg');
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      bottom: -4px;
+      right: -20px;
+    }
   }
 
   p {
@@ -300,8 +312,8 @@
 
   &::after {
     top: auto;
-    bottom: -5px;
-    right: -17px;
+    bottom: 2px;
+    right: -21px;
   }
 }
 
@@ -314,6 +326,18 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 0px 12px 0px 0px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../img/sprite/news-angle.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    bottom: -4px;
+    right: -20px;
+  }
 }
 
 
