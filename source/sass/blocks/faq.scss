@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  user-select: none;
 }
 
 .faq__item {
@@ -25,6 +26,7 @@
   border: 1px solid $color-cerulean-blue;
   padding: 40px;
   color: $color-cerulean-blue;
+  cursor: pointer;
 
   h3 {
     margin: 0;
@@ -44,11 +46,49 @@
     line-height: 26px;
     color: $color-default-white;
   }
+
+  &:hover,
+  &:focus-within {
+    background-color: $color-default-white;
+  }
+
+  &:hover .faq__button,
+  &:focus-within .faq__button {
+    background-color: $color-default-white;
+  }
+
+  &:hover .faq__button::after,
+  &:focus-within .faq__button::after {
+    background-color: $color-cerulean-blue;
+  }
+
+  &:hover .faq__button::before,
+  &:focus-within .faq__button::before {
+    background-color: $color-cerulean-blue;
+  }
+
+  &:active {
+    color: $color-blue-dark;
+  }
+
+  &:active .faq__button{
+    background-color: $color-blue-dark;
+  }
+
+  &:active .faq__button::before,
+  &:active .faq__button::after {
+    background-color: $color-default-white;
+  }
 }
 
 .faq__item.is-active {
   background-color: $color-cerulean-blue;
   color: $color-default-white;
+
+  &:hover,
+  &:focus-within {
+    background-color: $color-default-white;
+  }
 }
 
 .faq__wrapper {
@@ -63,9 +103,10 @@
   background-color: $color-cerulean-blue;
   width: 40px;
   height: 40px;
-  border: none;
+  border: 1px solid $color-cerulean-blue;;
   border-radius: 50%;
   position: relative;
+  outline: none;
 
   &::before,
   &::after {
@@ -74,11 +115,15 @@
     width: 20px;
     height: 1px;
     background-color: $color-default-white;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  &::after {
-    display: none;
+  &::after{
+    display: block;
+    background-color: $color-default-white;
+    left: 23%;
+    transform: rotate(90deg);
   }
 }
 
@@ -90,9 +135,7 @@
   }
 
   &::after{
-    display: block;
-    background-color: $color-cerulean-blue;
-    transform: rotate(90deg);
+    display: none;
   }
 }
 /**/

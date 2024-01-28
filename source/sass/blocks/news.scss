@@ -228,6 +228,7 @@
 .news__slider {
   margin-bottom: 0;
   position: relative;
+  user-select: none;
 
   @include vp-1439 {
     margin-bottom: 5px;
