@@ -175,7 +175,7 @@
   }
 
   @include vp-767 {
-    max-height: 590px;
+    max-height: 790px;
   }
 }
 
@@ -184,6 +184,7 @@
   min-height: 400px;
   height: auto;
   background-color: red;
+  position: relative;
 
 
   @include vp-1439 {
@@ -209,7 +210,26 @@
     max-width: 324px;
     min-height: 350px;
   }
+
+  @include vp-767 {
+    max-width: 290px;
+    min-height: 330px;
+  }
 }
 
+.news__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+  }
+}
 /**/

@@ -36,6 +36,11 @@ function initNewsSlider() {
         }
       },
       0: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+        },
       },
     },
   });
