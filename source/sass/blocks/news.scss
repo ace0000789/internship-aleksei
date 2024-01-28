@@ -6,6 +6,7 @@
   @include vp-1439 {
     margin-top: 97px;
     margin-bottom: 100px;
+    padding-top: 0;
   }
 
   @include vp-767 {
@@ -140,7 +141,7 @@
   margin-top: 45px;
 
   @include vp-1439 {
-
+    margin-top: 35px;
   }
 }
 
@@ -183,7 +184,7 @@
   position: relative;
 
   @include vp-1439 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {
