@@ -689,29 +689,30 @@
                   <ul class="news__list swiper-wrapper">
                     <li class="news__item swiper-slide swiper-slide--big">
 
-                    <div class="news__img">
-                      <picture>
-                        <source type="image/webp" srcset="img/news/books.webp 1x,
+                      <div class="news__img">
+                        <picture>
+                          <source type="image/webp" srcset="img/news/books.webp 1x,
                         img/news/books@2x.webp 2x">
-                        <img src="img/news/books.jpg" width="286" height="400" srcset="img/news/books@2x.jpg 2x"
-                          alt="Изображение книг.">
-                      </picture>
-                    </div>
-
-                    <div class="news__item-content">
-                      <p class="news__item-dates">23/03/2023</p>
-                      <h3>Интервью с&nbsp;участницей программы стажировки</h3>
-                      <div class="news__item-wrap">
-                        <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
-                        <a class="news__link btn" href="programs.html">
-                          <span class="btn__toggle">
-                            <svg width="10" height="10" role="img" aria-label="Лого кнопки">
-                              <use href="__spritemap#sprite-btn-arrow"></use>
-                            </svg>
-                          </span>
-                        </a>
+                          <img src="img/news/books.jpg" width="286" height="400" srcset="img/news/books@2x.jpg 2x"
+                            alt="Изображение книг.">
+                        </picture>
                       </div>
-                    </div>
+
+                      <div class="news__item-content">
+                        <p class="news__item-dates">23/03/2023</p>
+                        <h3>Интервью с&nbsp;участницей программы стажировки</h3>
+                        <div class="news__item-wrap">
+                          <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка
+                            в ISOFound</p>
+                          <a class="news__link btn" href="programs.html">
+                            <span class="btn__toggle">
+                              <svg width="10" height="10" role="img" aria-label="Лого кнопки">
+                                <use href="__spritemap#sprite-btn-arrow"></use>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
                     </li>
                     <li class="news__item swiper-slide">
                       <div class="news__img">
@@ -902,7 +903,71 @@
 
       <section class="faq" data-test="FAQ">
 
-        
+        <ul class="faq__info-list" data-accordion="parent">
+
+          <li class="faq__info-item" data-accordion="element">
+            <div class="faq__info-wrapper">
+              <h3 class="faq__info-title">Кто организатор? Какие сроки у программы?</h3>
+              <button class="faq__info-button" type="button" data-accordion="button" aria-label="Подробнее.">
+                <span class="visually-hidden">Подробнее.</span>
+              </button>
+            </div>
+            <p class="faq__info-text" data-accordion="content">Организатором программы является проект “Маса” в
+              сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного
+              семестра до года.</p>
+          </li>
+
+          <li class="faq__info-item" data-accordion="element">
+            <div class="faq__info-wrapper">
+              <h3 class="faq__info-title">Что такое грант на обучение?</h3>
+              <button class="faq__info-button" type="button" data-accordion="button" aria-label="Подробнее.">
+                <span class="visually-hidden">Подробнее.</span>
+              </button>
+            </div>
+            <p class="faq__info-text" data-accordion="content">Грант на обучение - это финансовая поддержка, которую
+              предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
+          </li>
+
+          <li class="faq__info-item is-active" data-accordion="element">
+            <div class="faq__info-wrapper">
+              <h3 class="faq__info-title">Как определяется стоимость программы?</h3>
+              <button class="faq__info-button" type="button" data-accordion="button" aria-label="Подробнее.">
+                <span class="visually-hidden">Подробнее.</span>
+              </button>
+            </div>
+            Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
+            «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного
+            участия.</p>
+          </li>
+
+          <li class="faq__info-item" data-accordion="element">
+            <div class="faq__info-wrapper">
+              <h3 class="faq__info-title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+              <button class="faq__info-button" type="button" data-accordion="button" aria-label="Подробнее.">
+                <span class="visually-hidden">Подробнее.</span>
+              </button>
+            </div>
+            <p class="faq__info-text" data-accordion="content">Студенты, участвующие в проекте, могут использовать
+              полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших
+              учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в
+              программе обмена студентами.</p>
+          </li>
+
+          <li class="faq__info-item" data-accordion="element">
+            <div class="faq__info-wrapper">
+              <h3 class="faq__info-title">Как выглядит полный процесс регистрации на программу «Стажировка»?</h3>
+              <button class="faq__info-button" type="button" data-accordion="button" aria-label="Подробнее.">
+                <span class="visually-hidden">Подробнее.</span>
+              </button>
+            </div>
+            <p class="faq__info-text" data-accordion="content">Процесс регистрации на программу обмена включает выбор
+              университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и
+              предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение
+              по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив
+              в центр.</p>
+          </li>
+        </ul>
+
       </section>
 
     </main>
