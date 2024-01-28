@@ -85,10 +85,30 @@
   background-color: $color-cerulean-blue;
   color: $color-default-white;
 
-  &:hover,
-  &:focus-within {
+  &:hover .faq__button,
+  &:focus-within .faq__button {
+    background-color: $color-cerulean-blue;
+    border: 1px solid $color-default-white;
+  }
+
+  &:hover .faq__button::before,
+  &:focus-within .faq__button::before {
     background-color: $color-default-white;
   }
+
+  &:active {
+    background-color: $color-blue-dark;
+  }
+
+  &:active .faq__button {
+    background-color: $color-default-white;
+    border: 1px solid $color-default-white;
+  }
+
+  &:active .faq__button::before {
+    background-color: $color-blue-dark;
+  }
+
 }
 
 .faq__wrapper {
