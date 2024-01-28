@@ -204,6 +204,18 @@
   }
 }
 
+.news__item--show-tablet {
+  display: none;
+
+  @include vp-1439 {
+    display: block;
+  }
+}
+
+.swiper-slide-hidden {
+  display: none;
+}
+
 .news__item.swiper-slide--big {
   max-width: 604px;
   width: 604px;
