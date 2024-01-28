@@ -195,9 +195,11 @@
   @include vp-767 {
     max-width: 290px;
     min-height: 330px;
+    width: 290px;
 
     &:nth-child(2n) {
       min-height: 240px;
+      width: 290px;
     }
   }
 }
