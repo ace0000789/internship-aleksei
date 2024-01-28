@@ -40,6 +40,7 @@
 
   @include vp-1439 {
     gap: 7px;
+    padding-bottom: 30px;
   }
 }
 
@@ -137,6 +138,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 45px;
+
+  @include vp-1439 {
+
+  }
 }
 
 .news__link {
@@ -241,6 +246,16 @@
     width: 291px;
     padding-bottom: 2px;
     padding-top: 13px;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 0;
+      min-height: 54px;
+      width: 207px;
+      padding-top: 6px;
+      padding-bottom: 0;
+    }
   }
 
   p {
@@ -250,6 +265,7 @@
   @include vp-1439 {
     max-width: 324px;
     min-height: 350px;
+    line-height: 20px;
   }
 
   @include vp-767 {
@@ -303,6 +319,14 @@
       bottom: -4px;
       right: -19px;
     }
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 0;
+      min-height: 54px;
+      width: 207px;
+    }
   }
 
   p {
@@ -313,6 +337,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
   }
 
   &::after {
@@ -347,11 +375,12 @@
     width: 20px;
     height: 20px;
     top: -16px;
-    left: -1px
+    left: -1px;
   }
 
   &::after {
     top: auto;
+    left: auto;
     bottom: -4px;
     right: -19px;
   }
@@ -382,10 +411,21 @@
     bottom: -4px;
     right: -19px;
   }
+
+  @include vp-1439 {
+    padding-bottom: 10px;
+    padding-top: 7px;
+  }
 }
 
 .news__item.swiper-slide--big .news__item-wrap {
   width: 389px;
+
+  @include vp-1439 {
+    padding-bottom: 10px;
+    padding-top: 7px;
+    width: 240px;
+  }
 }
 
 
