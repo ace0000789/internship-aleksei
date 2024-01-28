@@ -4,6 +4,7 @@
   padding-top: 3px;
 
   @include vp-1439 {
+    margin-top: 97px;
     margin-bottom: 100px;
   }
 
@@ -21,6 +22,12 @@
   margin: 0;
   padding: 0;
   margin-bottom: 47px;
+
+  @include vp-1439 {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 31px;
+  }
 }
 
 /* tabs */
@@ -30,6 +37,10 @@
   gap: 28px;
   justify-content: center;
   padding-bottom: 40px;
+
+  @include vp-1439 {
+    gap: 7px;
+  }
 }
 
 .news__button {
@@ -43,6 +54,10 @@
   color: $color-cerulean-blue;
   opacity: 0.6;
   padding: 10px 26px 12px;
+
+  @include vp-1439 {
+    padding: 10px 20px 11px 21px;
+  }
 }
 
 .news__content {
