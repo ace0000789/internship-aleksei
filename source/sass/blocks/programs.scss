@@ -45,9 +45,6 @@
 }
 
 .programs__link-all-programs.btn {
-  @include vp-1439 {
-  }
-
   @include vp-767 {
     grid-row: 3 / 4;
     width: 203px;

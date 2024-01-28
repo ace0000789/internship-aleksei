@@ -22,7 +22,7 @@
 
   @include vp-1439 {
     grid-template-columns: 1fr;
-    gap: 37px
+    gap: 37px;
   }
 
   @include vp-767 {
@@ -83,7 +83,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
-  };
+  }
 
   @include vp-1439 {
     height: 375px;
@@ -191,7 +191,4 @@
   @include vp-1439 {
     display: none;
   }
-
 }
-
-/**/

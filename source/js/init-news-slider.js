@@ -45,12 +45,9 @@ function initNewsSlider() {
     },
   });
 
-
   return {
     sliderMySlider,
   };
 }
 
 export {initNewsSlider};
-
-
