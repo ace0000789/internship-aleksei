@@ -10,6 +10,7 @@
   }
 
   @include vp-767 {
+    padding-top: 2px;
     margin-top: 62px;
     margin-bottom: 60px;
   }
@@ -236,7 +237,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 24px;
+    margin-bottom: 3px;
   }
 }
 
