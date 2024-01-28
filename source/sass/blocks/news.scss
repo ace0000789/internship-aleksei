@@ -114,6 +114,13 @@
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
+
+  @include vp-767 {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    bottom: -3px;
+  }
 }
 
 .news__content .swiper-pagination-bullet {
@@ -132,6 +139,14 @@
   border-radius: 50%;
   border: 1px solid transparent;
   cursor: pointer;
+
+  @include vp-767 {
+    gap: 16px;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .news__content .swiper-pagination-bullet:hover,
@@ -163,6 +178,10 @@
 
   @include vp-1439 {
     margin-top: 35px;
+  }
+
+  @include vp-767 {
+    margin-top: 25px;
   }
 }
 
