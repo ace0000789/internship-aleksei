@@ -85,6 +85,14 @@
 
 .news__content {
   min-height: 472px;
+
+  @include vp-1439 {
+    min-height: 710px;
+  }
+
+  @include vp-767 {
+    min-height: 630px;
+  }
 }
 
 .news__button:hover,
