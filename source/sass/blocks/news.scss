@@ -37,6 +37,19 @@
   }
 }
 
+::-webkit-scrollbar {
+    @include vp-767 {
+    visibility: visible;
+    height: 15px;
+    background-color: darkgrey;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  height: 15px;
+}
+
 /* tabs */
 .news__button-list {
   display: flex;
@@ -51,7 +64,8 @@
   }
 
   @include vp-767 {
-    overflow: scroll;
+    overflow-x: scroll;
+    justify-content: flex-start;
   }
 }
 
