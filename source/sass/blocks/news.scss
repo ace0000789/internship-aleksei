@@ -1,5 +1,5 @@
 .news {
-  margin-top: 120px;
+  margin-top: 123px;
   margin-bottom: 120px;
 
   @include vp-1439 {
@@ -17,13 +17,16 @@
   line-height: 50px;
   color: $color-cerulean-blue;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 47px;
 }
 
 /* tabs */
 .news__button-list {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 28px;
   justify-content: center;
   padding-bottom: 40px;
 }
@@ -38,7 +41,11 @@
   text-transform: uppercase;
   color: $color-cerulean-blue;
   opacity: 0.6;
-  padding: 10px 26px;
+  padding: 10px 26px 12px;
+}
+
+.news__content {
+  min-height: 472px;
 }
 
 .news__button:hover,
@@ -183,8 +190,11 @@
   max-width: 286px;
   min-height: 400px;
   height: auto;
-  background-color: red;
   position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-color: $color-charcoal;
+  border-radius: 12px;
 
 
   @include vp-1439 {
@@ -207,6 +217,7 @@
 .news__item.swiper-slide--big {
   max-width: 604px;
   width: 604px;
+  border-radius: 12px;
 
   @include vp-1439 {
     max-width: 324px;
@@ -227,11 +238,59 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
+  border-radius: 12px;
 
   img {
     object-fit: cover;
     height: 100%;
-    width: 100%
+    width: 100%;
+    border-radius: 12px;
   }
 }
+
+.news__item-content {
+  h3 {
+    margin: 0;
+    background-color: $color-alabaster;
+    color: $color-cerulean-blue;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    min-height: 57px;
+    padding: 10px 18px 4px 0;
+    width: 214px;
+    border-radius: 0px 12px 0px 0px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: $color-charcoal;
+    width: 176px;
+  }
+}
+
+.news__item-dates {
+  background-color: $color-alabaster;
+  color: $color-cerulean-blue;
+  padding: 12px 12px 6px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  border-radius: 0px 12px 0px 0px;
+}
+
+.news__item-wrap {
+  background-color: $color-alabaster;
+  width: 240px;
+  padding: 12px 18px 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0px 12px 0px 0px;
+}
+
+
 /**/
