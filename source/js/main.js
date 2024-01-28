@@ -15,7 +15,7 @@ import { initNumbersForList } from './init-numbers-for-list';
 import { initTabsNews } from './init-tabs-news';
 import { initNewsSlider } from './init-news-slider';
 import { initAddSlides } from './init-add-slides';
-
+import { initClickElementAccordion } from './init-click-element-accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -29,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabsNews();
   initNewsSlider();
   initAddSlides();
+  initClickElementAccordion();
 
   window.addEventListener('load', () => {
     initModals();
