@@ -82,6 +82,15 @@
   &:active .faq__button:not(:disabled)::after {
     background-color: $color-default-white;
   }
+
+  &--duble-text {
+    padding-top: 30px;
+    padding-bottom: 34px;
+
+    button {
+      margin-top: 9px;
+    }
+  }
 }
 
 .faq__item.is-active {
