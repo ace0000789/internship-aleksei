@@ -220,6 +220,16 @@
   width: 604px;
   border-radius: 12px;
 
+  h3 {
+    width: 291px;
+    padding-bottom: 2px;
+    padding-top: 13px;
+  }
+
+  p {
+    width: 325px;
+  }
+
   @include vp-1439 {
     max-width: 324px;
     min-height: 350px;
@@ -317,6 +327,10 @@
   }
 }
 
+.news__item.swiper-slide--big .news__item-dates {
+  width: fit-content;
+}
+
 .news__item-wrap {
   background-color: $color-alabaster;
   width: 240px;
@@ -338,6 +352,10 @@
     bottom: -4px;
     right: -20px;
   }
+}
+
+.news__item.swiper-slide--big .news__item-wrap {
+  width: 389px;
 }
 
 
