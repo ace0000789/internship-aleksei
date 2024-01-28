@@ -59,6 +59,7 @@
   &:hover .faq__button:not(:disabled),
   &:focus-within .faq__button:not(:disabled) {
     background-color: $color-default-white;
+    transition: $trans-modal;
   }
 
   &:hover .faq__button:not(:disabled)::after,
