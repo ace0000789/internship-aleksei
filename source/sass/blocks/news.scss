@@ -199,7 +199,6 @@
 
   @include vp-767 {
     margin-bottom: 24px;
-    padding-right: 15px;
   }
 }
 
@@ -239,11 +238,12 @@
   @include vp-767 {
     max-width: 100%;
     min-height: 330px;
-    width: 280px;
+    width: 290px;
 
     &:nth-child(2n) {
       min-height: 240px;
       width: 100%;
+      width: 290px;
     }
   }
 }
@@ -282,6 +282,7 @@
   @include vp-767 {
     max-width: 100%;
     min-height: 330px;
+    width: 290px;
   }
 }
 
