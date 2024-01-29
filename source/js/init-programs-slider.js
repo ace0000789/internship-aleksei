@@ -2,15 +2,20 @@ import Swiper from 'swiper';
 import {Navigation, Scrollbar} from 'swiper/modules';
 
 function initProgramsSlider() {
-  const sliderMySlider = new Swiper('[data-validate="swiper-programs"]', {
+  const programSleder = document.querySelector('[data-validate="swiper-programs"]');
+  const nextSlide = document.querySelector('[data-validate="swiper-programs-next"]');
+  const prevSlide = document.querySelector('[data-validate="swiper-programs-prev"]');
+  const scroll = document.querySelector('[data-validate="swiper-programs-scrollbar"]');
+
+  const sliderMySlider = new Swiper(programSleder, {
     modules: [Navigation, Scrollbar],
     navigation: {
-      nextEl: '[data-validate="swiper-programs-next"]',
-      prevEl: '[data-validate="swiper-programs-prev"]',
+      nextEl: nextSlide,
+      prevEl: prevSlide,
     },
 
     scrollbar: {
-      el: '[data-validate="swiper-programs-scrollbar"]',
+      el: scroll,
       hide: false,
       dragSize: 392,
     },
