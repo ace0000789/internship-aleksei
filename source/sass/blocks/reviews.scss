@@ -73,7 +73,7 @@
   }
 
   @include vp-767 {
-    padding: 30px 14px 25px 14px;
+    padding: 30px 14px 25px;
     min-height: 375px;
   }
 }
@@ -223,7 +223,7 @@
 
     @include vp-1439 {
       font-size: 20px;
-      line-height: 24px
+      line-height: 24px;
     }
 
     @include vp-767 {
@@ -241,7 +241,7 @@
     line-height: 26px;
 
     @include vp-1439 {
-      line-height: 20px
+      line-height: 20px;
     }
 
     @include vp-767 {
@@ -289,8 +289,3 @@
     display: block;
   }
 }
-
-
-
-
-/**/

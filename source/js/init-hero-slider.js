@@ -13,7 +13,6 @@ function initHeroSlider() {
   const paginationThree = document.querySelector('[data-validate="swiper-hero-pagination-three"]');
 
 
-
   const sliderOne = new Swiper(sliderHero, {
     modules: [Autoplay, Controller],
 

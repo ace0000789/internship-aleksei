@@ -56,12 +56,12 @@
 .faq__item {
   border-radius: 16px;
   border: 1px solid $color-cerulean-blue;
-  padding: 39px 39px 39px 39px;
+  padding: 39px;
   color: $color-cerulean-blue;
   cursor: pointer;
 
   @include vp-1439 {
-    padding: 29px 29px 29px 29px;
+    padding: 29px;
   }
 
   @include vp-767 {
@@ -146,10 +146,6 @@
 .faq__item--duble-text {
   padding-top: 30px;
   padding-bottom: 34px;
-
-  button {
-    margin-top: 9px;
-  }
 
   @include vp-1439 {
     padding-top: 25px;
