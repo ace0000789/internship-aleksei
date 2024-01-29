@@ -1,0 +1,135 @@
+.reviews__title {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  color: $color-cerulean-blue;
+  margin-bottom: 45px;
+  padding-left: 3px;
+}
+
+.reviews .swiper-container {
+  overflow: hidden;
+}
+
+.reviews .swiper-wrapper {
+  margin-bottom: 40px;
+}
+
+.reviews .swiper-slide {
+  padding: 50px 50px 50px 49px;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  user-select: none;
+}
+
+.reviews__profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__person {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  gap: 15px;
+
+  span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-cerulean-blue;
+  }
+}
+
+.reviews__img {
+  border-radius: 50%;
+  background-color: $color-cerulean-blue;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.reviews__program {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 3px;
+}
+
+.reviews__program-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    color: $color-cerulean-blue;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $color-charcoal;
+  }
+}
+
+.review__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $color-cerulean-blue;
+  }
+
+  p {
+    color: $color-charcoal;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+.reviews__controles {
+  display: flex;
+  grid-template-columns: 1134px 54px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__arrows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+/**/
