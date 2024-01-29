@@ -2,7 +2,7 @@
   padding-top: 3px;
   width: 1028px;
   margin: 0 auto;
-  margin-bottom: 116px;
+  margin-bottom: 119px;
 
   @include vp-1439 {
     width: 100%;
@@ -56,7 +56,7 @@
 .faq__item {
   border-radius: 16px;
   border: 1px solid $color-cerulean-blue;
-  padding: 39px 40px;
+  padding: 39px 39px 39px 39px;
   color: $color-cerulean-blue;
   cursor: pointer;
 
