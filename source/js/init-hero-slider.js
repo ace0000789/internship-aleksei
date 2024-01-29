@@ -2,7 +2,19 @@ import Swiper from 'swiper';
 import {Autoplay, Controller, Pagination} from 'swiper/modules';
 
 function initHeroSlider() {
-  const sliderOne = new Swiper('[data-validate="swiper-hero"]', {
+  const sliderHero = document.querySelector('[data-validate="swiper-hero"]');
+
+  const sliderPagOne = document.querySelector('[data-validate="swiper-hero-pag-one"]');
+  const sliderPagTwo = document.querySelector('[data-validate="swiper-hero-pag-two"]');
+  const sliderPagThree = document.querySelector('[data-validate="swiper-hero-pag-three"]');
+
+  const paginationOne = document.querySelector('[data-validate="swiper-hero-pagination-one"]');
+  const paginationTwo = document.querySelector('[data-validate="swiper-hero-pagination-two"]');
+  const paginationThree = document.querySelector('[data-validate="swiper-hero-pagination-three"]');
+
+
+
+  const sliderOne = new Swiper(sliderHero, {
     modules: [Autoplay, Controller],
 
     autoplay: {
@@ -25,12 +37,12 @@ function initHeroSlider() {
     },
   });
 
-  const sliderTwo = new Swiper('[data-validate="swiper-hero-pag-one"]', {
+  const sliderTwo = new Swiper(sliderPagOne, {
     modules: [Controller, Pagination],
     loop: true,
 
     pagination: {
-      el: '[data-validate="swiper-hero-pagination-one"]',
+      el: paginationOne,
       clickable: true,
       renderBullet(index, className) {
         return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
@@ -38,12 +50,12 @@ function initHeroSlider() {
     },
   });
 
-  const sliderThree = new Swiper('[data-validate="swiper-hero-pag-two"]', {
+  const sliderThree = new Swiper(sliderPagTwo, {
     modules: [Controller, Pagination],
     loop: true,
 
     pagination: {
-      el: '[data-validate="swiper-hero-pagination-two"]',
+      el: paginationTwo,
       clickable: true,
       renderBullet(index, className) {
         return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
@@ -51,12 +63,12 @@ function initHeroSlider() {
     },
   });
 
-  const sliderFour = new Swiper('[data-validate="swiper-hero-pag-three"]', {
+  const sliderFour = new Swiper(sliderPagThree, {
     modules: [Controller, Pagination],
     loop: true,
 
     pagination: {
-      el: '[data-validate="swiper-hero-pagination-three"]',
+      el: paginationThree,
       clickable: true,
       renderBullet(index, className) {
         return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;

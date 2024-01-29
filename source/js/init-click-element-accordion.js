@@ -3,7 +3,7 @@ const button = document.querySelector('faq__button');
 
 export function initClickElementAccordion() {
 
-  if (!infoItem || infoItem.length === 0) {
+  if (!infoItem || infoItem.length === 0 || button) {
     return;
   }
 
