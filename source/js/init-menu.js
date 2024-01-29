@@ -3,7 +3,7 @@ export function initMenu() {
   const headerButton = document.querySelector('[data-validate="header-button"]');
   const html = document.querySelector('[data-validate="html"]');
 
-  if (!header || !headerButton) {
+  if (!header || !headerButton || !html) {
     return;
   }
 

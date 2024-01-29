@@ -4,6 +4,10 @@ export function initAddSlides() {
     const slider = document.querySelector('.news__slider');
     const slidesWrapper = slider.querySelector('.news__list');
 
+    if (!windowWidth || !slider || !slidesWrapper) {
+      return;
+    }
+
     slidesWrapper.querySelectorAll('.copied-slide').forEach((slide) => {
       slide.remove();
     });
