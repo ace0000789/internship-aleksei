@@ -3,11 +3,16 @@ function stickyHeader() {
 
   window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('.header');
+
+    if (!header) {
+      return;
+    }
 
     if (prevScrollPos > currentScrollPos) {
-      document.querySelector('.header').style.top = '0';
+      header.style.top = '0';
     } else {
-      document.querySelector('.header').style.top = '-100px';
+      header.style.top = '-100px';
     }
 
     prevScrollPos = currentScrollPos;
