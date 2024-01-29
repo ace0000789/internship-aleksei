@@ -131,6 +131,7 @@
 
   &:active .faq__button:not(:disabled) {
     background-color: $color-blue-dark;
+    border: 1px solid $color-blue-dark;
   }
 
   &:active .faq__button:not(:disabled)::before,
