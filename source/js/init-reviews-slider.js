@@ -2,15 +2,22 @@ import Swiper from 'swiper';
 import {Navigation, Scrollbar} from 'swiper/modules';
 
 function initReviewsSlider() {
-  const sliderMySlider = new Swiper('[data-validate="swiper-reviews"]', {
+  const reviewsSlider = document.querySelector('[data-validate="swiper-reviews"]');
+  const nextSlide = document.querySelector('[data-validate="swiper-reviews-next"]');
+  const prevSlide = document.querySelector('[data-validate="swiper-reviews-prev"]');
+  const scroll = document.querySelector('[data-validate="swiper-reviews-scrollbar"]');
+
+
+
+  const sliderMySlider = new Swiper(reviewsSlider, {
     modules: [Navigation, Scrollbar],
     navigation: {
-      nextEl: '[data-validate="swiper-reviews-next"]',
-      prevEl: '[data-validate="swiper-reviews-prev"]',
+      nextEl: nextSlide,
+      prevEl: prevSlide,
     },
 
     scrollbar: {
-      el: '[data-validate="swiper-reviews-scrollbar"]',
+      el: scroll,
       hide: false,
       dragSize: 392,
     },
