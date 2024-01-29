@@ -193,6 +193,7 @@
   position: relative;
   outline: none;
   cursor: pointer;
+  transition: $trans-default;
 
   &::before,
   &::after {
