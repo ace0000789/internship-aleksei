@@ -71,6 +71,7 @@
   color: $color-cerulean-blue;
   opacity: 0.6;
   padding: 10px 26px 12px;
+  cursor: pointer;
 
   @include vp-1439 {
     padding: 10px 20px 11px 21px;
