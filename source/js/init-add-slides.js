@@ -3,6 +3,7 @@ export function initAddSlides() {
     const windowWidth = window.innerWidth;
     const slider = document.querySelector('.news__slider');
     const slidesWrapper = slider.querySelector('.news__list');
+    const slides = slidesWrapper.querySelectorAll('.swiper-slide');
 
     if (!windowWidth || !slider || !slidesWrapper) {
       return;
@@ -13,7 +14,6 @@ export function initAddSlides() {
     });
 
     if (windowWidth >= 768 && windowWidth <= 1439) {
-      const slides = slidesWrapper.querySelectorAll('.swiper-slide');
 
       const lastSlide1 = slides[slides.length - 2].cloneNode(true);
       const lastSlide2 = slides[slides.length - 1].cloneNode(true);
