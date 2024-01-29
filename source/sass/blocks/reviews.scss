@@ -17,6 +17,11 @@
     margin-right: 45px;
     padding-top: 0;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .reviews .swiper-container {
@@ -178,6 +183,12 @@
     grid-template-columns: auto 54px;
     margin-right: 45px;
     gap: 64px;
+  }
+}
+
+.reviews__controles .swiper-scrollbar {
+  @include vp-767 {
+    display: none;
   }
 }
 
