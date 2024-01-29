@@ -7,6 +7,10 @@
     width: 100%;
     padding-top: 0;
   }
+
+  @include vp-767 {
+    padding-top: 2px;
+  }
 }
 
 .faq__title {
@@ -57,7 +61,7 @@
     padding: 29px 29px 29px 29px;
   }
 
-  @include vp-1439 {
+  @include vp-767 {
     padding: 19px 14px;
     border-radius: 14px;
   }
