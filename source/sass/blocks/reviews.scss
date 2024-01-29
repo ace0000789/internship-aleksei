@@ -17,13 +17,14 @@
 }
 
 .reviews .swiper-slide {
-  padding: 50px 50px 50px 49px;
+  padding: 50px 50px 42px 49px;
   border: 1px solid $color-cerulean-blue;
   border-radius: 16px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 25px;
   user-select: none;
+  min-height: 456px;
 }
 
 .reviews__profile {
@@ -93,7 +94,7 @@
 .review__text {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 25px;
+  gap: 14px;
 
   h3 {
     padding: 0;
