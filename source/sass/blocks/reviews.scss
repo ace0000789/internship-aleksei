@@ -1,5 +1,9 @@
 .reviews {
   margin-bottom: 121px;
+
+  @include vp-1439 {
+    margin-bottom: 100px;
+  }
 }
 
 .reviews__title {
