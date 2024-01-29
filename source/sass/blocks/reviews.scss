@@ -13,7 +13,7 @@
 }
 
 .reviews .swiper-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .reviews .swiper-slide {
@@ -25,6 +25,7 @@
   gap: 25px;
   user-select: none;
   min-height: 456px;
+  outline: none;
 }
 
 .reviews__profile {
@@ -53,9 +54,14 @@
 .reviews__img {
   border-radius: 50%;
   background-color: $color-cerulean-blue;
+  height: 90px;
+  width: 90px;
 
   img {
     border-radius: 50%;
+    object-fit: cover;
+    height: 90px;
+    width: 90px;
   }
 }
 
@@ -126,6 +132,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  gap: 10px;
 }
 
 
