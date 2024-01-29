@@ -6,6 +6,10 @@
   @include vp-1439 {
     padding: 95px 0 100px 0;
   }
+
+  @include vp-767 {
+    padding: 67px 0 67px 0;
+  }
 }
 
 .contacts__text {
@@ -47,6 +51,11 @@
     font-size: 34px;
     line-height: 50px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px
+  }
 }
 
 .contatcs__list {
@@ -56,6 +65,10 @@
   display: grid;
   justify-content: space-between;
   grid-template-columns:  auto auto auto;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts__item {
@@ -91,6 +104,10 @@
 
   @include vp-1439 {
     line-height: 20px;
+  }
+
+  @include vp-1439 {
+    font-size: 14px;
   }
 }
 
@@ -140,9 +157,13 @@
   width: 100%;
   height: 500px;
 
+  @include vp-767 {
+    height: 240px;
+  }
+
   img {
     width: 100%;
-    height: 100;
+    height: 100%;
     object-fit: cover;
     border-radius: 16px;
   }
