@@ -12,17 +12,28 @@
 
   @include vp-1439 {
     font-size: 34px;
+    padding-left: 0;
+    margin-bottom: 39px;
+    margin-right: 45px;
+    padding-top: 0;
   }
 }
 
 .reviews .swiper-container {
   overflow: hidden;
+
+  @include vp-1439 {
+    padding-bottom: 1px;
+  }
 }
 
 .reviews .swiper-wrapper {
   margin-bottom: 39px;
   width: 1240px;
 
+  @include vp-1439 {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews .swiper-slide {
@@ -35,6 +46,12 @@
   user-select: none;
   min-height: 456px;
   outline: thin dotted;
+
+  @include vp-1439 {
+    width: 560px;
+    padding-right: 49px;
+    min-height: 395px;
+  }
 }
 
 .reviews__profile {
@@ -57,6 +74,10 @@
     font-weight: 400;
     line-height: 24px;
     color: $color-cerulean-blue;
+
+    @include vp-1439 {
+      font-size: 20px;
+    }
   }
 }
 
@@ -80,6 +101,10 @@
   flex-wrap: wrap;
   gap: 25px;
   padding-top: 3px;
+
+  @include vp-1439 {
+    gap: 26px;
+  }
 }
 
 .reviews__program-wrap {
@@ -111,6 +136,10 @@
   grid-template-columns: 1fr;
   gap: 14px;
 
+  @include vp-1439 {
+    gap: 16px;
+  }
+
   h3 {
     padding: 0;
     margin: 0;
@@ -118,6 +147,11 @@
     font-weight: 400;
     line-height: 26px;
     color: $color-cerulean-blue;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px
+    }
   }
 
   p {
@@ -127,6 +161,10 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+
+    @include vp-1439 {
+      line-height: 20px
+    }
   }
 }
 
@@ -135,6 +173,12 @@
   grid-template-columns: 1134px 54px;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-1439 {
+    grid-template-columns: auto 54px;
+    margin-right: 45px;
+    gap: 64px;
+  }
 }
 
 .reviews__arrows {
@@ -144,7 +188,13 @@
   gap: 10px;
 }
 
+.br__reviews {
+  display: none;
 
+  @include vp-1439 {
+    display: block;
+  }
+}
 
 
 
