@@ -41,6 +41,7 @@ function initReviewsSlider() {
         spaceBetween: 30,
         centeredSlides: true,
         watchSlidesProgress: true,
+        autoHeight: true,
       },
     },
   });

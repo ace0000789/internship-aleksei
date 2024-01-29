@@ -19,8 +19,11 @@
   }
 
   @include vp-767 {
+    padding-top: 3px;
     font-size: 20px;
     line-height: 20px;
+    max-width: 75%;
+    margin-bottom: 32px;
   }
 }
 
@@ -30,6 +33,12 @@
   @include vp-1439 {
     padding-bottom: 1px;
   }
+
+  @include vp-767 {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 0;
+  }
 }
 
 .reviews .swiper-wrapper {
@@ -38,6 +47,11 @@
 
   @include vp-1439 {
     margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
+    height: fit-content;
   }
 }
 
@@ -57,6 +71,11 @@
     padding-right: 49px;
     min-height: 395px;
   }
+
+  @include vp-767 {
+    padding: 30px 14px 25px 14px;
+    min-height: 375px;
+  }
 }
 
 .reviews__profile {
@@ -65,6 +84,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-767 {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .reviews__person {
@@ -83,6 +108,16 @@
     @include vp-1439 {
       font-size: 20px;
     }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  @include vp-767 {
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
   }
 }
 
@@ -97,6 +132,16 @@
     object-fit: cover;
     height: 90px;
     width: 90px;
+  }
+
+  @include vp-767 {
+    height: 60px;
+    width: 60px;
+
+    img {
+      height: 60px;
+      width: 60px;
+    }
   }
 }
 
@@ -133,6 +178,16 @@
     font-weight: 400;
     line-height: 18px;
     color: $color-charcoal;
+
+    @include vp-1439 {
+      opacity: 0.9;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  @include vp-767 {
+    gap: 7px;
   }
 }
 
@@ -143,6 +198,10 @@
 
   @include vp-1439 {
     gap: 16px;
+  }
+
+  @include vp-767 {
+    gap: 14px;
   }
 
   h3 {
@@ -157,6 +216,11 @@
       font-size: 20px;
       line-height: 24px
     }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 
   p {
@@ -169,6 +233,10 @@
 
     @include vp-1439 {
       line-height: 20px
+    }
+
+    @include vp-767 {
+      font-size: 14px;
     }
   }
 }
@@ -197,6 +265,12 @@
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 10px;
+
+  @include vp-767 {
+    position: absolute;
+    top: -52px;
+    right: 0;
+  }
 }
 
 .br__reviews {
