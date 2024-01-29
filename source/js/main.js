@@ -16,6 +16,7 @@ import { initTabsNews } from './init-tabs-news';
 import { initNewsSlider } from './init-news-slider';
 import { initAddSlides } from './init-add-slides';
 import { initClickElementAccordion } from './init-click-element-accordion';
+import { initReviewsSlider } from './init-reviews-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initNewsSlider();
   initAddSlides();
   initClickElementAccordion();
+  initReviewsSlider();
 
   window.addEventListener('load', () => {
     initModals();
