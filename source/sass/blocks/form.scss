@@ -1,4 +1,4 @@
-.form__wrap {
+.form__main-wrap {
   position: relative;
 }
 
@@ -16,5 +16,215 @@
     object-fit: cover;
   }
 }
+
+.modal__form-title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $color-cerulean-blue;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.modal__form-text {
+  margin: 0;
+  padding: 0;
+  color: $color-charcoal;
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* label name/phone */
+
+.modal__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 9px;
+  }
+
+  label:hover .modal__form-block-name {
+    color: $color-charcoal;
+  }
+
+  label:hover input {
+    border: 1px solid $color-charcoal;
+  }
+
+  label:hover input:disabled {
+    border: 1px solid rgba(169, 175, 183, 0.5);
+  }
+
+  label:focus-within .modal__form-block-name {
+    color: $color-charcoal;
+  }
+
+  .is-invalid input {
+    border: 1px solid $color-wild-watermelon;
+    background: rgba(255, 94, 102, 0.2);
+  }
+
+  .is-invalid .modal__form-block-name {
+    color: $color-charcoal;
+  }
+
+  input {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid rgba(72, 72, 72, 0.3);
+    color: $color-charcoal;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 17px 20px;
+  }
+
+  input:focus,
+  input:active {
+    border: 1px solid $color-charcoal;
+    outline: none;
+  }
+
+  input:disabled + .modal__form-block-name {
+    color: rgba(72, 72, 72, 0.6);
+  }
+
+  input:disabled {
+    border: 1px solid rgba(169, 175, 183, 0.5);
+    background: rgba(169, 175, 183, 0.2);
+  }
+}
+
+/* checkbox */
+.modal__form-chekbox {
+  margin-top: -22px;
+
+  label {
+    flex-direction: row;
+    min-height: 20px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20px auto;
+  }
+
+  input {
+    opacity: 0;
+    height: 20px;
+  }
+
+  label:hover .modal__form-chekbox-mark,
+  label:focus-within .modal__form-chekbox-mark {
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  input:disabled + .modal__form-chekbox-mark {
+    border: 1px solid $color-cerulean-blue;
+    background: rgba(49, 109, 194, 0.4);
+  }
+
+  .is-invalid .modal__form-chekbox-mark {
+    border: 1px solid rgba(255, 94, 102, 0.7);
+    background: rgba(255, 94, 102, 0.2);
+  }
+
+  .is-valid .modal__form-chekbox-mark {
+    background: $color-cerulean-blue;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  .is-valid svg {
+    stroke: $color-default-white;
+  }
+
+  input:checked + .modal__form-chekbox-mark {
+    background: $color-cerulean-blue;
+    border: 1px solid $color-cerulean-blue;
+    stroke: $color-default-white;
+  }
+
+  /* hover/focus witch checked */
+
+  .is-valid:hover .modal__form-chekbox-mark,
+  .is-valid:focus-within .modal__form-chekbox-mark {
+    background: $color-default-white;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  .is-valid:hover svg,
+  .is-valid:focus-within svg {
+    stroke: $color-cerulean-blue;
+  }
+
+  /* disabled checked */
+  input:disabled:checked + .modal__form-chekbox-mark {
+    background: $color-chocolate;
+    border: 1px solid $color-chocolate;
+    stroke: $color-default-white;
+  }
+}
+
+label:hover input:checked + .modal__form-chekbox-mark,
+label:focus-within input:checked + .modal__form-chekbox-mark {
+  background: $color-default-white;
+  border: 1px solid $color-cerulean-blue;
+  stroke: $color-cerulean-blue;
+}
+
+.modal__form-chekbox-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(49, 109, 194, 0.7);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__form-chekbox-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.modal__form-block-name {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(72, 72, 72, 0.8);
+  opacity: 0.8;
+}
+
+
+/* Button Send */
+.modal__form-btn {
+  background-color: $color-default-white;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 195px;
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
 
 /**/
