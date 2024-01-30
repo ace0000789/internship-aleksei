@@ -1177,25 +1177,24 @@
           </div>
         </div>
       </section>
-
       <section class="contacts" data-test="contacts">
         <div class="container">
           <div class="contacts__wrapper">
             <div class="contacts__text">
               <h2 class="contacts__title">Контакты</h2>
-              <ul class="contatcs__list">
+              <ul class="contacts__list">
                 <li class="contacts__item">
-                  <h3 class="contatcs__subtitle">центральный офис</h3>
+                  <h3 class="contacts__subtitle">центральный офис</h3>
                   <p class="contacts__address">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
                 </li>
                 <li class="contacts__item">
-                  <h3 class="contatcs__subtitle">Телефон</h3>
+                  <h3 class="contacts__subtitle">Телефон</h3>
                   <a class="contacts__link" href="tel:+796387687676">+7 963 876 876 76
                     <span class="visually-hidden">Наш телефон.</span>
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <h3 class="contatcs__subtitle">Email</h3>
+                  <h3 class="contacts__subtitle">Email</h3>
                   <a class="contacts__link" href="mailto:info@stazh.ru">Info@stazh.ru
                     <span class="visually-hidden">Наш email.</span>
                   </a>
@@ -1222,6 +1221,67 @@
           </div>
         </div>
 
+
+      </section>
+
+      <section class="form" data-test="form">
+
+        <div class="modal__form-container" data-form-validate data-callback="base">
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <h2 class="modal__form-title">Напишите нам</h2>
+            <p class="modal__form-text">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы — мы на них
+              ответим!</p>
+            <div class="modal__form-wrapper">
+              <label data-validate-type="text" data-limitation="name" data-message-extra="Более одной буквы"
+                data-on-input-validate data-required>
+                <input type="text" name="name" aria-label="Как к вам обращаться?" required autocomplete="off">
+                <span class="modal__form-block-name">Имя</span>
+                <span class="visually-hidden">Поле для заполнения имя.</span>
+              </label>
+              <label data-validate-type="phone" data-on-input-validate data-required>
+                <input type="text" name="phone" required aria-label="Телефон" autocomplete="off">
+                <span class="modal__form-block-name">Телефон</span>
+                <span class="visually-hidden">Поле для заполнения телефона.</span>
+              </label>
+              <div class="custom-select" data-select="data-select" data-validate-type="select" data-name="city">
+                <div class="custom-select__label">Выберите город</div>
+                <button class="custom-select__button" type="button" aria-label="Выберите город.">
+                  <span class="custom-select__text"></span>
+                  <span class="custom-select__icon">
+                    <svg width="16" height="16" role="img" aria-hidden="true" focusable="false">
+                      <use href="__spritemap#sprite-arrow-down"></use>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="custom-select__list">
+                  <li class="custom-select__item" tabindex="0" data-select-value=" "></li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="London">Лондон</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Moscow">Москва</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Florence">Флоренция</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Berlin">Берлин</li>
+                </ul>
+              </div>
+              <div class="modal__form-chekbox">
+                <label data-validate-type="checkbox" aria-label="Согласие на предосталение персональных данных.">
+                  <input type="checkbox" name="agree" id="checkbox">
+                  <span class="modal__form-chekbox-mark">
+                    <svg width="10" height="8" role="img" aria-label="Выбрано.">
+                      <use href="__spritemap#sprite-modal-check"></use>
+                    </svg>
+                  </span>
+                  <span class="modal__form-chekbox-text">Я согласен на обработку моих персональных данных</span>
+                </label>
+              </div>
+            </div>
+            <button class="modal__form-btn btn" type="submit">отправить
+              <span class="btn__toggle">
+                <svg width="10" height="10" role="img" aria-label="Лого кнопки">
+                  <use href="__spritemap#sprite-btn-arrow"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
 
       </section>
 
