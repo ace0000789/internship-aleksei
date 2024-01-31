@@ -82,7 +82,7 @@
   }
 
   .is-invalid .form__block-name {
-    color: $color-charcoal;
+    color: rgba(240, 239, 233, 0.8);
   }
 
   input {
@@ -136,12 +136,12 @@
 
   label:hover .form__checkbox-mark,
   label:focus-within .form__checkbox-mark {
-    border: 1px solid $color-cerulean-blue;
+    border: 1px solid $color-default-white;
   }
 
   input:disabled + .form__checkbox-mark {
-    border: 1px solid $color-cerulean-blue;
-    background: rgba(49, 109, 194, 0.4);
+    border: 1px solid $color-default-white;
+    background: rgba(255, 255, 255, 0.6);
   }
 
   .is-invalid .form__checkbox-mark {
@@ -155,26 +155,26 @@
   }
 
   .is-valid svg {
-    stroke: $color-default-white;
+    stroke: $color-cerulean-blue;
   }
 
   input:checked + .form__checkbox-mark {
-    background: $color-cerulean-blue;
-    border: 1px solid $color-cerulean-blue;
-    stroke: $color-default-white;
+    background: $color-default-white;
+    border: 1px solid $color-default-white;
+    stroke: $color-cerulean-blue;
   }
 
   /* hover/focus witch checked */
 
   .is-valid:hover .form__checkbox-mark,
   .is-valid:focus-within .form__checkbox-mark {
-    background: $color-default-white;
-    border: 1px solid $color-cerulean-blue;
+    background: $color-cerulean-blue;
+    border: 1px solid $color-default-white;
   }
 
   .is-valid:hover svg,
   .is-valid:focus-within svg {
-    stroke: $color-cerulean-blue;
+    stroke: $color-default-white;
   }
 
   /* disabled checked */
@@ -196,7 +196,7 @@ label:focus-within input:checked + .form__checkbox-mark {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 1px solid rgba(49, 109, 194, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 2px;
   display: flex;
   justify-content: center;
