@@ -13,7 +13,7 @@
 
     @include vp-1439 {
       width: 442px;
-      padding: 60px 45px 58px 45px;
+      padding: 60px 45px 58px;
     }
   }
 }
@@ -66,6 +66,29 @@
   }
 }
 
+.form__textarea-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 9px;
+
+  &:hover textarea,
+  &:hover.is-invalid textarea {
+    border: 1px solid $color-default-white;
+  }
+
+
+  &:hover .form__block-name,
+  &:hover.is-invalid .form__block-name {
+    color: $color-alabaster;
+  }
+
+  &:focus-within .form__block-name,
+  &:focus-within.is-invalid .form__block-name {
+    color: $color-alabaster;
+  }
+}
+
 /* label name/phone */
 
 .form__wrapper--feedback {
@@ -84,8 +107,7 @@
     color: $color-alabaster;
   }
 
-  label:hover input,
-  label:hover textarea {
+  label:hover input {
     border: 1px solid $color-default-white;
   }
 
@@ -152,7 +174,6 @@
 
     @include vp-1439 {
       margin-bottom: 1px;
-
     }
   }
 
@@ -162,7 +183,7 @@
 
   textarea:disabled {
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.2);
 
     &:hover {
       border: 1px solid rgba(255, 255, 255, 0.4);
@@ -172,8 +193,6 @@
   textarea:disabled + .form__block-name {
     color: rgba(240, 239, 233, 0.6);
   }
-
-
 }
 
 /* checkbox */
@@ -340,5 +359,3 @@ label:focus-within input:checked + .form__checkbox-mark {
     stroke: rgba(255, 255, 255, 0.7);
   }
 }
-
-/*  */

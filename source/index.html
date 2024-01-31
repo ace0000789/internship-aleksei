@@ -1246,12 +1246,12 @@
                     <span class="form__block-name">Телефон</span>
                     <span class="visually-hidden">Поле для заполнения телефона.</span>
                   </label>
-                  <label data-validate-type="text" data-limitation="message" data-message-extra="Более одной буквы"
+                  <div class="form__textarea-wrap" data-validate-type="text" data-limitation="message" data-message-extra="Более одной буквы"
                     data-on-input-validate data-required>
                     <textarea name="message" id="message" rows="1" aria-label="textarea"></textarea>
                     <span class="form__block-name">Ваше сообщение</span>
                     <span class="visually-hidden">Поле для заполнения сообщения.</span>
-                  </label>
+                  </div>
                   <div class="custom-select" data-select="data-select" data-validate-type="select" data-required="true"
                     data-name="city">
                     <div class="custom-select__label custom-select__label--feedback">Выберите город</div>
@@ -1297,9 +1297,9 @@
               <picture>
 
                 <source type="image/webp" media="(max-width: 1439px)"
-                srcset="img/form/city-tablet.webp 1x, img/form/city-tablet@2x.webp 2x">
-              <source type="image/jpg" media="(max-width: 1439px)"
-                srcset="img/form/city-tablet.webp 1x, img/form/city-tablet@2x.webp 2x">
+                  srcset="img/form/city-tablet.webp 1x, img/form/city-tablet@2x.webp 2x">
+                <source type="image/jpg" media="(max-width: 1439px)"
+                  srcset="img/form/city-tablet.webp 1x, img/form/city-tablet@2x.webp 2x">
 
 
                 <source type="image/webp" srcset="img/form/city-desktop.webp 1x,
