@@ -223,10 +223,12 @@ label:focus-within input:checked + .form__checkbox-mark {
 
 /* Button Send */
 .form__btn {
-  background-color: $color-default-white;
+  background-color: transparent;
   cursor: pointer;
   margin: 0 auto;
-  min-width: 195px;
+  width: 100%;
+  color: $color-default-white;
+  border: 1px solid $color-default-white;
 
   &:disabled {
     cursor: default;
@@ -234,5 +236,40 @@ label:focus-within input:checked + .form__checkbox-mark {
   }
 }
 
+.form__btn .btn__toggle {
+  background-color: $color-default-white;
+
+  svg {
+    stroke: $color-cerulean-blue;
+  }
+}
+
+.form__btn:hover,
+.form__btn:focus-visible {
+  background-color: $color-default-white;
+  color: $color-cerulean-blue;
+}
+
+.form__btn:hover .btn__toggle,
+.form__btn:focus-visible .btn__toggle {
+  background-color: $color-cerulean-blue;
+
+  svg {
+    stroke: $color-default-white;
+  }
+}
+
+.form__btn:active {
+  color: rgba(49, 109, 194, 0.7);
+  background-color: $color-default-white;
+}
+
+.form__btn:active .btn__toggle {
+  background-color: $color-cerulean-blue;
+
+  svg {
+    stroke: rgba(255, 255, 255, 0.7);
+  }
+}
 
 /*  */
