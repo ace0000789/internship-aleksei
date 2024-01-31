@@ -185,13 +185,13 @@
   /* hover/focus witch checked */
 
   .is-valid:hover .modal__form-chekbox-mark,
-  .is-valid:focus-within .modal__form-chekbox-mark {
+  .is-valid:focus-visible .modal__form-chekbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
   }
 
   .is-valid:hover svg,
-  .is-valid:focus-within svg {
+  .is-valid:focus-visible svg {
     stroke: $color-cerulean-blue;
   }
 
@@ -203,8 +203,7 @@
   }
 }
 
-label:hover input:checked + .modal__form-chekbox-mark,
-label:focus-within input:checked + .modal__form-chekbox-mark {
+label:hover input:checked + .modal__form-chekbox-mark {
   background: $color-default-white;
   border: 1px solid $color-cerulean-blue;
   stroke: $color-cerulean-blue;
