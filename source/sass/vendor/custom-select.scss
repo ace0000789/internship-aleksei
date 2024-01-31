@@ -81,6 +81,11 @@
 
   &__label--feedback {
     color: rgba(240, 239, 233, 0.8);
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__placeholder {
@@ -155,6 +160,10 @@
 
   &__button--feedback {
     border: 1px solid rgba(255, 255, 255, 0.30);
+
+    @include vp-767 {
+      height: 50px;
+    }
   }
 
   &__list {
