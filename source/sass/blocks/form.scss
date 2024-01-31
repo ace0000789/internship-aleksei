@@ -167,13 +167,13 @@
   /* hover/focus witch checked */
 
   .is-valid:hover .form__checkbox-mark,
-  .is-valid:focus-within .form__checkbox-mark {
+  .is-valid:focus-visible .form__checkbox-mark {
     background: $color-cerulean-blue;
     border: 1px solid $color-default-white;
   }
 
   .is-valid:hover svg,
-  .is-valid:focus-within svg {
+  .is-valid:focus-visible svg {
     stroke: $color-default-white;
   }
 
