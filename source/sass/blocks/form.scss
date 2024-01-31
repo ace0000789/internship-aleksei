@@ -115,7 +115,7 @@
 }
 
 /* checkbox */
-.form__chekbox {
+.form__checkbox {
   margin-top: -22px;
 
   label {
@@ -134,22 +134,22 @@
     height: 20px;
   }
 
-  label:hover .form__chekbox-mark,
-  label:focus-within .form__chekbox-mark {
+  label:hover .form__checkbox-mark,
+  label:focus-within .form__checkbox-mark {
     border: 1px solid $color-cerulean-blue;
   }
 
-  input:disabled + .form__chekbox-mark {
+  input:disabled + .form__checkbox-mark {
     border: 1px solid $color-cerulean-blue;
     background: rgba(49, 109, 194, 0.4);
   }
 
-  .is-invalid .form__chekbox-mark {
+  .is-invalid .form__checkbox-mark {
     border: 1px solid rgba(255, 94, 102, 0.7);
     background: rgba(255, 94, 102, 0.2);
   }
 
-  .is-valid .form__chekbox-mark {
+  .is-valid .form__checkbox-mark {
     background: $color-cerulean-blue;
     border: 1px solid $color-cerulean-blue;
   }
@@ -158,7 +158,7 @@
     stroke: $color-default-white;
   }
 
-  input:checked + .form__chekbox-mark {
+  input:checked + .form__checkbox-mark {
     background: $color-cerulean-blue;
     border: 1px solid $color-cerulean-blue;
     stroke: $color-default-white;
@@ -166,8 +166,8 @@
 
   /* hover/focus witch checked */
 
-  .is-valid:hover .form__chekbox-mark,
-  .is-valid:focus-within .form__chekbox-mark {
+  .is-valid:hover .form__checkbox-mark,
+  .is-valid:focus-within .form__checkbox-mark {
     background: $color-default-white;
     border: 1px solid $color-cerulean-blue;
   }
@@ -178,21 +178,21 @@
   }
 
   /* disabled checked */
-  input:disabled:checked + .form__chekbox-mark {
+  input:disabled:checked + .form__checkbox-mark {
     background: $color-chocolate;
     border: 1px solid $color-chocolate;
     stroke: $color-default-white;
   }
 }
 
-label:hover input:checked + .form__chekbox-mark,
-label:focus-within input:checked + .form__chekbox-mark {
+label:hover input:checked + .form__checkbox-mark,
+label:focus-within input:checked + .form__checkbox-mark {
   background: $color-default-white;
   border: 1px solid $color-cerulean-blue;
   stroke: $color-cerulean-blue;
 }
 
-.form__chekbox-mark {
+.form__checkbox-mark {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -203,10 +203,11 @@ label:focus-within input:checked + .form__chekbox-mark {
   align-items: center;
 }
 
-.form__chekbox-text {
+.form__checkbox-text {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  color: rgba(255, 255, 255, 0.9);;
 }
 
 .form__block-name {
