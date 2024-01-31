@@ -64,7 +64,8 @@
     color: $color-alabaster;
   }
 
-  label:hover input {
+  label:hover input,
+  label:hover textarea {
     border: 1px solid $color-default-white;
   }
 
@@ -112,6 +113,39 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.2);
   }
+
+  /* textarea */
+
+  textarea {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: $color-cerulean-blue;
+    color: $color-default-white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 17px 20px;
+    outline: none;
+  }
+
+  textarea:focus {
+    border: 1px solid $color-default-white;
+  }
+
+  textarea:disabled {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.20);
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  textarea:disabled + .form__block-name {
+    color: rgba(240, 239, 233, 0.6);
+  }
+
+
 }
 
 /* checkbox */
