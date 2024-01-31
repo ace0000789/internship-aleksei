@@ -115,7 +115,7 @@
 }
 
 /* checkbox */
-.form__checkbox {
+.form__checkbox--feedback {
   margin-top: -22px;
 
   label {
@@ -188,7 +188,7 @@
 label:hover input:checked + .form__checkbox-mark,
 label:focus-within input:checked + .form__checkbox-mark {
   background: $color-default-white;
-  border: 1px solid $color-cerulean-blue;
+  border: 1px solid $color-default-white;
   stroke: $color-cerulean-blue;
 }
 
