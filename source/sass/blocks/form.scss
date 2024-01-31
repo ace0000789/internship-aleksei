@@ -229,6 +229,7 @@ label:focus-within input:checked + .form__checkbox-mark {
   width: 100%;
   color: $color-default-white;
   border: 1px solid $color-default-white;
+  transition: $trans-default;
 
   &:disabled {
     cursor: default;
@@ -253,6 +254,7 @@ label:focus-within input:checked + .form__checkbox-mark {
 .form__btn:hover .btn__toggle,
 .form__btn:focus-visible .btn__toggle {
   background-color: $color-cerulean-blue;
+  transition: $trans-default;
 
   svg {
     stroke: $color-default-white;
@@ -262,6 +264,7 @@ label:focus-within input:checked + .form__checkbox-mark {
 .form__btn:active {
   color: rgba(49, 109, 194, 0.7);
   background-color: $color-default-white;
+  transition: $trans-default;
 }
 
 .form__btn:active .btn__toggle {
