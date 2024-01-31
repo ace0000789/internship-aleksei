@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 52px auto 148px;
   column-gap: 52px;
-  row-gap: 25px;
+  row-gap: 24px;
   align-items: center;
 }
 
@@ -17,7 +17,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30.5px;
+  padding-bottom: 2px;
 }
 
 .footer__item {
@@ -50,6 +51,7 @@
   width: 148px;
   gap: 20px;
   grid-template-columns: 36px 36px 36px;
+  padding-bottom: 3px;
 }
 
 .footer__social-item {
@@ -64,8 +66,20 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: $color-blue-dark;
+  background-color: $color-cerulean-blue;
   fill: $color-default-white;
+  transition: $trans-default;
+
+  &:hover,
+  &:focus-visible {
+    fill: rgba(255, 255, 255, 0.7);
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-blue-dark;
+    fill: $color-default-white;
+  }
 }
 
 .footer__subwrapper {
@@ -101,6 +115,25 @@
     background-color: $color-charcoal;
     left: 0;
     bottom: -1px;
+  }
+
+
+  &:hover,
+  &:focus-visible {
+    color: $color-cerulean-blue;
+    outline: none;
+
+    &::after {
+      background-color: $color-cerulean-blue;
+    }
+
+  }
+  &:active {
+    color: $color-blue-dark;
+
+    &::after {
+      background-color: $color-blue-dark;
+    }
   }
 }
 
