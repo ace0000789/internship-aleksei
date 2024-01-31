@@ -265,6 +265,9 @@ label:focus-within input:checked + .form__checkbox-mark {
 
 /* Button Send */
 .form__btn {
+  display: grid;
+  grid-template-columns: 1fr 46px;
+  padding: 3px 4px 3px 2px;
   background-color: transparent;
   cursor: pointer;
   margin: 0 auto;
