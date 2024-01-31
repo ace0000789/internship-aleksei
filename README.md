@@ -13,5 +13,3 @@
 - команда `npm run lint-js` проверяет валидность JavaScript
 - команда `npm run ls-lint` проверяет названия файлов
 - команда `npm run editorconfig` проверяет формат файлов
-
-<div data-test="footer">footer</div>
