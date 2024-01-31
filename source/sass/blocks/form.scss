@@ -19,7 +19,7 @@
     @include vp-767 {
       width: 90.5%;
       margin: 0 auto;;
-      padding: 51px 15px;
+      padding: 51px 15px 50px;
     }
   }
 }
@@ -364,6 +364,23 @@ label:focus-within input:checked + .form__checkbox-mark {
   color: $color-default-white;
   border: 1px solid $color-default-white;
   transition: $trans-default;
+
+  @include vp-767 {
+    grid-template-columns: 1fr 34px;
+    padding-right: 3px;
+    padding-left: 1px;
+    min-width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+
+    .btn__toggle {
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+    }
+  }
 
   &:disabled {
     cursor: default;
