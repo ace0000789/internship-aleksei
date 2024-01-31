@@ -9,7 +9,7 @@
   }
 }
 
-.form__image  {
+.form__image {
   position: absolute;
   top: 0;
   right: 0;
@@ -48,7 +48,7 @@
 
 /* label name/phone */
 
-.form__wrapper.form__wrapper--feedback {
+.form__wrapper--feedback {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -110,7 +110,7 @@
 
   input:disabled {
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -207,7 +207,7 @@ label:focus-within input:checked + .form__checkbox-mark {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
-  color: rgba(255, 255, 255, 0.9);;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .form__block-name {
@@ -235,4 +235,4 @@ label:focus-within input:checked + .form__checkbox-mark {
 }
 
 
-/**/
+/*  */
