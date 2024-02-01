@@ -346,6 +346,13 @@
 
       &:focus,
       &:hover {
+        border: 1px solid $color-charcoal;
+      }
+    }
+
+    .custom-select__button--feedback {
+      &:focus,
+      &:hover {
         border: 1px solid $color-default-white;
       }
     }
