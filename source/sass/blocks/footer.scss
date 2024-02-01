@@ -8,6 +8,10 @@
   column-gap: 52px;
   row-gap: 24px;
   align-items: center;
+
+  @include vp-1439 {
+    grid-template-columns: 52px 300px 1fr;
+  }
 }
 
 .footer__list {
@@ -19,6 +23,11 @@
   flex-wrap: wrap;
   gap: 30.5px;
   padding-bottom: 2px;
+
+  @include vp-1439 {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
 }
 
 .footer__item {
@@ -52,6 +61,11 @@
   gap: 20px;
   grid-template-columns: 36px 36px 36px;
   padding-bottom: 3px;
+
+  @include vp-1439 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 }
 
 .footer__social-item {
@@ -89,6 +103,11 @@
   justify-content: space-between;
   align-items: center;
   grid-column: 1/-1;
+
+  @include vp-1439 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 }
 
 .footer__text {
