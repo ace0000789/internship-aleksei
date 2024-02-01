@@ -267,10 +267,10 @@
   align-items: flex-end;
   background-color: $color-charcoal;
   border-radius: 12px;
-
+  visibility: hidden;
 
   @include vp-1439 {
-    max-width: 324px;
+    max-width: 100%;
     min-height: 350px;
   }
 
@@ -285,6 +285,11 @@
     }
   }
 }
+
+.news__item.swiper-slide-visible {
+  visibility: visible;
+}
+
 
 .news__item.swiper-slide--big {
   max-width: 604px;
@@ -325,7 +330,7 @@
   }
 
   @include vp-1439 {
-    max-width: 324px;
+    max-width: 100%;
     min-height: 350px;
     line-height: 20px;
   }

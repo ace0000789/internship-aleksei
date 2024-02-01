@@ -26,16 +26,18 @@ function initNewsSlider() {
         slidesPerView: 'auto',
         slidesPerGroup: 1,
         spaceBetween: 32,
+        watchSlidesProgress: true,
       },
       768: {
-        slidesPerView: 'auto',
+        watchSlidesProgress: true,
+        slidesPerView: 2,
         spaceBetween: 30,
-
         grid: {
           rows: 2,
         }
       },
       0: {
+        watchSlidesProgress: true,
         slidesPerView: 1,
         spaceBetween: 20,
         grid: {
