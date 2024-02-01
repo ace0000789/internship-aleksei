@@ -12,7 +12,6 @@ import { scrollLock } from './utils/scroll-lock';
 import { Form } from './vendor/form-validate/form';
 import { CustomSelect } from './vendor/custom-select/custom-select';
 import { initProgramsSlider } from './init-programs-slider';
-import { initNumbersForList } from './init-numbers-for-list';
 import { initTabsNews } from './init-tabs-news';
 import { initNewsSlider } from './init-news-slider';
 import { initAddSlides } from './init-add-slides';
@@ -22,21 +21,21 @@ import { initReviewsSlider } from './init-reviews-slider';
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
-  stickyHeader();
-  initAccordions();
-  initHeroSlider();
-  initProgramsSlider();
-  initNumbersForList();
-  initTabsNews();
-  initNewsSlider();
-  initAddSlides();
-  initClickElementAccordion();
-  initReviewsSlider();
+    initHeroSlider();
+    initNewsSlider();
+    initAddSlides();
+    initReviewsSlider();
+    initProgramsSlider();
 
   window.addEventListener('load', () => {
-    initModals();
+    stickyHeader();
     scrollLock();
+    initClickElementAccordion();
+    initAccordions();
+    initModals();
     initMenu();
+    initTabsNews();
+
 
     const select = new CustomSelect();
     select.init();
