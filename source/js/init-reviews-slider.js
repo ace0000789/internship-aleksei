@@ -28,7 +28,7 @@ function initReviewsSlider() {
         slidesPerView: 2,
         slidesPerGroup: 1,
         simulateTouch: false,
-        spaceBetween: 32,
+        spaceBetween: 31,
         watchSlidesProgress: true,
       },
       768: {
