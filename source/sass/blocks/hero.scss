@@ -185,6 +185,9 @@
   }
 
   &--small-text {
+
+  right: -25px;
+
     @include vp-767 {
       right: -4px;
     }
