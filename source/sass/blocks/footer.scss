@@ -221,7 +221,7 @@
     bottom: -1px;
 
     @include vp-1439 {
-      bottom: 0px;
+      bottom: 0;
     }
 
     @include vp-767 {
@@ -248,5 +248,3 @@
     }
   }
 }
-
-/*  */

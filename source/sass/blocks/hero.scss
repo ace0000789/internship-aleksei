@@ -293,7 +293,8 @@
   @include vp-767 {
     width: 80px;
     height: 28px;
-    padding: 10px 16px;
+    padding: 0;
+    padding-top: 10px;
   }
 }
 
@@ -309,14 +310,59 @@
   outline: none;
 
   @include vp-767 {
-    width: 8px;
-    height: 8px;
+    width: 0;
+    height: 0;
+    padding: 8px 15.5px;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-left: -9px;
+    margin-right: 9px;
+    border-radius: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      bottom: 8px;
+      left: 33%;
+      background-color: $color-default-white;
+      border: 1px solid $color-cerulean-blue;
+      border-radius: 50%;
+    }
+  }
+}
+
+.swiper-pagination-bullet:last-child {
+  @include vp-767 {
+    &::after {
+      left: -2px;
+    }
+  }
+}
+
+.swiper-pagination-bullet:first-child {
+  @include vp-767 {
+    &::after {
+      right: 0;
+      left: auto;
+    }
   }
 }
 
 .slider-pagination .swiper-pagination-bullet-active {
   background-color: $color-cerulean-blue;
+
+  @include vp-767 {
+    background-color: transparent;
+
+    &::after {
+      background-color: $color-cerulean-blue;
+    }
+  }
 }
+
 
 .hero__br {
   display: block;
