@@ -247,14 +247,14 @@
     height: 1px;
     background-color: $color-default-white;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.1);
   }
 
   &::after {
     display: block;
     background-color: $color-default-white;
-    left: 23%;
-    transform: rotate(90deg);
+    left: 25%;
+    transform: rotate(90deg) scale(1.1);
 
     @include vp-1439 {
       left: 24%;
