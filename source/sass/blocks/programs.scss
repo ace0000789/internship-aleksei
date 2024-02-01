@@ -384,6 +384,8 @@
   border: none;
   outline: none;
   border-radius: 50%;
+  background-color: $color-alabaster;
+  cursor: pointer;
 
   svg {
     stroke: $color-cerulean-blue;
@@ -403,6 +405,7 @@
 }
 
 .swiper-button-disabled {
+  cursor: default;
   svg {
     stroke: $color-chocolate;
   }
