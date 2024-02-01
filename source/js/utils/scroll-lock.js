@@ -46,3 +46,30 @@ export class ScrollLock {
 }
 
 window.scrollLock = new ScrollLock();
+
+
+export function scrollLock() {
+  // Получаем элементы <body> и <html>
+  const bodyElement = document.querySelector('body');
+  const htmlElement = document.querySelector('html');
+
+  // Создаем новый наблюдатель мутаций
+  const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        // Проверяем, содержит ли класс 'scroll-lock'
+        const hasScrollLockClass = bodyElement.classList.contains('scroll-lock');
+
+        // Добавляем или удаляем класс 'scroll-lock' на <html> в зависимости от наличия класса на <body>
+        if (hasScrollLockClass) {
+          htmlElement.classList.add('scroll-lock');
+        } else {
+          htmlElement.classList.remove('scroll-lock');
+        }
+      }
+    }
+  });
+
+  // Настраиваем наблюдатель на отслеживание изменений атрибута 'class' элемента <body>
+  observer.observe(bodyElement, { attributes: true });
+}

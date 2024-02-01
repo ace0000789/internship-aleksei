@@ -8,6 +8,7 @@ import { initMenu } from './init-menu';
 import { initAccordions } from './init-accordion';
 import { initHeroSlider } from'./init-hero-slider';
 import { initModals } from './modules/modals/init-modals';
+import { scrollLock } from './utils/scroll-lock';
 import { Form } from './vendor/form-validate/form';
 import { CustomSelect } from './vendor/custom-select/custom-select';
 import { initProgramsSlider } from './init-programs-slider';
@@ -22,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
   stickyHeader();
-  initMenu();
   initAccordions();
   initHeroSlider();
   initProgramsSlider();
@@ -35,6 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('load', () => {
     initModals();
+    scrollLock();
+    initMenu();
 
     const select = new CustomSelect();
     select.init();
