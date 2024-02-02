@@ -298,6 +298,7 @@
 
 .programs__link--disabled {
   pointer-events: none;
+  cursor: default;
 }
 
 .programs__link.programs__link--disabled .btn__toggle {
@@ -422,6 +423,18 @@
 }
 
 .swiper-button-disabled {
+  cursor: default;
+
+  svg {
+    stroke: $color-chocolate;
+  }
+}
+
+/* for disabled custom add class program-button-disabled */
+
+.swiper-button-prev.program-button-disabled,
+.swiper-button-next.program-button-disabled  {
+  pointer-events: none;
   cursor: default;
 
   svg {
