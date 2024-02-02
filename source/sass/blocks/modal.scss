@@ -79,6 +79,7 @@
   background: $color-default-white;
   border: none;
   cursor: pointer;
+  transition: $tf-default;
 
   @include vp-767 {
     width: 16px;
@@ -94,9 +95,11 @@
 }
 
 .modal__close-btn:hover,
-.modal__close-btn:focus,
-.modal__close-btn:active {
+.modal__close-btn:focus-visible {
   outline: none;
+  opacity: 0.8;
+}
+.modal__close-btn:active {
   opacity: 0.6;
 }
 
