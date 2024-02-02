@@ -306,18 +306,17 @@
 
 
 .programs__link:hover,
-.programs__link:focus-visible,
-.programs__link:active {
+.programs__link:focus-visible {
   background-color: $color-default-white;
   outline: none;
 }
 
-.programs__link:focus {
+.programs__link:active .btn__toggle {
   background-color: $color-default-white;
 }
 
-.btn:active {
-  color: rgba(255, 255, 255, 0.7);
+.programs__link:active svg {
+  opacity: 0.8;
 }
 
 .programs .programs__controles {
@@ -404,12 +403,13 @@
 }
 
 .swiper-button-prev:active:not(.swiper-button-disabled),
-.swiper-button-next:active:not(.swiper-button-disabled){
+.swiper-button-next:active:not(.swiper-button-disabled) {
   background-color: $color-default-white;
 }
 
 .swiper-button-prev:active:not(.swiper-button-disabled) svg,
 .swiper-button-next:active:not(.swiper-button-disabled) svg {
+  transition: $trans-default;
   opacity: 0.7;
 }
 
