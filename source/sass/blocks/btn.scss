@@ -44,14 +44,15 @@
   background-color: $color-default-white;
 }
 
-
 .btn:active {
   color: rgba(255, 255, 255, 0.7);
+  transition: $trans-default;
 }
 
 .btn:active .btn__toggle {
   stroke: rgba(49, 109, 194, 0.7);
   transform: rotate(45deg);
+  transition: $trans-default;
 }
 
 /* for disabled add class btn--disabled */
