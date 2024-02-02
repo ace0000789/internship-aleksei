@@ -207,7 +207,23 @@
   }
 }
 
-.hero__link.btn {
+.hero__link {
+
+  &:hover,
+  &:focus-visible {
+    padding: 2.5px 4px 3.5px 30px;
+    transition: $tf-default;
+  }
+
+  &:active {
+    background-color: $color-cerulean-blue;
+    padding: 2.5px 4px 3.5px 30px;
+  }
+
+  &:active .btn__toggle {
+    background-color: $color-default-white;
+  }
+
   @include vp-767 {
     min-width: 152px;
     width: 152px;
