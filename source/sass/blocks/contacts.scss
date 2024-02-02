@@ -133,6 +133,7 @@
   line-height: 26px;
   color: $color-default-white;
   position: relative;
+  transition: $trans-default;
 
 
   &:focus {
