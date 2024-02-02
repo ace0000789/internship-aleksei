@@ -397,6 +397,11 @@ label:focus-within input:checked + .form__checkbox-mark {
   }
 }
 
+.form__btn:disabled .btn__toggle svg{
+  stroke: $color-default-white;
+  opacity: 0.6;
+}
+
 .form__btn .btn__toggle {
   background-color: $color-default-white;
 
