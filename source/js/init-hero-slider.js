@@ -19,16 +19,18 @@ function initHeroSlider() {
     autoplay: {
       delay: 3000,
     },
-
+    
     grabCursor: true,
     autoHeight: true,
     loop: true,
+    watchSlidesProgress: true,
     breakpoints: {
-      1200: {
+      1440: {
         slidesPerView: 1,
         slidesPerGroup: 1,
         centeredSlides: false,
         simulateTouch: false,
+        watchSlidesProgress: true,
       },
       768: {
         simulateTouch: true,
