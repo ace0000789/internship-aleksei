@@ -90,6 +90,19 @@
   color: $color-default-white;
 }
 
+.header__button:active .header__button-text {
+  opacity: 0.8;
+  transition: $trans-default;
+}
+
+.header__button:active .header__button-toggle::before {
+  opacity: 0.8;
+}
+
+.header__button:active .header__button-toggle::after {
+  opacity: 0.8;
+}
+
 .header__button:disabled {
   border: 1px solid $color-chocolate;
   color: $color-chocolate;
@@ -283,7 +296,7 @@
   letter-spacing: 0.32px;
   text-transform: uppercase;
   height: 0;
-  transition: 0.5s;
+  transition: 0.5s color;
 }
 
 .is-opened .header__menu-link {
@@ -291,11 +304,11 @@
 }
 
 .header__menu-link:hover,
-.header__menu-link:focus {
+.header__menu-link:focus-visible {
   color: $color-default-white;
   outline: none;
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.2s color;
 }
 
 .header__menu-button {
@@ -317,7 +330,7 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.5s color;
 
   svg {
     stroke: rgba(255, 255, 255, 0.7);
@@ -356,7 +369,7 @@
 }
 
 .header__submenu-link:hover,
-.header__submenu-link:focus,
+.header__submenu-link:focus-visible,
 .header__submenu-link:active {
   color: $color-default-white;
   outline: none;
