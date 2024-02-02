@@ -63,7 +63,7 @@
 
   @include vp-767 {
     margin-bottom: 0;
-    height: fit-content;
+    min-height: fit-content;
   }
 }
 
