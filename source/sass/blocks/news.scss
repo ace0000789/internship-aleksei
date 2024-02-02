@@ -221,10 +221,17 @@
 }
 
 .news__link:hover,
-.news__link:focus-visible,
-.news__link:active {
+.news__link:focus-visible {
   background-color: $color-default-white;
   outline: none;
+}
+
+.news__link.btn:active .btn__toggle{
+  background-color: $color-default-white;
+}
+
+.news__link.btn:active svg {
+  opacity: 0.8;
 }
 
 .news__slider {
@@ -289,7 +296,6 @@
 .news__item.swiper-slide-visible {
   visibility: visible;
 }
-
 
 .news__item.swiper-slide--big {
   max-width: 604px;

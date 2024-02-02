@@ -42,6 +42,7 @@
   stroke: $color-cerulean-blue;
   transform: rotate(45deg);
   background-color: $color-default-white;
+  transition: $trans-default;
 }
 
 .btn:active {
