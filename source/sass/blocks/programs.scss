@@ -394,6 +394,7 @@
   border-radius: 50%;
   background-color: $color-alabaster;
   cursor: pointer;
+  transition: 0.3s background-color;
 
   svg {
     stroke: $color-cerulean-blue;
