@@ -264,6 +264,14 @@ label:hover input:checked + .modal__form-chekbox-mark {
     }
   }
 
+  &:active {
+    background-color: $color-cerulean-blue;
+  }
+
+  &:active .btn__toggle{
+    background-color: $color-default-white;
+  }
+
   &:disabled {
     cursor: default;
     pointer-events: none;
