@@ -142,10 +142,6 @@
 
     &:focus {
       border: 1px solid $color-charcoal;
-
-      .custom-select__icon {
-        transform: rotate(180deg);
-      }
     }
 
     &:disabled {
