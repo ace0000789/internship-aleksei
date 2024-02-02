@@ -692,11 +692,11 @@
                   <ul class="news__list swiper-wrapper">
                     <li class="news__item swiper-slide swiper-slide--big">
                       <div class="news__img">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="img/news/books-mobile.webp 1x, img/news/books-mobile@2x.webp 2x">
-                      <source type="image/jpg" media="(max-width: 767px)"
-                        srcset="img/news/books-mobile.webp 1x, img/news/books-mobile@2x.webp 2x">
                         <picture>
+                        <source type="image/webp" media="(max-width: 767px)"
+                          srcset="img/news/books-mobile.webp 1x, img/news/books-mobile@2x.webp 2x">
+                        <source type="image/jpg" media="(max-width: 767px)"
+                          srcset="img/news/books-mobile.webp 1x, img/news/books-mobile@2x.webp 2x">
                           <source type="image/webp" srcset="img/news/books.webp 1x,
                         img/news/books@2x.webp 2x">
                           <img src="img/news/books.jpg" width="286" height="400" srcset="img/news/books@2x.jpg 2x"
@@ -1250,7 +1250,8 @@
             <div class="form__container" data-form-validate data-callback="base">
               <form action="http://echo.htmlacademy.ru" method="post" data-form="feedback">
                 <h2 class="form__title">Напишите нам</h2>
-                <p class="form__text">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы — мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+                <p class="form__text">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы —
+                  мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
                 <div class="form__feedback">
                   <label data-validate-type="text" data-limitation="name" data-message-extra="Более одной буквы"
                     data-on-input-validate data-required>
@@ -1263,14 +1264,14 @@
                     <span class="form__block-name">Телефон</span>
                     <span class="visually-hidden">Поле для заполнения телефона.</span>
                   </label>
-                  <div class="form__textarea-wrap" data-validate-type="text" data-limitation="message" data-message-extra="Более одной буквы"
-                    data-on-input-validate data-required>
+                  <div class="form__textarea-wrap" data-validate-type="text" data-limitation="message"
+                    data-message-extra="Более одной буквы" data-on-input-validate data-required>
                     <textarea name="message" id="message" rows="1" aria-label="textarea"></textarea>
                     <span class="form__block-name">Ваше сообщение</span>
                     <span class="visually-hidden">Поле для заполнения сообщения.</span>
                   </div>
-                  <div class="custom-select custom-select--feedback" data-select="data-select" data-validate-type="select" data-required="true"
-                    data-name="city">
+                  <div class="custom-select custom-select--feedback" data-select="data-select"
+                    data-validate-type="select" data-required="true" data-name="city">
                     <div class="custom-select__label custom-select__label--feedback">Выберите город</div>
                     <button class="custom-select__button custom-select__button--feedback" type="button"
                       aria-label="Выберите город.">

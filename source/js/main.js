@@ -21,11 +21,11 @@ import { initReviewsSlider } from './init-reviews-slider';
 window.addEventListener('DOMContentLoaded', () => {
 
   //iosVhFix();
-    initHeroSlider();
-    initNewsSlider();
-    initAddSlides();
-    initReviewsSlider();
-    initProgramsSlider();
+  initHeroSlider();
+  initNewsSlider();
+  initAddSlides();
+  initReviewsSlider();
+  initProgramsSlider();
 
   window.addEventListener('load', () => {
     stickyHeader();
