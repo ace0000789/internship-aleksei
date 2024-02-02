@@ -430,10 +430,10 @@
   }
 }
 
-/* for disabled custom add class program-button-disabled */
+/* for disabled custom add class slider-button-disabled */
 
-.swiper-button-prev.program-button-disabled,
-.swiper-button-next.program-button-disabled  {
+.swiper-button-prev.slider-button-disabled,
+.swiper-button-next.slider-button-disabled  {
   pointer-events: none;
   cursor: default;
 
