@@ -390,12 +390,21 @@
   svg {
     stroke: $color-cerulean-blue;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .swiper-button-prev:focus-visible,
 .swiper-button-next:focus-visible,
 .swiper-button-prev:hover:not(.swiper-button-disabled),
 .swiper-button-next:hover:not(.swiper-button-disabled) {
+  background-color: $color-default-white;
+}
+
+.swiper-button-prev:active:not(.swiper-button-disabled),
+.swiper-button-next:active:not(.swiper-button-disabled){
   background-color: $color-default-white;
 }
 

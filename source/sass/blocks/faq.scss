@@ -239,6 +239,10 @@
   cursor: pointer;
   transition: $trans-default;
 
+  &:focus {
+    outline: none;
+  }
+
   &::before,
   &::after {
     position: absolute;
