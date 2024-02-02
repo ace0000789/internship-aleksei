@@ -31,14 +31,14 @@
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus-visible {
   background-color: $color-cerulean-blue;
   color: $color-default-white;
   outline: none;
 }
 
 .btn:hover .btn__toggle,
-.btn:focus .btn__toggle {
+.btn:focus-visible .btn__toggle {
   stroke: $color-cerulean-blue;
   transform: rotate(45deg);
   background-color: $color-default-white;
@@ -63,6 +63,7 @@
   pointer-events: none;
   color: $color-chocolate;
 
+  &:focus-visible,
   &:focus {
     border: 1px solid $color-chocolate;
     cursor: default;
@@ -77,8 +78,8 @@
   background-color: $color-chocolate;
 }
 
-.btn--disabled:focus .btn__toggle,
-.btn:disabled:focus .btn__toggle {
+.btn--disabled:focus-visible .btn__toggle,
+.btn:disabled:focus-visible .btn__toggle {
   background-color: $color-chocolate;
   stroke: $color-default-white;
   transform: none;
