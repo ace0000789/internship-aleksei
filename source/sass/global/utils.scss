@@ -53,3 +53,86 @@
 .swiper-notification {
   display: none;
 }
+
+/* swiper scrollbar */
+.swiper-scrollbar {
+  width: 1134px;
+  height: 2px;
+  background-color: rgba(49, 109, 194, 0.2);
+
+  @include vp-1439 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.swiper-scrollbar-drag {
+  height: 2px;
+  background-color: $color-cerulean-blue;
+  z-index: 100;
+}
+
+/* swiper arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: $color-alabaster;
+  cursor: pointer;
+  transition: 0.3s background-color;
+
+  svg {
+    stroke: $color-cerulean-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.swiper-button-prev:focus-visible,
+.swiper-button-next:focus-visible,
+.swiper-button-prev:hover:not(.swiper-button-disabled),
+.swiper-button-next:hover:not(.swiper-button-disabled) {
+  background-color: $color-default-white;
+}
+
+.swiper-button-prev:active:not(.swiper-button-disabled),
+.swiper-button-next:active:not(.swiper-button-disabled) {
+  background-color: $color-default-white;
+}
+
+.swiper-button-prev:active:not(.swiper-button-disabled) svg,
+.swiper-button-next:active:not(.swiper-button-disabled) svg {
+  transition: $trans-default;
+  opacity: 0.7;
+}
+
+.swiper-button-disabled {
+  cursor: default;
+
+  svg {
+    stroke: $color-chocolate;
+  }
+}
+
+/* for custom-disabled arrow add class slider-button-disabled */
+
+.swiper-button-prev.slider-button-disabled,
+.swiper-button-next.slider-button-disabled {
+  pointer-events: none;
+  cursor: default;
+
+  svg {
+    stroke: $color-chocolate;
+  }
+}
