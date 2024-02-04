@@ -19,7 +19,7 @@ function initHeroSlider() {
     autoplay: {
       delay: 3000,
     },
-    
+
     grabCursor: true,
     autoHeight: true,
     loop: true,
