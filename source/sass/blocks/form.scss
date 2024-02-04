@@ -397,7 +397,7 @@ label:focus-within input:checked + .form__checkbox-mark {
   }
 }
 
-.form__btn:disabled .btn__toggle svg{
+.form__btn:disabled .btn__toggle svg {
   stroke: $color-default-white;
   opacity: 0.6;
 }
