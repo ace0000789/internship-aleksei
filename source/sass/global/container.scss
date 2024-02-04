@@ -24,12 +24,7 @@
     }
   }
 
-  &--form {
-    @include vp-767 {
-      padding: 0;
-    }
-  }
-
+  &--form,
   &--footer {
     @include vp-767 {
       padding: 0;

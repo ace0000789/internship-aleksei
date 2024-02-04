@@ -15,11 +15,11 @@ function initHeroSlider() {
 
   const sliderOne = new Swiper(sliderHero, {
     modules: [Autoplay, Controller],
-
+    /*
     autoplay: {
       delay: 3000,
     },
-
+    */
     grabCursor: true,
     autoHeight: true,
     loop: true,
