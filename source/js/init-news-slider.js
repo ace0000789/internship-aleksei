@@ -27,6 +27,7 @@ function initNewsSlider() {
         slidesPerGroup: 1,
         spaceBetween: 32,
         watchSlidesProgress: true,
+        grid: false,
       },
       768: {
         watchSlidesProgress: true,
