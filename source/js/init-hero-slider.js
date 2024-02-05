@@ -46,7 +46,7 @@ function initHeroSlider() {
       el: paginationOne,
       clickable: true,
       renderBullet(index, className) {
-        return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
+        return `<button class="${className}" type="button" tabindex="-1"><span class="visually-hidden">bullet.</span></button>`;
       },
     },
   });
@@ -59,7 +59,7 @@ function initHeroSlider() {
       el: paginationTwo,
       clickable: true,
       renderBullet(index, className) {
-        return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
+        return `<button class="${className}" type="button" tabindex="-1"><span class="visually-hidden">bullet.</span></button>`;
       },
     },
   });
@@ -72,7 +72,7 @@ function initHeroSlider() {
       el: paginationThree,
       clickable: true,
       renderBullet(index, className) {
-        return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
+        return `<button class="${className}" type="button" tabindex="-1"><span class="visually-hidden">bullet.</span></button>`;
       },
     },
   });
