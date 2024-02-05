@@ -15,7 +15,6 @@ import { initReviewsSlider } from './init-reviews-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  //iosVhFix();
   initHeroSlider();
   initNewsSlider();
   initAddSlides();
@@ -30,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initMenu();
     initTabsNews();
-
 
     const select = new CustomSelect();
     select.init();
