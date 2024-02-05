@@ -180,6 +180,13 @@
     padding-bottom: 14px;
   }
 
+  &:hover,
+  &:focus-within {
+    border: 1px solid $color-default-white;
+    outline: 2px solid $color-default-white;
+    outline-offset: -2px;
+  }
+
   &:hover .faq__button:not(:disabled),
   &:focus-within .faq__button:not(:disabled) {
     background-color: $color-cerulean-blue;
