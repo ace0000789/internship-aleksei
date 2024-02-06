@@ -30,6 +30,7 @@ function initReviewsSlider() {
         simulateTouch: false,
         spaceBetween: 31,
         watchSlidesProgress: true,
+        centeredSlides: false,
       },
       768: {
         simulateTouch: true,
