@@ -118,16 +118,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 40px;
+  width: calc(100% - 60px);
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 
   @include vp-767 {
-    gap: 16px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    bottom: -3px;
   }
 }
 
@@ -183,7 +180,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 45px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
 
   @include vp-1439 {
     margin-top: 35px;
@@ -327,7 +326,7 @@
   }
 
   p {
-    width: 325px;
+    width: 326px;
 
     @include vp-767 {
       width: 193px;
@@ -417,7 +416,7 @@
     margin: 0;
     padding: 0;
     color: $color-charcoal;
-    width: 176px;
+    width: 177px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
