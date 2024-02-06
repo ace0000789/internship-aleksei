@@ -33,6 +33,7 @@ function initProgramsSlider() {
         watchSlidesProgress: true,
       },
       768: {
+        centeredSlides: false,
         simulateTouch: true,
         slidesPerView: 2,
         spaceBetween: 30,
