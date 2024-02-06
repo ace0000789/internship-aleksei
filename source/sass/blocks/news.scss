@@ -124,6 +124,10 @@
   margin-right: auto;
   justify-content: center;
 
+  @include vp-1439 {
+    margin-top: 30px;
+  }
+
   @include vp-767 {
   }
 }
@@ -183,10 +187,6 @@
   position: absolute;
   bottom: 5px;
   width: 100%;
-
-  @include vp-1439 {
-    margin-top: 35px;
-  }
 
   @include vp-767 {
     margin-top: 25px;
