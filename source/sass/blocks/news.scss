@@ -43,6 +43,7 @@
 .news__button-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 28px;
   justify-content: center;
   padding-bottom: 40px;
@@ -53,6 +54,7 @@
   }
 
   @include vp-767 {
+    flex-wrap: nowrap;
     overflow-x: scroll;
     justify-content: flex-start;
     gap: 10px;
@@ -358,11 +360,24 @@
     height: 100%;
     width: 100%;
     border-radius: 12px;
+    display: block;
+    vertical-align: bottom;
   }
 }
 
 .news__item-content {
   position: relative;
+
+  @include vp-1439 {
+    max-height: 350px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+  }
+
+  @include vp-767 {
+    max-height: auto;
+  }
 
   h3 {
     margin: 0;
@@ -495,8 +510,8 @@
     background-image: url("../../img/sprite/news-angle.svg");
     background-repeat: no-repeat;
     width: 20px;
-    height: 20px;
-    bottom: -4px;
+    height: 16px;
+    bottom: 0;
     right: -19px;
   }
 
