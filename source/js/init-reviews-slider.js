@@ -33,6 +33,7 @@ function initReviewsSlider() {
         centeredSlides: false,
       },
       768: {
+        centeredSlides: false,
         simulateTouch: true,
         slidesPerView: 'auto',
         spaceBetween: 30,
