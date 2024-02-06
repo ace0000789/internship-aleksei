@@ -7,6 +7,11 @@ const buttonPrev = document.querySelector('[data-validate="swiper-news-prev"]');
 const paginationSlider = document.querySelector('[data-validate="swiper-news-pagination"]');
 
 function initNewsSlider() {
+
+  if (!swiperNews || !buttonNext || !buttonPrev || !paginationSlider) {
+    return;
+  }
+
   const sliderMySlider = new Swiper(swiperNews, {
     modules: [Navigation, Pagination, Grid],
     navigation: {
