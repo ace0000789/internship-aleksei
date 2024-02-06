@@ -21,7 +21,7 @@ function initReviewsSlider() {
     },
 
     grabCursor: true,
-    autoHeight: false,
+    autoHeight: true,
     loop: false,
     breakpoints: {
       1440: {
