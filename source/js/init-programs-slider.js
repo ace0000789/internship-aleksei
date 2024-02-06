@@ -7,6 +7,10 @@ function initProgramsSlider() {
   const prevSlide = document.querySelector('[data-validate="swiper-programs-prev"]');
   const scroll = document.querySelector('[data-validate="swiper-programs-scrollbar"]');
 
+  if (!programSleder || !nextSlide || !prevSlide || !scroll) {
+    return;
+  }
+
   const sliderMySlider = new Swiper(programSleder, {
     modules: [Navigation, Scrollbar],
     navigation: {

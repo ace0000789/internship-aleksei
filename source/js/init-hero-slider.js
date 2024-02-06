@@ -12,6 +12,9 @@ function initHeroSlider() {
   const paginationTwo = document.querySelector('[data-validate="swiper-hero-pagination-two"]');
   const paginationThree = document.querySelector('[data-validate="swiper-hero-pagination-three"]');
 
+  if (!sliderHero || !sliderPagOne || !sliderPagTwo || !sliderPagThree || !paginationOne || !paginationTwo || !paginationThree) {
+    return;
+  }
 
   const sliderOne = new Swiper(sliderHero, {
     modules: [Autoplay, Controller],

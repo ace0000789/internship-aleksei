@@ -7,6 +7,10 @@ function initReviewsSlider() {
   const prevSlide = document.querySelector('[data-validate="swiper-reviews-prev"]');
   const scroll = document.querySelector('[data-validate="swiper-reviews-scrollbar"]');
 
+  if (!reviewsSlider || !nextSlide || !prevSlide || !scroll) {
+    return;
+  }
+
   const sliderMySlider = new Swiper(reviewsSlider, {
     modules: [Navigation, Scrollbar],
     navigation: {

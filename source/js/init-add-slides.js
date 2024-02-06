@@ -5,7 +5,7 @@ export function initAddSlides() {
     const slidesWrapper = slider.querySelector('.news__list');
     const slides = slidesWrapper.querySelectorAll('.swiper-slide');
 
-    if (!windowWidth || !slider || !slidesWrapper) {
+    if (!windowWidth || !slider || !slidesWrapper || !slides) {
       return;
     }
 
